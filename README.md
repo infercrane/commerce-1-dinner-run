@@ -6,7 +6,7 @@ colorTo: yellow
 sdk: static
 pinned: false
 license: apache-2.0
-short_description: Make one shopping-agent recommendation, then compare it with Commerce-1.
+short_description: Make one shopping-agent call with Commerce-1.
 ---
 
 # The €18 Agent Test
