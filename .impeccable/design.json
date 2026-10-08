@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T20:13:25Z",
-  "title": "Design System: The €18 Agent Test",
+  "generatedAt": "2026-10-08T21:06:16Z",
+  "title": "Design System: Checkout Rush",
   "extensions": {
     "colorMeta": {
       "ink": {
@@ -18,7 +18,7 @@
       },
       "lavender-ground": {
         "role": "primary",
-        "displayName": "Lavender Tabletop",
+        "displayName": "Lavender Floor",
         "canonical": "#f2f0ff",
         "tonalRamp": ["oklch(15% 0.045 285)", "oklch(25% 0.045 285)", "oklch(35% 0.044 285)", "oklch(45% 0.042 285)", "oklch(55% 0.039 285)", "oklch(68% 0.034 285)", "oklch(82% 0.026 285)", "oklch(95% 0.016 285)"]
       },
@@ -54,7 +54,7 @@
       },
       "focus-coral": {
         "role": "tertiary",
-        "displayName": "Focus Coral",
+        "displayName": "Focus and Urgency Coral",
         "canonical": "#ff775f",
         "tonalRamp": ["oklch(15% 0.080 30)", "oklch(25% 0.110 30)", "oklch(35% 0.140 30)", "oklch(45% 0.165 30)", "oklch(55% 0.180 30)", "oklch(68% 0.170 30)", "oklch(82% 0.115 30)", "oklch(95% 0.045 30)"]
       },
@@ -114,26 +114,28 @@
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Quick-Draw Display", "purpose": "The two-line invitation only." },
-      "headline": { "displayName": "Question and Reveal", "purpose": "The basket question and Same call/Different call result hierarchy." },
-      "title": { "displayName": "Household Voice", "purpose": "The quoted shopping brief." },
-      "body": { "displayName": "Operational Body", "purpose": "Instructions, facts, policy rationale, and disclosure." },
-      "label": { "displayName": "Receipt Label", "purpose": "Budget, choices, comparison labels, probabilities, and doctrine." }
+      "display": { "displayName": "Arcade Display", "purpose": "The two-line invitation and Take the cart start state." },
+      "headline": { "displayName": "Question and Verdict", "purpose": "The basket question and policy-first result hierarchy." },
+      "title": { "displayName": "Customer Voice", "purpose": "Maya's quoted request." },
+      "body": { "displayName": "Operational Body", "purpose": "Mission instructions, facts, policy rationale, scoring, and disclosure." },
+      "label": { "displayName": "Checkout Telemetry", "purpose": "HUD, time, points, status, option letters, probabilities, and doctrine." }
     },
     "shadows": [
-      { "name": "decision-stage-lift", "value": "0 24px 65px rgba(58, 46, 111, .14)", "purpose": "Binds the brief and answer sheet into one elevated desktop decision object." },
-      { "name": "compact-stage-lift", "value": "0 18px 45px rgba(58, 46, 111, .13)", "purpose": "Preserves the same single-object lift on compact screens." }
+      { "name": "console-lift", "value": "0 24px 65px rgba(58, 46, 111, .16)", "purpose": "Binds HUD, timer, brief, and play deck into one desktop cabinet." },
+      { "name": "compact-console-lift", "value": "0 18px 45px rgba(58, 46, 111, .14)", "purpose": "Preserves the same single-object lift on compact screens." }
     ],
     "motion": [
-      { "name": "answer-state", "value": "color .16s ease, background .16s ease", "purpose": "Immediate answer-row hover response." },
-      { "name": "directional-arrow", "value": "transform .16s cubic-bezier(.2,.8,.2,1)", "purpose": "Moves answer and model-link arrows 3px toward their destination." },
-      { "name": "choice-exit", "value": "opacity .18s ease, transform .18s cubic-bezier(.2,.8,.2,1)", "purpose": "Fades and slides the answer sheet left before reveal." },
-      { "name": "result-entry", "value": "reveal .44s cubic-bezier(.16,1,.3,1)", "purpose": "Reveals result content downward-to-rest with opacity and clip-path." },
+      { "name": "countdown-track", "value": "requestAnimationFrame + transform: scaleX(remaining / 15)", "purpose": "Shows continuous remaining mission time without layout work." },
+      { "name": "critical-time", "value": "background .2s ease at <= 5 seconds", "purpose": "Turns the time and track coral during the final five seconds." },
+      { "name": "answer-state", "value": "color/background/transform .16s", "purpose": "Moves a focused or hovered candidate 3px while changing to violet." },
+      { "name": "start-action", "value": "background/transform .18s cubic-bezier(.2,.8,.2,1)", "purpose": "Gives the explicit mission start a short lift and arrow response." },
+      { "name": "result-entry", "value": "result-in .52s cubic-bezier(.16,1,.3,1)", "purpose": "Reveals the result downward-to-rest with opacity and clip-path." },
+      { "name": "model-match-burst", "value": "burst .72s cubic-bezier(.16,1,.3,1)", "purpose": "Marks model agreement decoratively without changing points." },
       { "name": "toast-state", "value": "transform .2s ease, opacity .2s ease", "purpose": "Presents share feedback from below the viewport." },
-      { "name": "reduced-motion", "value": "animation-duration: .01ms; transition-duration: .01ms", "purpose": "Collapses animation and transition durations; JavaScript also removes the handoff delay." }
+      { "name": "reduced-motion", "value": "animation-duration: .01ms; transition-duration: .01ms", "purpose": "Collapses presentation motion without changing game timing or content." }
     ],
     "breakpoints": [
-      { "name": "stacked-stage", "value": "900px" },
+      { "name": "stacked-console", "value": "900px" },
       { "name": "compact-mobile", "value": "620px" }
     ]
   },
@@ -141,125 +143,123 @@
     {
       "name": "Transparent Topbar",
       "kind": "nav",
-      "description": "Lavender-ground navigation with brand, centered demo name, and persistent model access.",
-      "html": "<header class=\"ds-topbar\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-brand-mark\"><i></i><i></i><i></i></span><strong>InferCrane</strong></a><span class=\"ds-demo-name\">The €18 Agent Test</span><a class=\"ds-model-link\" href=\"#\">Open model <svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a></header>",
-      "css": ".ds-topbar{min-height:68px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;color:var(--ink,#17151f);background:var(--ground,#f2f0ff);border-bottom:1px solid rgba(23,21,31,.16);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-brand,.ds-model-link{display:inline-flex;align-items:center;text-decoration:none}.ds-brand{justify-self:start;gap:11px}.ds-brand strong{font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-size:17px;letter-spacing:-.02em}.ds-brand-mark{position:relative;width:28px;height:26px}.ds-brand-mark i{position:absolute;left:2px;width:24px;height:5px;background:var(--ink,#17151f);transform:skewX(-32deg)}.ds-brand-mark i:nth-child(1){top:2px}.ds-brand-mark i:nth-child(2){top:10px;left:6px;width:20px}.ds-brand-mark i:nth-child(3){top:18px;left:10px;width:16px}.ds-demo-name{justify-self:center;font-size:13px;font-weight:700}.ds-model-link{justify-self:end;gap:7px;font-size:12px;font-weight:700}.ds-model-link svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;transition:transform .18s cubic-bezier(.2,.8,.2,1)}.ds-model-link:hover svg{transform:translateX(3px)}.ds-model-link:focus-visible{outline:3px solid var(--coral,#ff775f);outline-offset:4px}"
+      "description": "Lavender navigation with brand, centered Checkout Rush name, and persistent model access.",
+      "html": "<header class=\"ds-topbar\"><a class=\"ds-brand\" href=\"#\">InferCrane</a><span>Checkout Rush</span><a class=\"ds-model\" href=\"#\">Open model →</a></header>",
+      "css": ".ds-topbar{min-height:68px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;color:#17151f;background:#f2f0ff;border-bottom:1px solid rgba(23,21,31,.16);font-family:\"DM Sans\",sans-serif}.ds-brand{justify-self:start;font-family:\"Bricolage Grotesque\",sans-serif;font-weight:700}.ds-model{justify-self:end;font-size:12px;font-weight:700}.ds-topbar a{color:inherit;text-decoration:none}.ds-topbar a:focus-visible{outline:3px solid #ff775f;outline-offset:3px}"
     },
     {
-      "name": "Ink Household Brief",
+      "name": "Checkout Rush HUD",
+      "kind": "custom",
+      "description": "Four-cell mission telemetry plus the active countdown track.",
+      "html": "<div class=\"ds-hud\"><div><span>Mission</span><strong>01 / 01</strong></div><div><span>Time</span><strong class=\"ds-time\">08.4</strong></div><div><span>Game points</span><strong>0000</strong></div><div><span>Status</span><strong>Choose now</strong></div></div><div class=\"ds-track\"><i></i></div>",
+      "css": ".ds-hud{display:grid;grid-template-columns:repeat(4,1fr);color:#fff;background:#17151f;font-family:\"IBM Plex Mono\",monospace}.ds-hud>div{display:flex;justify-content:space-between;gap:12px;padding:22px;border-right:1px solid #3c3943}.ds-hud span{color:#afaab9;font-size:9px;text-transform:uppercase;letter-spacing:.08em}.ds-hud strong{font-size:16px;font-variant-numeric:tabular-nums}.ds-hud .ds-time{color:#d9ff67;font-size:22px}.ds-track{height:5px;background:#3c3943}.ds-track i{display:block;width:56%;height:100%;background:#6d5dfc;transform-origin:left}"
+    },
+    {
+      "name": "Start Mission Button",
+      "kind": "button",
+      "refersTo": "start-button",
+      "description": "Explicit 54px action that begins the 15-second clock.",
+      "html": "<button class=\"ds-start\" type=\"button\">Start 15-second mission →</button>",
+      "css": ".ds-start{min-height:54px;padding:0 21px;border:0;color:#fff;background:#6d5dfc;font-family:\"DM Sans\",sans-serif;font-weight:700;cursor:pointer;transition:background .18s ease,transform .18s cubic-bezier(.2,.8,.2,1)}.ds-start:hover{background:#4938df;transform:translateY(-2px)}.ds-start:focus-visible{outline:3px solid #ff775f;outline-offset:3px}"
+    },
+    {
+      "name": "Ink Customer Brief",
       "kind": "card",
       "refersTo": "brief-panel",
-      "description": "Scenario anchor combining a human sender, quoted need, hard constraints, and lime budget.",
-      "html": "<aside class=\"ds-brief\"><div class=\"ds-speaker\"><span>M</span><div><strong>Maya briefed her shopping agent</strong><small>Customer request · synthetic scenario</small></div></div><blockquote>“Dinner for four tonight. One guest has a serious nut allergy.”</blockquote><ul><li>4 adults</li><li>30 min maximum</li><li>Vegetarian</li><li>Strictly nut-free</li></ul><div class=\"ds-budget\"><small>Budget · total maximum</small><strong>€18</strong></div></aside>",
-      "css": ".ds-brief{position:relative;overflow:hidden;max-width:430px;padding:36px;color:#fff;background:var(--ink,#17151f);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-brief:after{content:\"\";position:absolute;right:-42px;bottom:-60px;width:200px;height:200px;border:36px solid rgba(217,255,103,.09);border-radius:50%}.ds-speaker{display:flex;align-items:center;gap:12px}.ds-speaker>span{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;color:var(--ink,#17151f);background:var(--lime,#d9ff67);font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-weight:700}.ds-speaker strong,.ds-speaker small{display:block}.ds-speaker small{margin-top:3px;color:#afaab9;font-size:11px}.ds-brief blockquote{margin:32px 0 28px;font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-size:2rem;font-weight:600;line-height:1.08;letter-spacing:-.03em}.ds-brief ul{display:grid;grid-template-columns:1fr 1fr;margin:0;padding:0;border-top:1px solid #3c3943;list-style:none}.ds-brief li{padding:15px 8px;border-bottom:1px solid #3c3943;color:#fff;font-size:12px}.ds-budget{position:relative;z-index:1;display:flex;align-items:end;justify-content:space-between;margin-top:28px}.ds-budget small{color:#afaab9;font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:9px;text-transform:uppercase}.ds-budget strong{color:var(--lime,#d9ff67);font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-size:3.25rem;line-height:.82}"
+      "description": "Persistent scenario anchor combining customer need, four displayed constraints, and the €18 fifth rule.",
+      "html": "<aside class=\"ds-brief\"><strong>Maya needs a decision</strong><small>Customer request · synthetic scenario</small><blockquote>“Dinner for four tonight. One guest has a serious nut allergy.”</blockquote><ul><li>4 adults</li><li>30 min maximum</li><li>Vegetarian</li><li>Strictly nut-free</li></ul><div><small>Cart limit</small><strong>€18</strong></div></aside>",
+      "css": ".ds-brief{max-width:430px;padding:36px;color:#fff;background:#17151f;font-family:\"DM Sans\",sans-serif}.ds-brief>small{display:block;margin-top:3px;color:#afaab9}.ds-brief blockquote{margin:29px 0 25px;font-family:\"Bricolage Grotesque\",sans-serif;font-size:2rem;font-weight:600;line-height:1.08}.ds-brief ul{display:grid;grid-template-columns:1fr 1fr;padding:0;border-top:1px solid #3c3943;list-style:none}.ds-brief li{padding:15px 8px;border-bottom:1px solid #3c3943}.ds-brief>div{display:flex;align-items:end;justify-content:space-between;margin-top:24px}.ds-brief>div strong{color:#d9ff67;font-family:\"Bricolage Grotesque\",sans-serif;font-size:3.25rem}"
     },
     {
-      "name": "Basket Answer Row",
-      "kind": "input",
+      "name": "Basket Action Row",
+      "kind": "button",
       "refersTo": "answer-row",
-      "description": "Full-row native radio answer with receipt facts, warning copy, and quick violet response.",
-      "html": "<label class=\"ds-answer\"><input type=\"radio\" name=\"ds-dinner\"><span class=\"ds-letter\">A</span><span class=\"ds-copy\"><strong>Tomato lentil spaghetti</strong><small>26g protein · 235g vegetables / person</small></span><span class=\"ds-facts\"><strong>€8.45</strong><small>28 min · nut-free</small></span><svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></label>",
-      "css": ".ds-answer{position:relative;display:grid;grid-template-columns:38px minmax(170px,1fr) minmax(145px,auto) 20px;align-items:center;gap:15px;padding:15px 2px;border-bottom:1px solid var(--line,#d7d2df);color:var(--ink,#17151f);background:transparent;cursor:pointer;font-family:var(--sans,\"DM Sans\",sans-serif);transition:color .16s ease,background .16s ease}.ds-answer:hover{color:#fff;background:var(--violet,#6d5dfc)}.ds-answer:focus-within{outline:3px solid var(--coral,#ff775f);outline-offset:3px}.ds-answer input{position:absolute;opacity:0;pointer-events:none}.ds-letter{width:31px;height:31px;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px;font-weight:600}.ds-copy strong,.ds-copy small,.ds-facts strong,.ds-facts small{display:block}.ds-copy strong{font-size:14px}.ds-copy small,.ds-facts small{margin-top:4px;color:#746e7b;font-size:11px}.ds-facts{text-align:right}.ds-facts strong{font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-size:16px}.ds-answer:hover small{color:rgba(255,255,255,.74)}.ds-answer>svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;transition:transform .16s cubic-bezier(.2,.8,.2,1)}.ds-answer:hover>svg{transform:translateX(3px)}"
+      "description": "Immediate full-row action with receipt facts, warning copy, pointer activation, and A–D shortcut.",
+      "html": "<button class=\"ds-answer\" type=\"button\"><span class=\"ds-letter\">A</span><span><strong>Tomato lentil spaghetti</strong><small>26g protein · 235g vegetables / person</small></span><span class=\"ds-facts\"><strong>€8.45</strong><small>28 min · nut-free</small></span><span>→</span></button>",
+      "css": ".ds-answer{width:100%;display:grid;grid-template-columns:38px 1fr auto 20px;align-items:center;gap:15px;padding:14px 13px;border:0;border-bottom:1px solid #d7d2df;color:#17151f;background:transparent;text-align:left;font-family:\"DM Sans\",sans-serif;cursor:pointer;transition:color .16s ease,background .16s ease,transform .16s cubic-bezier(.2,.8,.2,1)}.ds-answer:hover,.ds-answer:focus-visible{color:#fff;background:#6d5dfc;transform:translateX(3px);outline:none;box-shadow:inset 0 0 0 3px #ff775f}.ds-letter{width:31px;height:31px;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-family:\"IBM Plex Mono\",monospace}.ds-answer small{display:block;margin-top:4px;color:#746e7b}.ds-answer:hover small,.ds-answer:focus-visible small{color:rgba(255,255,255,.78)}.ds-facts{text-align:right}"
     },
     {
-      "name": "Human-versus-Model Comparison",
+      "name": "Policy-First Score Header",
+      "kind": "custom",
+      "description": "Result hierarchy that leads with checkout policy and keeps game points adjacent but distinct.",
+      "html": "<header class=\"ds-result\"><div><span>Checkout cleared · different model call</span><h2>Five rules. Cleared.</h2><p>Your basket passes policy. Commerce-1 independently ranked the lentil dinner first.</p></div><div class=\"ds-points\"><strong>+1240</strong><span>game points</span></div></header>",
+      "css": ".ds-result{display:grid;grid-template-columns:1fr auto;align-items:end;gap:24px;padding-bottom:19px;border-bottom:1px solid #d7d2df;color:#17151f;font-family:\"DM Sans\",sans-serif}.ds-result>div>span,.ds-points span{color:#4938df;font-family:\"IBM Plex Mono\",monospace;font-size:10px;text-transform:uppercase;letter-spacing:.08em}.ds-result h2{margin:5px 0 0;color:#6d5dfc;font-family:\"Bricolage Grotesque\",sans-serif;font-size:3.2rem;line-height:1}.ds-result p{max-width:530px;color:#514d5b}.ds-points{text-align:right}.ds-points strong{display:block;font-family:\"Bricolage Grotesque\",sans-serif;font-size:3rem;font-variant-numeric:tabular-nums}.ds-points span{display:block;margin-top:5px;color:#746e7b}"
+    },
+    {
+      "name": "Player-versus-Model Comparison",
       "kind": "custom",
       "refersTo": "model-pick",
-      "description": "Recommendation comparison that gives Commerce-1 darker violet emphasis without turning probability into a score.",
-      "html": "<div class=\"ds-versus\"><div><span>Your agent recommends</span><strong>Black bean tacos</strong></div><b>vs</b><div class=\"ds-model-pick\"><span>Commerce-1 recommends</span><strong>Tomato lentil spaghetti</strong><small>82.99% probability</small></div></div>",
-      "css": ".ds-versus{display:grid;grid-template-columns:1fr 34px 1fr;align-items:center;gap:16px;color:var(--ink,#17151f);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-versus>div{min-width:0;padding:16px;background:var(--paper-2,#f8f5ed)}.ds-versus>b{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;color:#fff;background:var(--ink,#17151f);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:9px;text-transform:uppercase}.ds-versus span,.ds-versus small{display:block;color:#403a47;font-size:11px}.ds-versus span{margin-bottom:5px;font-family:var(--mono,monospace);letter-spacing:.06em;text-transform:uppercase}.ds-versus strong{display:block;font-size:14px;line-height:1.25}.ds-versus small{margin-top:5px}.ds-versus .ds-model-pick{color:#fff;background:var(--violet-dark,#4938df)}.ds-versus .ds-model-pick span,.ds-versus .ds-model-pick small{color:rgba(255,255,255,.9)}"
-    },
-    {
-      "name": "Checkout-Code Pass",
-      "kind": "custom",
-      "refersTo": "policy-pass",
-      "description": "Deterministic proceed state, kept distinct from model probability.",
-      "html": "<div class=\"ds-policy ds-pass\"><svg viewBox=\"0 0 24 24\"><path d=\"m5 12 4 4L19 6\"/></svg><div><span>Checkout code</span><strong>Safe to continue</strong><p>This basket satisfies the budget, time, vegetarian, servings, and declared nut-free rules.</p></div></div>",
-      "css": ".ds-policy{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:15px 16px;border:1px solid var(--line,#d7d2df);color:var(--ink,#17151f);background:var(--paper,#fffdf8);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-policy>svg{width:27px;height:27px;fill:none;stroke:#287a3f;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-policy span,.ds-policy strong{display:block}.ds-policy span{color:#403a47;font-family:var(--mono,monospace);font-size:10px;letter-spacing:.06em;text-transform:uppercase}.ds-policy strong{margin-top:3px;font-size:13px}.ds-policy p{margin:3px 0 0;color:#403a47;font-size:12px;line-height:1.4}"
+      "description": "Separate action comparison that never turns agreement or probability into game points.",
+      "html": "<div class=\"ds-versus\"><div><span>Your agent</span><strong>Black bean tacos</strong><small>locked in 3.1s</small></div><b>vs</b><div class=\"ds-model\"><span>Commerce-1</span><strong>Tomato lentil spaghetti</strong><small>82.99% probability</small></div></div>",
+      "css": ".ds-versus{display:grid;grid-template-columns:1fr 34px 1fr;align-items:center;gap:14px;color:#17151f;font-family:\"DM Sans\",sans-serif}.ds-versus>div{padding:14px 15px;background:#f8f5ed}.ds-versus>b{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;color:#fff;background:#17151f;font-family:\"IBM Plex Mono\",monospace;font-size:9px}.ds-versus span,.ds-versus small{display:block;color:#403a47;font-size:11px}.ds-versus span{font-family:\"IBM Plex Mono\",monospace;text-transform:uppercase}.ds-versus .ds-model{color:#fff;background:#4938df}.ds-versus .ds-model span,.ds-versus .ds-model small{color:rgba(255,255,255,.9)}"
     },
     {
       "name": "Checkout-Code Block",
       "kind": "custom",
       "refersTo": "policy-block",
-      "description": "Deterministic allergy block with explicit reason and model-independent authority.",
-      "html": "<div class=\"ds-policy ds-block\"><svg viewBox=\"0 0 24 24\"><path d=\"m6 6 12 12M18 6 6 18\"/></svg><div><span>Checkout code</span><strong>Blocked: contains cashew</strong><p>The allergy rule stops this basket before checkout, independently of the model.</p></div></div>",
-      "css": ".ds-policy{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:15px 16px;border:1px solid #d95b47;color:var(--ink,#17151f);background:#fff0ec;font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-policy>svg{width:27px;height:27px;fill:none;stroke:#c53d29;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-policy span,.ds-policy strong{display:block}.ds-policy span{color:#403a47;font-family:var(--mono,monospace);font-size:10px;letter-spacing:.06em;text-transform:uppercase}.ds-policy strong{margin-top:3px;font-size:13px}.ds-policy p{margin:3px 0 0;color:#403a47;font-size:12px;line-height:1.4}"
+      "description": "Deterministic allergy failure with an explicit reason and model-independent authority.",
+      "html": "<div class=\"ds-policy\"><span>×</span><div><small>Checkout code</small><strong>Blocked: contains cashew</strong><p>The allergy rule stops this basket independently of the model.</p></div></div>",
+      "css": ".ds-policy{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:14px 15px;border:1px solid #d95b47;color:#17151f;background:#fff0ec;font-family:\"DM Sans\",sans-serif}.ds-policy>span{color:#c53d29;font-size:28px}.ds-policy small,.ds-policy strong{display:block}.ds-policy small{color:#403a47;font-family:\"IBM Plex Mono\",monospace;text-transform:uppercase}.ds-policy strong{margin-top:3px}.ds-policy p{margin:3px 0 0;color:#403a47;font-size:12px}"
     },
     {
-      "name": "Primary Result Button",
+      "name": "Result Actions",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Ink-filled Play again action that turns violet on hover or focus.",
-      "html": "<button class=\"ds-btn-primary\" type=\"button\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 11a8 8 0 1 1 2.3 6M4 11V5m0 6h6\"/></svg>Play again</button>",
-      "css": ".ds-btn-primary{min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 15px;border:1px solid var(--ink,#17151f);color:#fff;background:var(--ink,#17151f);cursor:pointer;font-family:var(--sans,\"DM Sans\",sans-serif);font-size:11px;font-weight:700}.ds-btn-primary:hover,.ds-btn-primary:focus-visible{color:#fff;background:var(--violet,#6d5dfc);border-color:var(--violet,#6d5dfc);outline:none}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}"
+      "description": "Square Play again and Share score actions with a shared violet hover/focus state.",
+      "html": "<div class=\"ds-actions\"><button type=\"button\">↻ Play again</button><button type=\"button\">Share score</button></div>",
+      "css": ".ds-actions{display:flex;gap:10px}.ds-actions button{min-height:42px;padding:0 15px;border:1px solid #17151f;color:#17151f;background:transparent;font-family:\"DM Sans\",sans-serif;font-weight:700}.ds-actions button:first-child{color:#fff;background:#17151f}.ds-actions button:hover,.ds-actions button:focus-visible{color:#fff;background:#6d5dfc;border-color:#6d5dfc;outline:none}"
     },
     {
-      "name": "Secondary Result Button",
-      "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "Transparent Share result action with the same violet hover/focus response.",
-      "html": "<button class=\"ds-btn-secondary\" type=\"button\"><svg viewBox=\"0 0 24 24\"><circle cx=\"18\" cy=\"5\" r=\"2.5\"/><circle cx=\"6\" cy=\"12\" r=\"2.5\"/><circle cx=\"18\" cy=\"19\" r=\"2.5\"/><path d=\"m8.2 10.8 7.6-4.5m-7.6 6.9 7.6 4.5\"/></svg>Share result</button>",
-      "css": ".ds-btn-secondary{min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 15px;border:1px solid var(--ink,#17151f);color:var(--ink,#17151f);background:transparent;cursor:pointer;font-family:var(--sans,\"DM Sans\",sans-serif);font-size:11px;font-weight:700}.ds-btn-secondary:hover,.ds-btn-secondary:focus-visible{color:#fff;background:var(--violet,#6d5dfc);border-color:var(--violet,#6d5dfc);outline:none}.ds-btn-secondary:active{transform:translateY(1px)}.ds-btn-secondary svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}"
-    },
-    {
-      "name": "Evidence Drawer",
+      "name": "Evidence and Scoring Drawer",
       "kind": "custom",
-      "description": "Native disclosure for the full Choice distribution, precomputed-output boundary, and receipt link.",
-      "html": "<details class=\"ds-evidence\"><summary>See model probabilities and evidence</summary><div class=\"ds-prob ds-winner\"><span>Tomato lentil spaghetti</span><i><b style=\"width:82.99%\"></b></i><strong>82.99%</strong></div><div class=\"ds-prob ds-blocked\"><span>Cashew pesto pasta <em>ineligible</em></span><i><b style=\"width:.89%\"></b></i><strong>0.89%</strong></div><p>Real precomputed output from the public Commerce-1 artifact on NVIDIA H200.</p><a href=\"#\">Open inference receipt</a></details>",
-      "css": ".ds-evidence{padding-top:16px;border-top:1px solid var(--line,#d7d2df);color:var(--ink,#17151f);background:var(--paper,#fffdf8);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-evidence summary{padding:14px 0 6px;cursor:pointer;color:var(--ink-soft,#514d5b);font-size:12px;font-weight:700}.ds-evidence summary:hover{color:var(--ink,#17151f)}.ds-evidence summary:focus-visible{outline:3px solid var(--coral,#ff775f);outline-offset:3px}.ds-prob{display:grid;grid-template-columns:minmax(130px,1.25fr) minmax(80px,1fr) 54px;align-items:center;gap:10px;margin:8px 0;font-size:11px}.ds-prob>span em{margin-left:5px;color:#b43827;font-family:var(--mono,monospace);font-size:9px;font-style:normal;font-weight:700;text-transform:uppercase}.ds-prob>i{height:6px;background:#e4e0e9}.ds-prob>i>b{display:block;min-width:3px;height:100%;background:#9f98aa}.ds-prob.ds-winner>i>b{background:var(--violet,#6d5dfc)}.ds-prob.ds-blocked>i>b{background:var(--coral,#ff775f)}.ds-prob>strong{text-align:right;font-family:var(--mono,\"IBM Plex Mono\",monospace)}.ds-evidence p{color:#746e7b;font-size:12px;line-height:1.45}.ds-evidence a{font-size:12px;font-weight:700;text-underline-offset:4px}"
-    },
-    {
-      "name": "Explainer Fact Pill",
-      "kind": "chip",
-      "description": "Compact outlined fact for open weights, typed decisions, or zero generated tokens.",
-      "html": "<span class=\"ds-fact-pill\">Typed decisions</span>",
-      "css": ".ds-fact-pill{display:inline-block;padding:7px 9px;border:1px solid #c4bdcf;border-radius:999px;color:var(--ink,#17151f);background:transparent;font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px;white-space:nowrap}.ds-fact-pill:hover{border-color:var(--violet,#6d5dfc);color:var(--violet,#6d5dfc)}"
+      "description": "Native disclosure for Choice probabilities, exact game rules, precomputed-output boundary, and receipt.",
+      "html": "<details class=\"ds-evidence\"><summary>Open model probabilities, scoring, and evidence</summary><p><strong>Game scoring:</strong> 1,000 for any basket that clears all five hard rules, 0 for a blocked basket or timeout, plus up to 300 speed points. Agreement with Commerce-1 does not change the score.</p><p>Real precomputed output from the public Commerce-1 artifact on NVIDIA H200. The store and scenario are synthetic.</p><a href=\"#\">Open inference receipt</a></details>",
+      "css": ".ds-evidence{padding-top:14px;border-top:1px solid #d7d2df;color:#17151f;background:#fffdf8;font-family:\"DM Sans\",sans-serif}.ds-evidence summary{padding:13px 0 5px;color:#514d5b;font-size:12px;font-weight:700;cursor:pointer}.ds-evidence summary:focus-visible{outline:3px solid #ff775f;outline-offset:3px}.ds-evidence p{max-width:620px;color:#746e7b;font-size:12px;line-height:1.45}.ds-evidence a{font-size:12px;font-weight:700;text-underline-offset:4px}"
     }
   ],
   "narrative": {
-    "northStar": "The Checkout Quick Draw",
-    "overview": "The €18 Agent Test makes one bounded AI decision feel like a twenty-second human game, not a model dashboard. A spacious lavender ground holds one elevated decision stage. Inside it, a near-black customer brief states the stakes and non-negotiable constraints; a warm paper answer sheet asks one plain-language recommendation question. Bricolage Grotesque brings game-show immediacy, while receipt-like mono facts keep price, time, state, and probability precise.\n\nThe interaction is intentionally sequential. The first state contains the scenario and four complete answers but no model output. A user commits to one basket, the answer sheet changes in place, and only then does Commerce-1 appear alongside the code-owned checkout result. Violet signals action and revealed model material; electric lime calls out fixed constraints and budget; neither is allowed to blur model probability with policy authority.\n\nThe system is playful, candid, and materially simple: lavender tabletop, ink brief, paper answer/result panel, violet action, lime constraints. It rejects model-control-room density, retailer imitation, product photography, and decorative data visualization. The interface should remain understandable from the first question and evidentiary after the reveal.",
+    "northStar": "The Fifteen-Second Checkout Cabinet",
+    "overview": "Checkout Rush turns one bounded commerce decision into a short arcade mission. A lavender floor holds a single ink game console: receipt-like mission telemetry on top, Maya's fixed customer brief at left, and a paper start/choice/result deck at right. Bricolage Grotesque supplies the game-show urgency; DM Sans and IBM Plex Mono keep constraints, time, points, and model probability inspectable. The loop has three explicit states. Ready explains the mission and starts no clock. Playing exposes four candidate actions and a 15-second countdown. Result shows policy outcome and game points, then compares the player's action with Commerce-1's frozen Choice distribution. Commerce-1 remains sealed until the player commits or times out. The arcade layer is subordinate to product truth. Points reward only clearing five deterministic checkout rules and responding before the clock expires. Model agreement is displayed separately, never treated as correctness, and never changes the score. Synthetic scenario data and precomputed inference stay visible in the result evidence.",
     "keyCharacteristics": [
-      "One large, softly elevated decision stage on a quiet lavender field.",
-      "An ink brief paired with a paper answer sheet, like a note beside a checkout form.",
-      "Bricolage Grotesque for the human game voice; DM Sans and IBM Plex Mono for operational facts.",
-      "Violet reserved for action, comparison, and revealed model emphasis.",
-      "Lime reserved for people, constraints, budget, and text selection—not model confidence.",
-      "A one-question choice-to-reveal flow with the full probability distribution kept in an evidence drawer."
+      "One elevated console containing HUD, timer, brief, play deck, and result.",
+      "An explicit Start action before any time pressure begins.",
+      "Four full-row candidate buttons with A–D shortcuts.",
+      "Policy outcome and points as the game result; model agreement as comparison.",
+      "Violet action and clock motion, lime constraints, coral urgency/focus.",
+      "Full Choice probabilities, scoring rules, and provenance behind one disclosure."
     ],
     "rules": [
-      { "name": "The Human Commits First Rule", "body": "Do not show Commerce-1's answer, probability, or policy result until the user chooses one supplied basket.", "section": "overview" },
-      { "name": "The One Question Rule", "body": "Keep the primary flow to one scenario, one four-option question, one reveal, and one reset; explanation lives after the decision.", "section": "overview" },
-      { "name": "The Lavender Is Atmosphere Rule", "body": "Use lavender around the decision object, not inside every component; paper and ink must keep the central stage legible.", "section": "colors" },
-      { "name": "The Violet Means Reveal Rule", "body": "Violet carries action or revealed model emphasis. It must not imply policy approval, allergy safety, or model correctness.", "section": "colors" },
-      { "name": "The Lime Means Constraint Rule", "body": "Lime marks the human brief and its fixed limits. Never use it as a probability winner color or a generic success badge.", "section": "colors" },
-      { "name": "The Game Voice Leads Rule", "body": "Use Bricolage Grotesque for the invitation, question, quoted brief, price emphasis, and reveal headline; never use it for dense evidence copy.", "section": "typography" },
-      { "name": "The Receipt Facts Rule", "body": "Use IBM Plex Mono only for bounded labels and values that benefit from a factual, scanned quality.", "section": "typography" },
-      { "name": "The Brief Persists Rule", "body": "The household constraints remain visible while the result replaces the answer list; do not navigate to a detached result page.", "section": "layout" },
-      { "name": "The Safety Facts Survive Rule", "body": "Responsive compression may hide secondary nutrition detail, but never price, time, nut-status, the €18 limit, or the checkout-code result.", "section": "layout" },
-      { "name": "The One Elevated Object Rule", "body": "Elevate the complete decision stage, not its rows, comparison blocks, policy slips, or evidence details.", "section": "elevation" },
-      { "name": "The Reveal Motion Rule", "body": "Choice exit lasts 180ms; result entry lasts 440ms with a short downward-to-rest reveal. Reduced-motion mode collapses both animation and the JavaScript handoff delay.", "section": "elevation" },
-      { "name": "The Soft Frame, Sharp Answer Rule", "body": "Round the enclosing stage and compact markers; keep answer, result, evidence, and action surfaces square and direct.", "section": "shapes" }
+      { "name": "The Explicit Start Rule", "body": "The clock never begins on page load; the player starts the mission deliberately.", "section": "overview" },
+      { "name": "The Score Is Not the Model Rule", "body": "Policy compliance and remaining time determine points. Commerce-1 agreement never changes them.", "section": "overview" },
+      { "name": "The Model Stays Sealed Rule", "body": "Do not reveal the model choice or probabilities before the player commits or times out.", "section": "overview" },
+      { "name": "The Lavender Is Outside Rule", "body": "Lavender surrounds the console; paper and ink own the game.", "section": "colors" },
+      { "name": "The Signal Needs Language Rule", "body": "Lime, coral, red, and green never carry time, match, pass, or block meaning without text or structure.", "section": "colors" },
+      { "name": "The Violet Is Not Approval Rule", "body": "Violet marks action, time, and model material—not safety or checkout authority.", "section": "colors" },
+      { "name": "The Game Voice Leads Rule", "body": "Use Bricolage for mission, prompt, quote, price, points, and result—not dense evidence.", "section": "typography" },
+      { "name": "The Telemetry Uses Mono Rule", "body": "Use IBM Plex Mono for bounded facts and controls, never narrative copy.", "section": "typography" },
+      { "name": "The Brief Persists Rule", "body": "The five hard constraints remain adjacent to every game state.", "section": "layout" },
+      { "name": "The Safety Facts Survive Rule", "body": "Mobile may hide nutrition detail, but never price, time, nut status, cart limit, or policy verdict.", "section": "layout" },
+      { "name": "The HUD Is Game State Rule", "body": "Mission, time, points, and status are the only top-level telemetry; model metrics live after commitment.", "section": "layout" },
+      { "name": "The One Cabinet Rule", "body": "Do not elevate rows, comparisons, policy slips, or HUD cells independently.", "section": "elevation" },
+      { "name": "The Soft Cabinet, Sharp Controls Rule", "body": "Round the enclosing console and compact markers; keep actions, rows, comparison blocks, and policy slips square.", "section": "shapes" }
     ],
     "dos": [
-      "Do keep the lavender ground, ink brief, and paper answer/result panel as the three dominant material layers.",
-      "Do preserve the one-question flow: human choice first, result second, detailed probabilities on demand.",
-      "Do keep the household brief visible beside or above the result so policy remains grounded in the original constraints.",
-      "Do use violet for action and revealed model emphasis, lime for fixed brief constraints, and coral for focus or blocked evidence.",
-      "Do preserve native radio semantics, Up/Down keyboard focus, programmatic focus on the result headline, reset focus, polite share feedback, and reduced-motion handling.",
-      "Do show price, time, nut status, checkout-code result, and the €18 limit at every supported width.",
-      "Do label 82.99% as model probability and keep the checkout-code result visually and verbally separate.",
-      "Do keep the public inference receipt reachable from the revealed state and disclose that the scenario is synthetic and the output precomputed."
+      "Do preserve Ready → Playing → Result and start the clock only on explicit action.",
+      "Do keep score tied only to policy-safe eligibility and time remaining.",
+      "Do keep model choice/probability sealed until commit or timeout.",
+      "Do present policy verdict, game points, and model agreement as separate concepts.",
+      "Do preserve button semantics, A–D/S/Enter/R shortcuts, result focus, polite share feedback, and reduced-motion behavior.",
+      "Do retain price, prep time, nut status, cart limit, and checkout verdict at every width.",
+      "Do disclose synthetic scenario data, precomputed inference, scoring rules, and the public receipt."
     ],
     "donts": [
-      "Don't show Commerce-1's choice before the user commits or turn the opening state into a model dashboard.",
-      "Don't use lime as model confidence, violet as policy approval, or color alone as the carrier of safety meaning.",
-      "Don't call 82.99% a score, pass rate, policy verdict, benchmark, generated rationale, or checkout authority.",
+      "Don't award points for matching Commerce-1 or call a match correct.",
+      "Don't call 82.99% a game score, policy verdict, benchmark, explanation, or checkout authority.",
       "Don't imply live inference, autonomous purchase, real-store facts, nutrition advice, or an allergy guarantee.",
-      "Don't detach the result from the brief, merge model probability with deterministic policy, or hide the block reason inside the evidence drawer.",
-      "Don't add food photography, retailer branding, gradients, glass effects, nested card shadows, or dashboard chrome.",
-      "Don't round answer rows, comparison blocks, policy slips, or action buttons; the outer stage owns the softness.",
-      "Don't hide the Open model link, evidence receipt, project links, or core claim boundaries to save space."
+      "Don't expose model output before commitment or place model metrics in the ready HUD.",
+      "Don't detach result from brief, merge policy with probability, or hide the block reason.",
+      "Don't add retailer branding, food photography, gradients, glass, nested shadows, or dashboard analytics.",
+      "Don't hide the Open model link, inference receipt, project links, or core boundaries to save space."
     ]
   }
 }

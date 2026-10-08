@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f2f0ff" />
-    <meta name="description" content="Make one shopping-agent recommendation, then compare it with Commerce-1." />
-    <title>The €18 Agent Test — Commerce-1</title>
+    <meta name="description" content="Take a 15-second agentic-commerce challenge, then compare your checkout decision with Commerce-1." />
+    <title>Checkout Rush — Commerce-1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
@@ -13,11 +13,11 @@
   </head>
   <body>
     <!--
-      THESIS: Make one bounded AI decision feel like a 20-second human game, not a model dashboard.
-      OWN-WORLD: Lavender stage, ink-black brief, paper answer sheet, violet action, and lime result signals; game-show typography with checkout-receipt facts.
-      STORY: Read a dinner brief, choose one basket, then compare your call with Commerce-1 and the code-owned checkout rule.
-      FIRST VIEWPORT: A plain-language headline leads into one two-part stage: the household brief at left and four tap-to-answer rows at right. The model appears only after a choice.
-      FORM: One-question checkout game, user-pinned Quick Draw simplicity; direction roll a860ea20.
+      THESIS: Turn one bounded commerce decision into a tense, legible fifteen-second checkout game.
+      OWN-WORLD: Lavender arcade floor, ink mission board, paper candidate deck, violet clock, and lime constraint signals.
+      STORY: Read the customer brief, start the clock, choose one basket, then watch Commerce-1 and checkout code judge different parts of the decision.
+      FIRST VIEWPORT: The invitation and game HUD make the interaction unmistakable before the player starts; no model answer is visible.
+      FORM: One-mission commerce arcade; the game score is explicitly separate from model evaluation.
       FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
     -->
     <svg class="icon-sprite" aria-hidden="true">
@@ -30,6 +30,7 @@
       <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 8v5l3 2" /></symbol>
       <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M19 5c-7 0-12 3-12 8 0 3 2 5 5 5 5 0 7-6 7-13Z" /><path d="M5 20c2-5 5-8 10-11" /></symbol>
       <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 2.7 8.2 7 10 4.3-1.8 7-5.5 7-10V6l-7-3Z" /><path d="m9 12 2 2 4-4" /></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-8 12h7l-1 8 8-12h-7l1-8Z" /></symbol>
     </svg>
 
     <div class="app-shell">
@@ -38,112 +39,129 @@
           <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
           <strong>InferCrane</strong>
         </a>
-        <span class="demo-name">The €18 Agent Test</span>
+        <span class="demo-name">Checkout Rush</span>
         <a class="model-link" href="https://huggingface.co/infercrane/Commerce-1" target="_blank" rel="noreferrer">Open model <svg><use href="#i-arrow"></use></svg></a>
       </header>
 
       <main>
         <section class="intro" aria-labelledby="pageTitle">
-          <div>
-            <h1 id="pageTitle">One customer. Four baskets.<br /><span>Make the agent’s call.</span></h1>
-            <p>Choose what a shopping agent should recommend. Then compare your decision with Commerce-1.</p>
+          <h1 id="pageTitle">You have 15 seconds.<br /><span>Don’t break checkout.</span></h1>
+          <p>You’re the shopping agent. Pick one dinner that satisfies every customer constraint—then see what Commerce-1 chose.</p>
+        </section>
+
+        <section class="game-console" aria-label="Checkout Rush game">
+          <div class="game-hud" aria-label="Game status">
+            <div><span>Mission</span><strong>01 / 01</strong></div>
+            <div class="hud-clock"><span>Time</span><strong id="timerValue">15.0</strong></div>
+            <div><span>Game points</span><strong id="scoreValue">0000</strong></div>
+            <div><span>Status</span><strong id="statusValue">Ready</strong></div>
+          </div>
+          <div class="timer-track" aria-hidden="true"><i id="timerTrack"></i></div>
+
+          <div class="decision-stage">
+            <aside class="brief-panel">
+              <div class="brief-speaker">
+                <span class="avatar" aria-hidden="true">M</span>
+                <div><strong>Maya needs a decision</strong><small>Customer request · synthetic scenario</small></div>
+              </div>
+              <blockquote>“Dinner for four tonight. One guest has a serious nut allergy.”</blockquote>
+              <ul class="rules" aria-label="Dinner requirements">
+                <li><svg><use href="#i-people"></use></svg><span><strong>4 adults</strong><small>A complete dinner</small></span></li>
+                <li><svg><use href="#i-clock"></use></svg><span><strong>30 min maximum</strong><small>Prep time</small></span></li>
+                <li><svg><use href="#i-leaf"></use></svg><span><strong>Vegetarian</strong><small>No meat or fish</small></span></li>
+                <li><svg><use href="#i-shield"></use></svg><span><strong>Strictly nut-free</strong><small>Including “may contain”</small></span></li>
+              </ul>
+              <div class="budget-ticket"><span>Cart limit</span><strong>€18</strong><small>total maximum</small></div>
+            </aside>
+
+            <section class="play-panel" id="playPanel" aria-live="polite">
+              <div class="start-view" id="startView">
+                <div class="start-bolt" aria-hidden="true"><svg><use href="#i-bolt"></use></svg></div>
+                <h2>Take the cart.</h2>
+                <p>One customer. Four candidate baskets. Your recommendation must survive the checkout rules.</p>
+                <button class="start-button" type="button" id="startButton">Start 15-second mission <svg><use href="#i-arrow"></use></svg></button>
+                <small>The model answer stays sealed until you commit. Use A–D or tap.</small>
+              </div>
+
+              <div class="choice-view" id="choiceView" hidden>
+                <header class="play-heading">
+                  <div><h2>What should the agent recommend?</h2></div>
+                  <p>Choose fast, but check every hard constraint.</p>
+                </header>
+
+                <div class="answer-list" id="dinnerGrid" role="group" aria-label="Choose the best dinner basket">
+                  <button class="answer" type="button" data-dinner="lentil_pasta">
+                    <span class="answer-letter">A</span>
+                    <span class="answer-copy"><strong>Tomato lentil spaghetti</strong><small>26g protein · 235g vegetables / person</small></span>
+                    <span class="answer-facts"><strong>€8.45</strong><small>28 min · nut-free</small></span>
+                    <svg><use href="#i-arrow"></use></svg>
+                  </button>
+                  <button class="answer" type="button" data-dinner="cashew_pesto_pasta">
+                    <span class="answer-letter">B</span>
+                    <span class="answer-copy"><strong>Cashew pesto pasta</strong><small>24g protein · 210g vegetables / person</small></span>
+                    <span class="answer-facts is-warning"><strong>€11.85</strong><small>22 min · contains cashew</small></span>
+                    <svg><use href="#i-arrow"></use></svg>
+                  </button>
+                  <button class="answer" type="button" data-dinner="tofu_penne">
+                    <span class="answer-letter">C</span>
+                    <span class="answer-copy"><strong>Tofu broccoli penne</strong><small>23g protein · 188g vegetables / person</small></span>
+                    <span class="answer-facts"><strong>€8.46</strong><small>25 min · nut-free</small></span>
+                    <svg><use href="#i-arrow"></use></svg>
+                  </button>
+                  <button class="answer" type="button" data-dinner="bean_tacos">
+                    <span class="answer-letter">D</span>
+                    <span class="answer-copy"><strong>Black bean tacos</strong><small>19g protein · 220g vegetables / person</small></span>
+                    <span class="answer-facts"><strong>€11.03</strong><small>18 min · nut-free</small></span>
+                    <svg><use href="#i-arrow"></use></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="result-view" id="resultView" hidden>
+                <div class="celebration" id="celebration" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <header class="result-heading">
+                  <div class="result-copy">
+                    <span id="resultLabel">Model match</span>
+                    <h2 id="resultHeadline" tabindex="-1">Same call.</h2>
+                    <p id="resultSummary"></p>
+                  </div>
+                  <div class="points-earned"><strong id="pointsEarned">+0000</strong><span>game points</span></div>
+                </header>
+
+                <div class="versus" aria-label="Your choice compared with Commerce-1">
+                  <div><span>Your agent</span><strong id="humanChoice"></strong><small id="humanTime"></small></div>
+                  <b aria-hidden="true">vs</b>
+                  <div class="model-pick"><span>Commerce-1</span><strong>Tomato lentil spaghetti</strong><small>82.99% probability</small></div>
+                </div>
+
+                <div class="policy-result" id="policyResult"></div>
+
+                <div class="result-actions">
+                  <button type="button" id="resetButton"><svg><use href="#i-reset"></use></svg> Play again</button>
+                  <button type="button" id="shareButton"><svg><use href="#i-share"></use></svg> Share score</button>
+                </div>
+
+                <details class="evidence-drawer">
+                  <summary>Open model probabilities, scoring, and evidence</summary>
+                  <div class="probability-list" aria-label="Commerce-1 Choice probabilities">
+                    <div class="probability-row winner"><span>Tomato lentil spaghetti</span><i><b style="width:82.99%"></b></i><strong>82.99%</strong></div>
+                    <div class="probability-row"><span>Black bean tacos</span><i><b style="width:10.18%"></b></i><strong>10.18%</strong></div>
+                    <div class="probability-row"><span>Tofu broccoli penne</span><i><b style="width:5.15%"></b></i><strong>5.15%</strong></div>
+                    <div class="probability-row blocked"><span>Cashew pesto pasta <em>ineligible</em></span><i><b style="width:0.89%"></b></i><strong>0.89%</strong></div>
+                    <div class="probability-row"><span>None</span><i><b style="width:0.79%"></b></i><strong>0.79%</strong></div>
+                  </div>
+                  <p><strong>Game scoring:</strong> 1,000 for any basket that clears all five hard rules, 0 for a blocked basket or timeout, plus up to 300 speed points. Agreement with Commerce-1 does not change the score. This is play—not a model evaluation.</p>
+                  <p>Model values are real precomputed output from the public Commerce-1 artifact on NVIDIA H200. The store and scenario are synthetic.</p>
+                  <a href="evidence/mission-1-public.json" target="_blank" rel="noreferrer">Open inference receipt <svg><use href="#i-arrow"></use></svg></a>
+                </details>
+              </div>
+            </section>
           </div>
         </section>
 
-        <section class="decision-stage" aria-label="Dinner decision game">
-          <aside class="brief-panel">
-            <div class="brief-speaker">
-              <span class="avatar" aria-hidden="true">M</span>
-              <div><strong>Maya briefed her shopping agent</strong><small>Customer request · synthetic scenario</small></div>
-            </div>
-            <blockquote>“Dinner for four tonight. One guest has a serious nut allergy.”</blockquote>
-            <ul class="rules" aria-label="Dinner requirements">
-              <li><svg><use href="#i-people"></use></svg><span><strong>4 adults</strong><small>A complete dinner</small></span></li>
-              <li><svg><use href="#i-clock"></use></svg><span><strong>30 min maximum</strong><small>Prep time</small></span></li>
-              <li><svg><use href="#i-leaf"></use></svg><span><strong>Vegetarian</strong><small>No meat or fish</small></span></li>
-              <li><svg><use href="#i-shield"></use></svg><span><strong>Strictly nut-free</strong><small>Including “may contain”</small></span></li>
-            </ul>
-            <div class="budget-ticket"><span>Budget</span><strong>€18</strong><small>total maximum</small></div>
-          </aside>
-
-          <section class="play-panel" aria-live="polite">
-            <div class="choice-view" id="choiceView">
-              <header class="play-heading">
-                <div><h2>What should the shopping agent recommend?</h2></div>
-                <p>Synthetic baskets and prices. Real precomputed Commerce-1 output appears after you choose.</p>
-              </header>
-
-              <fieldset class="answer-list" id="dinnerGrid">
-                <legend class="sr-only">Choose the best dinner basket</legend>
-                <label class="answer" data-dinner="lentil_pasta">
-                  <input type="radio" name="dinner" value="lentil_pasta" />
-                  <span class="answer-letter">A</span>
-                  <span class="answer-copy"><strong>Tomato lentil spaghetti</strong><small>26g protein · 235g vegetables / person</small></span>
-                  <span class="answer-facts"><strong>€8.45</strong><small>28 min · nut-free</small></span>
-                  <svg><use href="#i-arrow"></use></svg>
-                </label>
-                <label class="answer" data-dinner="cashew_pesto_pasta">
-                  <input type="radio" name="dinner" value="cashew_pesto_pasta" />
-                  <span class="answer-letter">B</span>
-                  <span class="answer-copy"><strong>Cashew pesto pasta</strong><small>24g protein · 210g vegetables / person</small></span>
-                  <span class="answer-facts is-warning"><strong>€11.85</strong><small>22 min · contains cashew</small></span>
-                  <svg><use href="#i-arrow"></use></svg>
-                </label>
-                <label class="answer" data-dinner="tofu_penne">
-                  <input type="radio" name="dinner" value="tofu_penne" />
-                  <span class="answer-letter">C</span>
-                  <span class="answer-copy"><strong>Tofu broccoli penne</strong><small>23g protein · 188g vegetables / person</small></span>
-                  <span class="answer-facts"><strong>€8.46</strong><small>25 min · nut-free</small></span>
-                  <svg><use href="#i-arrow"></use></svg>
-                </label>
-                <label class="answer" data-dinner="bean_tacos">
-                  <input type="radio" name="dinner" value="bean_tacos" />
-                  <span class="answer-letter">D</span>
-                  <span class="answer-copy"><strong>Black bean tacos</strong><small>19g protein · 220g vegetables / person</small></span>
-                  <span class="answer-facts"><strong>€11.03</strong><small>18 min · nut-free</small></span>
-                  <svg><use href="#i-arrow"></use></svg>
-                </label>
-              </fieldset>
-            </div>
-
-            <div class="result-view" id="resultView" hidden>
-              <header class="result-heading">
-                <h2 id="resultHeadline" tabindex="-1">Same call.</h2>
-                <p id="resultSummary"></p>
-              </header>
-
-              <div class="versus" aria-label="Your choice compared with Commerce-1">
-                <div><span>Your agent recommends</span><strong id="humanChoice"></strong></div>
-                <b aria-hidden="true">vs</b>
-                <div class="model-pick"><span>Commerce-1 recommends</span><strong>Tomato lentil spaghetti</strong><small>82.99% probability</small></div>
-              </div>
-
-              <div class="policy-result" id="policyResult"></div>
-
-              <div class="result-actions">
-                <button type="button" id="resetButton"><svg><use href="#i-reset"></use></svg> Play again</button>
-                <button type="button" id="shareButton"><svg><use href="#i-share"></use></svg> Share result</button>
-              </div>
-
-              <details class="evidence-drawer">
-                <summary>See model probabilities and evidence</summary>
-                <div class="probability-list" aria-label="Commerce-1 Choice probabilities">
-                  <div class="probability-row winner"><span>Tomato lentil spaghetti</span><i><b style="width:82.99%"></b></i><strong>82.99%</strong></div>
-                  <div class="probability-row"><span>Black bean tacos</span><i><b style="width:10.18%"></b></i><strong>10.18%</strong></div>
-                  <div class="probability-row"><span>Tofu broccoli penne</span><i><b style="width:5.15%"></b></i><strong>5.15%</strong></div>
-                  <div class="probability-row blocked"><span>Cashew pesto pasta <em>ineligible</em></span><i><b style="width:0.89%"></b></i><strong>0.89%</strong></div>
-                  <div class="probability-row"><span>None</span><i><b style="width:0.79%"></b></i><strong>0.79%</strong></div>
-                </div>
-                <p>Real precomputed output from the public Commerce-1 artifact on NVIDIA H200. The store and scenario are synthetic.</p>
-                <a href="evidence/mission-1-public.json" target="_blank" rel="noreferrer">Open inference receipt <svg><use href="#i-arrow"></use></svg></a>
-              </details>
-            </div>
-          </section>
-        </section>
-
         <section class="model-explainer" aria-label="About Commerce-1">
-          <strong>What just happened?</strong>
-          <p>Commerce-1 is an open decision model for commerce agents. It ranks the actions your app supplies and returns a probability for each one—no generated explanation. Your code still owns inventory, allergies, budgets, permissions, and checkout.</p>
+          <strong>What the game proves</strong>
+          <p>Commerce-1 ranks supplied actions and returns a probability for each one. Separate deterministic code owns inventory, allergies, budgets, permissions, and checkout. The demo makes that boundary visible.</p>
           <div><span>Open weights</span><span>Typed decisions</span><span>0 generated tokens</span></div>
         </section>
       </main>

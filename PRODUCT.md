@@ -8,25 +8,30 @@ web
 
 ## Stack
 
-Delegated for this launch artifact: static HTML, CSS, and JavaScript on a
-Hugging Face static Space. The same files can be linked from GitHub and
-embedded in launch material without an always-on GPU.
+Static HTML, CSS, and JavaScript for a Hugging Face static Space. Checkout Rush
+uses a frozen inference receipt, so the public game does not require an always-on
+GPU and can also be linked from GitHub or launch material.
 
 ## Users
 
-- AI builders evaluating whether typed decisions belong in an agentic commerce
+- AI builders evaluating whether typed decisions belong in an agentic-commerce
   workflow.
 - Technical founders, researchers, and potential users finding Commerce-1
   through Hugging Face, GitHub, or a social post.
-- Non-specialists who should understand the product after one short game.
+- Non-specialists who should understand the model/policy boundary after one
+  short game.
 
 ## Product Purpose
 
 Commerce-1 accepts structured state and ordered Choice, Noul, or Score
 questions, then returns typed answers and probability distributions rather
-than generated prose. “The €18 Agent Test” makes that mechanism understandable
-through one bounded decision: a person and Commerce-1 choose from the same four
-complete dinners under the same budget, time, dietary, and household constraints.
+than generated prose. Checkout Rush makes that mechanism tangible through one
+15-second commerce decision: choose a dinner basket under five hard checkout
+rules, receive a policy-safe game score, and then compare the choice with a
+frozen Commerce-1 Choice distribution.
+
+The game score measures only deterministic scenario policy and remaining time.
+Agreement with Commerce-1 is shown separately and never changes the score.
 
 ## Positioning
 
@@ -38,20 +43,25 @@ explanation text.
 
 The model is used inside commerce-agent workflows for proceed/review/block
 gates, action and tool routing, fulfillment choices, approval-policy checks,
-and risk or priority scoring. The Agent Test uses an original fictional European
+and risk or priority scoring. Checkout Rush uses an original fictional European
 online supermarket; it does not copy a retailer's brand, product photography,
 or interface.
 
 ## Capabilities and Constraints
 
-- The public demo uses real, precomputed Commerce-1 outputs so it requires no
-  always-on GPU and never implies that the static Space is live inference.
-- The model produces a Choice distribution; deterministic code separately
-  decides whether the selected basket may proceed under the hard rules.
-- Decisions are Choice, Noul, and Score outputs with probability distributions.
-- The model does not generate explanations, retrieve live facts, process
+- The public demo uses real, precomputed Commerce-1 output and does not imply
+  that the static Space performs live inference.
+- Commerce-1 produces the displayed Choice distribution; deterministic game
+  code separately evaluates the player's selected basket against five frozen
+  rules and computes the game score.
+- A policy-safe basket earns 1,000 base points plus up to 300 speed points. A
+  blocked basket or timeout earns 0. Model agreement has no scoring effect.
+- The five hard rules cover the €18 budget, 30-minute limit, vegetarian diet,
+  four-adult serving requirement, and declared nut-free requirement.
+- Commerce-1 does not generate explanations, retrieve live facts, process
   payments, inspect images, or replace consequential human or policy review.
-- Demonstration cases and prices are synthetic and labeled as such.
+- Demonstration baskets, prices, customer, store, and scenario are synthetic
+  and labeled as such.
 - The frozen public source release records a self-hosted Decision Index 0.2.1
   score of 60.99 with 150,317/150,317 merged rows complete.
 - A separate Decision Index 0.3 submission records a 61.69 public-component
@@ -62,7 +72,7 @@ or interface.
 
 - Product name: Commerce-1.
 - Publisher: InferCrane.
-- Demo name: The €18 Agent Test.
+- Demo name: Checkout Rush.
 - Voice: direct, technically honest, and energetic enough for a public launch.
 
 ## Evidence on Hand
@@ -71,6 +81,9 @@ or interface.
 - Public model: `https://huggingface.co/infercrane/Commerce-1`.
 - Public Decision Index evidence:
   `https://huggingface.co/datasets/infercrane/commerce-1-decision-index`.
+- Checkout Rush inference receipt: `evidence/mission-1-public.json`.
+- The receipt records `lentil_pasta` as the top Choice at approximately 82.99%
+  from the immutable Commerce-1 artifact on NVIDIA H200.
 - Frozen release result: 60.99 on Decision Index 0.2.1 with
   150,317/150,317 merged rows complete.
 - Separate submission result: 61.69 on the Decision Index 0.3 public component
@@ -82,12 +95,16 @@ or interface.
 ## Product Principles
 
 1. Demonstrate the decision contract before describing it.
-2. Make uncertainty visible instead of narrating confidence away.
-3. Label synthetic scenarios and precomputed outputs plainly.
-4. Keep consequential decisions behind explicit code and user controls.
-5. One click to understand, one screenshot to share.
+2. Score policy compliance, never model agreement or model quality.
+3. Make uncertainty visible instead of narrating confidence away.
+4. Label synthetic scenarios and precomputed outputs plainly.
+5. Keep consequential decisions behind explicit code and user controls.
+6. One short mission to understand, one result to inspect or share.
 
 ## Accessibility & Inclusion
 
-The game remains keyboard operable, readable without motion, usable on mobile,
-and never encodes status through color alone.
+The clock starts only after an explicit action. The mission is operable with
+standard button controls or documented keyboard shortcuts, the result receives
+programmatic focus, and timeout leaves a stable result rather than removing
+content. Reduced-motion preferences collapse animation, mobile retains every
+safety-critical fact, and status never depends on color alone.
