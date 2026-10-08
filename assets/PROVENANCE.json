@@ -1,33 +1,21 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T18:26:31Z",
+  "generatedAt": "2026-10-08T20:16:58Z",
   "project": {
-    "name": "Dinner Run — Commerce-1",
+    "name": "The €18 Agent Test — Commerce-1",
     "surface": "index.html",
-    "finishContractSeed": "6c956125",
-    "assignedDirection": "supermarket shelf-edge decision arcade"
+    "finishContractSeed": "a860ea20",
+    "assignedDirection": "one-question agentic-commerce challenge"
   },
   "source": {
-    "repository": "https://github.com/infercrane/commerce-1",
-    "revision": "b76a6a02e2d07813e042421827a3ba6fd5401b14",
-    "revisionNote": "Screenshots were captured from this frozen application-source revision; documentation and raster provenance were committed afterward.",
+    "repository": "https://github.com/infercrane/commerce-1-dinner-run",
+    "revision": "f13294b3fdadc06efe0d2608f9b3771b6fffd3d9",
+    "revisionNote": "Screenshots were captured from this frozen source revision. Raster metadata and this manifest were committed afterward.",
     "files": [
-      {
-        "path": "index.html",
-        "sha256": "d0d1dc7a3053c9dac6b878b8442b5b157effa60dfff64c28e7907a13d60e0d10"
-      },
-      {
-        "path": "styles.css",
-        "sha256": "a12586d16ec6a16425b099c726bb507d5dd1bebb39673ea3f79af0bccf18bc62"
-      },
-      {
-        "path": "app.js",
-        "sha256": "ca2d28b712c3b28322a6ef09a8fdd5092f12df8a59e9c2164f6f3c65d3fe6528"
-      },
-      {
-        "path": "PRODUCT.md",
-        "sha256": "c7f46f25cf808b84e5f07f12c505742c8e9306e72b469064bcf7e61c97b14db5"
-      }
+      { "path": "index.html", "sha256": "133202970f852ff3af4dba5ba737a91c00c77e384bf69dfefb1d75954feafc69" },
+      { "path": "styles.css", "sha256": "d9f3114f7dede5aea8e9789c0b6e17007e8483ac6e9d1eda0f5f30e7c76160a8" },
+      { "path": "app.js", "sha256": "9efb977ed200143072ce6a2fb1ca9f348d91954c876a727bfe3337b9f11851a7" },
+      { "path": "PRODUCT.md", "sha256": "44fe0a6f3c0e4a35db2e58d663fb193c9403cda00a02370bd0d8085f0e1bc935" }
     ]
   },
   "evidence": {
@@ -43,121 +31,45 @@
   },
   "captureContract": {
     "format": "image/png",
-    "captureDate": "2026-10-08",
+    "capturedAt": "2026-10-08T20:16:58Z",
     "colorScheme": "light",
-    "locale": "en",
+    "locale": "en-US",
     "dataMode": "frozen synthetic scenario with precomputed model output",
-    "captureInvocationRetained": true,
     "captureTool": "Playwright Chromium",
+    "browserVersion": "151.0.7922.34",
     "deviceScaleFactor": 1,
-    "unknownCaptureFields": ["browserVersion", "reducedMotionPreference"],
-    "unknownCaptureFieldsReason": "The exact bundled Chromium version and OS-level reduced-motion preference were not persisted by the capture script."
+    "reducedMotion": "reduce"
   },
   "screenshots": [
     {
       "path": "assets/dinner-run-sealed.png",
-      "sha256": "4f944f5de1f24a1c82a4da0ad867a4e9624ed9162cba6a9516b6c15de715de77",
-      "bytes": 99667,
-      "pixelDimensions": {
-        "width": 1440,
-        "height": 940
-      },
-      "capture": {
-        "mode": "full-page",
-        "viewportWidthCssPixels": 1440,
-        "viewportHeightCssPixels": 900,
-        "deviceScaleFactor": 1,
-        "browserName": "Chromium",
-        "browserVersion": null,
-        "captureTool": "Playwright",
-        "reducedMotionPreference": null
-      },
-      "uiState": {
-        "modelState": "sealed",
-        "selectedBasket": null,
-        "methodDisclosureOpen": false,
-        "shareFeedbackVisible": false
-      },
-      "claimsVisible": [
-        "Four frozen basket choices are available to the user.",
-        "Commerce-1 output is precomputed on H200.",
-        "The model answer stays sealed until a user choice.",
-        "The mission is vegetarian, under 30 minutes, strict nut-free, and at most €18."
-      ],
-      "purpose": "Desktop launch and pre-interaction state.",
-      "alt": "Desktop Dinner Run board with four dinner choices on warm paper and Commerce-1's dark-green model panel still sealed."
+      "sha256": "c0207b60e970ea58b4f0b836e0b31a551f09a2edb88bb0bf78ee82409b04ff8d",
+      "bytes": 222600,
+      "pixelDimensions": { "width": 1440, "height": 1190 },
+      "viewport": { "width": 1440, "height": 1000 },
+      "uiState": { "modelState": "hidden until a recommendation is chosen", "selectedBasket": null },
+      "purpose": "Desktop initial state and launch preview.",
+      "alt": "Commerce-1 agent test showing a synthetic customer dinner brief and four basket recommendations before the model choice is revealed."
     },
     {
       "path": "assets/dinner-run-result.png",
-      "sha256": "1ed5ae529b8e61704c74d52ae2a02feb56e8ca5b025ff1c2e43c90d5276dac51",
-      "bytes": 126580,
-      "pixelDimensions": {
-        "width": 1440,
-        "height": 940
-      },
-      "capture": {
-        "mode": "full-page",
-        "viewportWidthCssPixels": 1440,
-        "viewportHeightCssPixels": 900,
-        "deviceScaleFactor": 1,
-        "browserName": "Chromium",
-        "browserVersion": null,
-        "captureTool": "Playwright",
-        "reducedMotionPreference": null
-      },
-      "uiState": {
-        "modelState": "revealed",
-        "selectedBasket": "lentil_pasta",
-        "modelChoice": "lentil_pasta",
-        "hardRuleResult": "eligible_to_continue",
-        "methodDisclosureOpen": false,
-        "shareFeedbackVisible": false
-      },
-      "claimsVisible": [
-        "The user and Commerce-1 chose tomato lentil spaghetti.",
-        "Commerce-1 assigns lentil_pasta an 82.99% Choice probability.",
-        "All four baskets plus None remain visible in the distribution.",
-        "Deterministic code reports the basket eligible to continue.",
-        "The inference receipt is linked from the result."
-      ],
-      "purpose": "Desktop revealed state and primary social/launch result.",
-      "alt": "Desktop Dinner Run result where the user and Commerce-1 both choose tomato lentil spaghetti, with the full probability distribution and an eligible hard-rule slip."
+      "sha256": "302c2dea2ceca6656bb96c427de37b8fb8eb1db1826d480d31ff6c19b5c70000",
+      "bytes": 198609,
+      "pixelDimensions": { "width": 1440, "height": 1190 },
+      "viewport": { "width": 1440, "height": 1000 },
+      "uiState": { "modelState": "revealed", "selectedBasket": "lentil_pasta", "modelChoice": "lentil_pasta", "checkoutCode": "safe_to_continue" },
+      "purpose": "Desktop matched-decision result and primary launch image.",
+      "alt": "Commerce-1 and the human shopping agent both recommend tomato lentil spaghetti; separate checkout code reports that the basket is safe to continue."
     },
     {
       "path": "assets/dinner-run-mobile.png",
-      "sha256": "8fd218fb9be032bb8fab4d2ee9cf652eab79e00300941a6541e9d9879200bbe9",
-      "bytes": 107544,
-      "pixelDimensions": {
-        "width": 390,
-        "height": 1710
-      },
-      "capture": {
-        "mode": "full-page",
-        "viewportWidthCssPixels": 390,
-        "viewportHeightCssPixels": 844,
-        "deviceScaleFactor": 1,
-        "browserName": "Chromium",
-        "browserVersion": null,
-        "captureTool": "Playwright",
-        "reducedMotionPreference": null
-      },
-      "uiState": {
-        "modelState": "revealed",
-        "selectedBasket": "bean_tacos",
-        "modelChoice": "lentil_pasta",
-        "hardRuleResult": "eligible_to_continue",
-        "methodDisclosureOpen": false,
-        "shareFeedbackVisible": false
-      },
-      "claimsVisible": [
-        "The responsive view preserves all four basket choices.",
-        "The user chose black bean tacos while Commerce-1 chose tomato lentil spaghetti.",
-        "Commerce-1 assigns lentil_pasta an 82.99% Choice probability.",
-        "Deterministic code reports the selected tacos eligible to continue.",
-        "Share, reset, inference receipt, and project links remain available on mobile."
-      ],
-      "purpose": "Full-page mobile responsive and divergent-choice proof.",
-      "alt": "Mobile Dinner Run result with four stacked dinner choices followed by Commerce-1's revealed probability distribution for a user who selected black bean tacos."
+      "sha256": "69a51d97c4c3f85985b74b25151ac415f0744027eff27c7da659f10cf97ce610",
+      "bytes": 93769,
+      "pixelDimensions": { "width": 390, "height": 1411 },
+      "viewport": { "width": 390, "height": 844 },
+      "uiState": { "modelState": "revealed", "selectedBasket": "cashew_pesto_pasta", "modelChoice": "lentil_pasta", "checkoutCode": "blocked_contains_cashew" },
+      "purpose": "Mobile divergent-decision and deterministic safety-gate proof.",
+      "alt": "Mobile Commerce-1 agent test where the human shopping agent recommends cashew pesto, Commerce-1 recommends lentil spaghetti, and checkout code blocks the cashew basket."
     }
   ]
 }
