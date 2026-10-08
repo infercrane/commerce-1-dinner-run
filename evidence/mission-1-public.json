@@ -1,0 +1,36 @@
+{
+  "schema_version": "dinner-run-model-evidence-v1",
+  "captured_at": "2026-10-08",
+  "execution": {
+    "device": "NVIDIA H200",
+    "precision": "bf16",
+    "attention_mode": "noncausal_full_attention",
+    "question_microbatch_size": 1,
+    "network_during_inference": "disabled"
+  },
+  "identity": {
+    "model": "infercrane/Commerce-1",
+    "artifact_sha256": "b7fba0cceb1b57834fecacfbcb5e361d94fa185e877e891f4e43fc25c6458a1d",
+    "runtime_sha256": "af6ee07de050fd9be064af9570080bf62258dc17aa1aaca33a9b97ed0940f310"
+  },
+  "answers": {
+    "best_basket": {
+      "type": "choice",
+      "choice": "lentil_pasta",
+      "probabilities": {
+        "lentil_pasta": 0.8299364864,
+        "bean_tacos": 0.1017507886,
+        "tofu_penne": 0.0515126388,
+        "cashew_pesto_pasta": 0.0088760249,
+        "none": 0.0079240613
+      }
+    },
+    "eligibility": {
+      "lentil_pasta": 0.9592862129,
+      "tofu_penne": 0.9624525654,
+      "bean_tacos": 0.9639456689,
+      "cashew_pesto_pasta": 0.0423913573
+    }
+  },
+  "disclosure": "Precomputed typed output from the immutable Commerce-1 release. Synthetic store and scenario. Deterministic code, not the model, enforces hard constraints and controls eligibility."
+}

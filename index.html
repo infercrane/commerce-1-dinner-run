@@ -1,19 +1,149 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>My static Space</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="card">
-			<h1>Welcome to your static Space!</h1>
-			<p>You can modify this app directly by editing <i>index.html</i> in the Files and versions tab.</p>
-			<p>
-				Also don't forget to check the
-				<a href="https://huggingface.co/docs/hub/spaces" target="_blank">Spaces documentation</a>.
-			</p>
-		</div>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f0e7" />
+    <meta name="description" content="Pick dinner, then reveal Commerce-1's typed decision." />
+    <title>Dinner Run — Commerce-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+      THESIS: one familiar choice makes typed model decisions legible to anyone.
+      USER: AI builders, researchers, founders, and curious shoppers.
+      OUTCOME: pick one complete dinner, reveal Commerce-1's bounded choice, inspect the evidence.
+      SURFACE: static Hugging Face Space, responsive and keyboard operable.
+      VOICE: plain supermarket language paired with exact technical disclosure.
+      VISUAL: a focused supermarket shelf-edge decision arcade.
+      CONSTRAINTS: synthetic baskets; real precomputed model output; policy stays deterministic.
+      EVIDENCE: H200 typed output, immutable artifact hash, Decision Index links.
+      ASSIGNED DIRECTION: supermarket shelf-edge decision arcade.
+      SEED: 6c956125.
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+    -->
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+      <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.5m-7.6 6.9 7.6 4.5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 11a8 8 0 1 1 2.3 6M4 11V5m0 6h6"/></symbol>
+    </svg>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="https://infercrane.com" target="_blank" rel="noreferrer" aria-label="InferCrane home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <strong>InferCrane</strong>
+        </a>
+        <div class="demo-title">
+          <strong>Dinner Run</strong>
+          <span>4 baskets + None</span>
+        </div>
+        <div class="runtime-pill"><i aria-hidden="true"></i> precomputed output · H200</div>
+      </header>
+
+      <main class="game-board">
+        <section class="choice-panel" aria-labelledby="missionTitle">
+          <div class="mission-head">
+            <p class="eyebrow">Tonight’s mission</p>
+            <h1 id="missionTitle">Pick dinner<br />for four.</h1>
+            <p>Vegetarian · ready in 30 minutes · strict nut-free, including “may contain”.</p>
+            <span class="budget">€18 maximum</span>
+          </div>
+
+          <fieldset class="dinner-grid" id="dinnerGrid">
+            <legend class="sr-only">Choose one dinner basket</legend>
+            <label class="dinner-card" data-dinner="lentil_pasta">
+              <input type="radio" name="dinner" value="lentil_pasta" />
+              <span class="dish dish-lentil" aria-hidden="true"><i></i><b></b><em></em></span>
+              <span class="dinner-copy"><strong>Tomato lentil spaghetti</strong><small>28 min · €8.45</small></span>
+              <span class="card-index">A</span>
+            </label>
+            <label class="dinner-card" data-dinner="cashew_pesto_pasta">
+              <input type="radio" name="dinner" value="cashew_pesto_pasta" />
+              <span class="dish dish-pesto" aria-hidden="true"><i></i><b></b><em></em></span>
+              <span class="dinner-copy"><strong>Cashew pesto pasta</strong><small>22 min · €11.85</small></span>
+              <span class="card-index">B</span>
+            </label>
+            <label class="dinner-card" data-dinner="tofu_penne">
+              <input type="radio" name="dinner" value="tofu_penne" />
+              <span class="dish dish-tofu" aria-hidden="true"><i></i><b></b><em></em></span>
+              <span class="dinner-copy"><strong>Tofu broccoli penne</strong><small>25 min · €8.46</small></span>
+              <span class="card-index">C</span>
+            </label>
+            <label class="dinner-card" data-dinner="bean_tacos">
+              <input type="radio" name="dinner" value="bean_tacos" />
+              <span class="dish dish-taco" aria-hidden="true"><i></i><b></b><em></em></span>
+              <span class="dinner-copy"><strong>Black bean tacos</strong><small>18 min · €11.03</small></span>
+              <span class="card-index">D</span>
+            </label>
+          </fieldset>
+          <p class="choice-hint"><strong>Synthetic baskets and prices · real precomputed model output.</strong> Choose one to reveal the result.</p>
+        </section>
+
+        <section class="model-panel" aria-labelledby="modelTitle">
+          <div class="model-head">
+            <div>
+              <p class="eyebrow">Commerce-1</p>
+              <h2 id="modelTitle" tabindex="-1">The model’s choice</h2>
+            </div>
+            <span class="model-state" id="modelState">Sealed</span>
+          </div>
+
+          <div class="sealed-state" id="sealedState">
+            <svg><use href="#i-lock"></use></svg>
+            <strong>Pick first.</strong>
+            <p>Then we’ll reveal the model’s full probability distribution and the hard-rule check.</p>
+          </div>
+
+          <div class="result-state" id="resultState" hidden role="region" aria-labelledby="modelTitle">
+            <div class="human-result" id="humanResult" role="status" aria-live="polite"></div>
+
+            <div class="probability-list" aria-label="Commerce-1 Choice probabilities">
+              <div class="probability-row winner"><span>Tomato lentil spaghetti</span><i><b style="width:82.99%"></b></i><strong>82.99%</strong></div>
+              <div class="probability-row"><span>Black bean tacos</span><i><b style="width:10.18%"></b></i><strong>10.18%</strong></div>
+              <div class="probability-row"><span>Tofu broccoli penne</span><i><b style="width:5.15%"></b></i><strong>5.15%</strong></div>
+              <div class="probability-row blocked"><span>Cashew pesto pasta <em>ineligible</em></span><i><b style="width:0.89%"></b></i><strong>0.89%</strong></div>
+              <div class="probability-row"><span>None</span><i><b style="width:0.79%"></b></i><strong>0.79%</strong></div>
+            </div>
+
+            <div class="rule-result" id="ruleResult"></div>
+
+            <div class="result-actions">
+              <button class="share-button" type="button" id="shareButton"><svg><use href="#i-share"></use></svg> Share result</button>
+              <button class="reset-button" type="button" id="resetButton"><svg><use href="#i-reset"></use></svg> Try again</button>
+            </div>
+            <a class="evidence-link" href="evidence/mission-1-public.json" target="_blank" rel="noreferrer">Open the inference receipt <svg><use href="#i-arrow"></use></svg></a>
+          </div>
+        </section>
+      </main>
+
+      <details class="method">
+        <summary>How this demo works</summary>
+        <div class="method-grid">
+          <p><strong>Same four options.</strong> You and Commerce-1 choose from the identical frozen set of complete baskets.</p>
+          <p><strong>One typed decision.</strong> The model returns a Choice distribution, not a recipe or generated explanation.</p>
+          <p><strong>Rules stay code.</strong> Budget, diet, time, and allergy checks run separately from the model.</p>
+          <p><strong>Real output.</strong> The probabilities are a precomputed H200 inference from the public immutable artifact. The store and prices are fictional.</p>
+        </div>
+      </details>
+
+      <footer>
+        <p>Commerce-1 proposes. Code enforces. You decide.</p>
+        <nav aria-label="Project links">
+          <a href="https://huggingface.co/infercrane/Commerce-1" target="_blank" rel="noreferrer">Weights</a>
+          <a href="https://github.com/infercrane/commerce-1" target="_blank" rel="noreferrer">Source</a>
+          <a href="https://huggingface.co/datasets/infercrane/commerce-1-decision-index" target="_blank" rel="noreferrer">Evidence</a>
+        </nav>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
 </html>
