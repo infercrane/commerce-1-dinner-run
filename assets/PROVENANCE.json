@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-08T18:26:31Z",
+  "project": {
+    "name": "Dinner Run — Commerce-1",
+    "surface": "index.html",
+    "finishContractSeed": "6c956125",
+    "assignedDirection": "supermarket shelf-edge decision arcade"
+  },
+  "source": {
+    "repository": "https://github.com/infercrane/commerce-1",
+    "revision": "b76a6a02e2d07813e042421827a3ba6fd5401b14",
+    "revisionNote": "Screenshots were captured from this frozen application-source revision; documentation and raster provenance were committed afterward.",
+    "files": [
+      {
+        "path": "index.html",
+        "sha256": "d0d1dc7a3053c9dac6b878b8442b5b157effa60dfff64c28e7907a13d60e0d10"
+      },
+      {
+        "path": "styles.css",
+        "sha256": "a12586d16ec6a16425b099c726bb507d5dd1bebb39673ea3f79af0bccf18bc62"
+      },
+      {
+        "path": "app.js",
+        "sha256": "ca2d28b712c3b28322a6ef09a8fdd5092f12df8a59e9c2164f6f3c65d3fe6528"
+      },
+      {
+        "path": "PRODUCT.md",
+        "sha256": "c7f46f25cf808b84e5f07f12c505742c8e9306e72b469064bcf7e61c97b14db5"
+      }
+    ]
+  },
+  "evidence": {
+    "path": "evidence/mission-1-public.json",
+    "sha256": "708b2676c146253d7c0af1c623085a8dee00fe07471358bb5e0d18eccea28ea4",
+    "schemaVersion": "dinner-run-model-evidence-v1",
+    "model": "infercrane/Commerce-1",
+    "device": "NVIDIA H200",
+    "outputMode": "precomputed typed Choice distribution",
+    "networkDuringInference": "disabled",
+    "artifactSha256": "b7fba0cceb1b57834fecacfbcb5e361d94fa185e877e891f4e43fc25c6458a1d",
+    "runtimeSha256": "af6ee07de050fd9be064af9570080bf62258dc17aa1aaca33a9b97ed0940f310"
+  },
+  "captureContract": {
+    "format": "image/png",
+    "captureDate": "2026-10-08",
+    "colorScheme": "light",
+    "locale": "en",
+    "dataMode": "frozen synthetic scenario with precomputed model output",
+    "captureInvocationRetained": true,
+    "captureTool": "Playwright Chromium",
+    "deviceScaleFactor": 1,
+    "unknownCaptureFields": ["browserVersion", "reducedMotionPreference"],
+    "unknownCaptureFieldsReason": "The exact bundled Chromium version and OS-level reduced-motion preference were not persisted by the capture script."
+  },
+  "screenshots": [
+    {
+      "path": "assets/dinner-run-sealed.png",
+      "sha256": "4f944f5de1f24a1c82a4da0ad867a4e9624ed9162cba6a9516b6c15de715de77",
+      "bytes": 99667,
+      "pixelDimensions": {
+        "width": 1440,
+        "height": 940
+      },
+      "capture": {
+        "mode": "full-page",
+        "viewportWidthCssPixels": 1440,
+        "viewportHeightCssPixels": 900,
+        "deviceScaleFactor": 1,
+        "browserName": "Chromium",
+        "browserVersion": null,
+        "captureTool": "Playwright",
+        "reducedMotionPreference": null
+      },
+      "uiState": {
+        "modelState": "sealed",
+        "selectedBasket": null,
+        "methodDisclosureOpen": false,
+        "shareFeedbackVisible": false
+      },
+      "claimsVisible": [
+        "Four frozen basket choices are available to the user.",
+        "Commerce-1 output is precomputed on H200.",
+        "The model answer stays sealed until a user choice.",
+        "The mission is vegetarian, under 30 minutes, strict nut-free, and at most €18."
+      ],
+      "purpose": "Desktop launch and pre-interaction state.",
+      "alt": "Desktop Dinner Run board with four dinner choices on warm paper and Commerce-1's dark-green model panel still sealed."
+    },
+    {
+      "path": "assets/dinner-run-result.png",
+      "sha256": "1ed5ae529b8e61704c74d52ae2a02feb56e8ca5b025ff1c2e43c90d5276dac51",
+      "bytes": 126580,
+      "pixelDimensions": {
+        "width": 1440,
+        "height": 940
+      },
+      "capture": {
+        "mode": "full-page",
+        "viewportWidthCssPixels": 1440,
+        "viewportHeightCssPixels": 900,
+        "deviceScaleFactor": 1,
+        "browserName": "Chromium",
+        "browserVersion": null,
+        "captureTool": "Playwright",
+        "reducedMotionPreference": null
+      },
+      "uiState": {
+        "modelState": "revealed",
+        "selectedBasket": "lentil_pasta",
+        "modelChoice": "lentil_pasta",
+        "hardRuleResult": "eligible_to_continue",
+        "methodDisclosureOpen": false,
+        "shareFeedbackVisible": false
+      },
+      "claimsVisible": [
+        "The user and Commerce-1 chose tomato lentil spaghetti.",
+        "Commerce-1 assigns lentil_pasta an 82.99% Choice probability.",
+        "All four baskets plus None remain visible in the distribution.",
+        "Deterministic code reports the basket eligible to continue.",
+        "The inference receipt is linked from the result."
+      ],
+      "purpose": "Desktop revealed state and primary social/launch result.",
+      "alt": "Desktop Dinner Run result where the user and Commerce-1 both choose tomato lentil spaghetti, with the full probability distribution and an eligible hard-rule slip."
+    },
+    {
+      "path": "assets/dinner-run-mobile.png",
+      "sha256": "8fd218fb9be032bb8fab4d2ee9cf652eab79e00300941a6541e9d9879200bbe9",
+      "bytes": 107544,
+      "pixelDimensions": {
+        "width": 390,
+        "height": 1710
+      },
+      "capture": {
+        "mode": "full-page",
+        "viewportWidthCssPixels": 390,
+        "viewportHeightCssPixels": 844,
+        "deviceScaleFactor": 1,
+        "browserName": "Chromium",
+        "browserVersion": null,
+        "captureTool": "Playwright",
+        "reducedMotionPreference": null
+      },
+      "uiState": {
+        "modelState": "revealed",
+        "selectedBasket": "bean_tacos",
+        "modelChoice": "lentil_pasta",
+        "hardRuleResult": "eligible_to_continue",
+        "methodDisclosureOpen": false,
+        "shareFeedbackVisible": false
+      },
+      "claimsVisible": [
+        "The responsive view preserves all four basket choices.",
+        "The user chose black bean tacos while Commerce-1 chose tomato lentil spaghetti.",
+        "Commerce-1 assigns lentil_pasta an 82.99% Choice probability.",
+        "Deterministic code reports the selected tacos eligible to continue.",
+        "Share, reset, inference receipt, and project links remain available on mobile."
+      ],
+      "purpose": "Full-page mobile responsive and divergent-choice proof.",
+      "alt": "Mobile Dinner Run result with four stacked dinner choices followed by Commerce-1's revealed probability distribution for a user who selected black bean tacos."
+    }
+  ]
+}

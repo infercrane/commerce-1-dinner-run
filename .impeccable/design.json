@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T18:26:08Z",
+  "title": "Design System: Dinner Run — Commerce-1",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Receipt Ink",
+        "canonical": "#13241c",
+        "tonalRamp": ["oklch(15% 0.025 155)", "oklch(25% 0.025 155)", "oklch(35% 0.025 155)", "oklch(45% 0.025 155)", "oklch(55% 0.025 155)", "oklch(68% 0.022 155)", "oklch(82% 0.015 155)", "oklch(95% 0.008 155)"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Quiet Copy",
+        "canonical": "#617068",
+        "tonalRamp": ["oklch(15% 0.018 155)", "oklch(25% 0.018 155)", "oklch(35% 0.018 155)", "oklch(45% 0.018 155)", "oklch(55% 0.017 155)", "oklch(68% 0.014 155)", "oklch(82% 0.010 155)", "oklch(95% 0.005 155)"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Grocery Paper",
+        "canonical": "#f4f0e7",
+        "tonalRamp": ["oklch(15% 0.025 85)", "oklch(25% 0.025 85)", "oklch(35% 0.024 85)", "oklch(45% 0.023 85)", "oklch(55% 0.022 85)", "oklch(68% 0.020 85)", "oklch(82% 0.016 85)", "oklch(95% 0.012 85)"]
+      },
+      "paper-bright": {
+        "role": "neutral",
+        "displayName": "Bright Slip",
+        "canonical": "#fffdf7",
+        "tonalRamp": ["oklch(15% 0.018 85)", "oklch(25% 0.018 85)", "oklch(35% 0.017 85)", "oklch(45% 0.016 85)", "oklch(55% 0.015 85)", "oklch(68% 0.013 85)", "oklch(82% 0.010 85)", "oklch(98% 0.007 85)"]
+      },
+      "decision-green": {
+        "role": "primary",
+        "displayName": "Decision Green",
+        "canonical": "#173f2d",
+        "tonalRamp": ["oklch(15% 0.060 155)", "oklch(25% 0.065 155)", "oklch(35% 0.070 155)", "oklch(45% 0.072 155)", "oklch(55% 0.068 155)", "oklch(68% 0.055 155)", "oklch(82% 0.035 155)", "oklch(95% 0.015 155)"]
+      },
+      "pass-green": {
+        "role": "primary",
+        "displayName": "Pass Green",
+        "canonical": "#2f6c4b",
+        "tonalRamp": ["oklch(15% 0.065 155)", "oklch(25% 0.072 155)", "oklch(35% 0.080 155)", "oklch(45% 0.084 155)", "oklch(55% 0.080 155)", "oklch(68% 0.063 155)", "oklch(82% 0.040 155)", "oklch(95% 0.018 155)"]
+      },
+      "reveal-lime": {
+        "role": "secondary",
+        "displayName": "Reveal Lime",
+        "canonical": "#c9f05b",
+        "tonalRamp": ["oklch(15% 0.100 115)", "oklch(25% 0.125 115)", "oklch(35% 0.150 115)", "oklch(45% 0.170 115)", "oklch(55% 0.180 115)", "oklch(68% 0.175 115)", "oklch(82% 0.150 115)", "oklch(95% 0.080 115)"]
+      },
+      "focus-orange": {
+        "role": "tertiary",
+        "displayName": "Focus Orange",
+        "canonical": "#f28b38",
+        "tonalRamp": ["oklch(15% 0.085 55)", "oklch(25% 0.110 55)", "oklch(35% 0.135 55)", "oklch(45% 0.155 55)", "oklch(55% 0.170 55)", "oklch(68% 0.165 55)", "oklch(82% 0.120 55)", "oklch(95% 0.050 55)"]
+      },
+      "constraint-red": {
+        "role": "tertiary",
+        "displayName": "Constraint Red",
+        "canonical": "#b8322a",
+        "tonalRamp": ["oklch(15% 0.080 28)", "oklch(25% 0.110 28)", "oklch(35% 0.140 28)", "oklch(45% 0.165 28)", "oklch(55% 0.175 28)", "oklch(68% 0.145 28)", "oklch(82% 0.090 28)", "oklch(95% 0.035 28)"]
+      },
+      "rule-line": {
+        "role": "neutral",
+        "displayName": "Shelf Rule",
+        "canonical": "#c9c7bd",
+        "tonalRamp": ["oklch(15% 0.010 90)", "oklch(25% 0.010 90)", "oklch(35% 0.010 90)", "oklch(45% 0.010 90)", "oklch(55% 0.010 90)", "oklch(68% 0.009 90)", "oklch(82% 0.008 90)", "oklch(95% 0.005 90)"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(25% 0 0)", "oklch(35% 0 0)", "oklch(45% 0 0)", "oklch(55% 0 0)", "oklch(68% 0 0)", "oklch(82% 0 0)", "oklch(100% 0 0)"]
+      },
+      "blocked-soft": {
+        "role": "tertiary",
+        "displayName": "Blocked Soft",
+        "canonical": "#ffd2cd",
+        "tonalRamp": ["oklch(15% 0.035 28)", "oklch(25% 0.045 28)", "oklch(35% 0.055 28)", "oklch(45% 0.060 28)", "oklch(55% 0.062 28)", "oklch(68% 0.058 28)", "oklch(82% 0.045 28)", "oklch(95% 0.022 28)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Mission Display", "purpose": "The shopper mission and largest invitation only." },
+      "headline": { "displayName": "Model Headline", "purpose": "The model panel heading and comparable reveal statements." },
+      "title": { "displayName": "Result Title", "purpose": "Dinner names, result messages, and compact strong statements." },
+      "body": { "displayName": "Operational Body", "purpose": "Instructions, disclosures, and short explanations." },
+      "label": { "displayName": "Shelf Label", "purpose": "Uppercase eyebrows and bounded state labels." },
+      "data": { "displayName": "Decision Data", "purpose": "Prices, timing, indices, runtime, percentages, and footer doctrine." }
+    },
+    "shadows": [
+      { "name": "selected-inset", "value": "inset 0 0 0 2px #13241c", "purpose": "Reinforces the selected radio card without changing layout." },
+      { "name": "plate-contact", "value": "0 2px 0 rgba(19,36,28,.13)", "purpose": "Grounds a geometric food illustration inside its circular plate." }
+    ],
+    "motion": [
+      { "name": "choice-state", "value": "border-color .18s ease, box-shadow .18s ease, transform .18s ease", "purpose": "Dinner-card hover and selected-state response." },
+      { "name": "toast-state", "value": "transform .2s ease, opacity .2s ease", "purpose": "Polite share-feedback toast entrance and exit." },
+      { "name": "reduced-motion", "value": "transition-duration: .01ms", "purpose": "Collapses all transitions when reduced motion is requested." }
+    ],
+    "breakpoints": [
+      { "name": "stacked-board", "value": "980px" },
+      { "name": "compact-mobile", "value": "620px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Topbar",
+      "kind": "nav",
+      "refersTo": "topbar",
+      "description": "Dark application frame with product identity and precomputed runtime provenance.",
+      "html": "<header class=\"ds-topbar\"><strong>InferCrane</strong><span>Dinner Run</span><span class=\"ds-runtime\"><i></i> precomputed output · H200</span></header>",
+      "css": ".ds-topbar{height:66px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;padding:0 22px;color:var(--white,#fff);background:var(--ink,#13241c);border-radius:13px 13px 0 0;font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-topbar>span:nth-child(2){justify-self:center;font-weight:700}.ds-runtime{justify-self:end;display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;color:rgba(255,255,255,.62);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px;text-transform:uppercase;letter-spacing:.05em}.ds-runtime i{width:6px;height:6px;background:var(--lime,#c9f05b);border-radius:50%}"
+    },
+    {
+      "name": "Runtime Pill",
+      "kind": "chip",
+      "refersTo": "runtime-pill",
+      "description": "Persistent factual label distinguishing precomputed output from live inference.",
+      "html": "<span class=\"ds-runtime-pill\"><i></i> precomputed output · H200</span>",
+      "css": ".ds-runtime-pill{display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;color:rgba(255,255,255,.62);background:var(--ink,#13241c);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px;text-transform:uppercase;letter-spacing:.05em}.ds-runtime-pill i{width:6px;height:6px;background:var(--lime,#c9f05b);border-radius:50%}"
+    },
+    {
+      "name": "Dinner Choice Card",
+      "kind": "card",
+      "refersTo": "dinner-card",
+      "description": "Radio-backed basket option with geometric dish, bounded facts, and robust hover/focus states.",
+      "html": "<label class=\"ds-dinner-card\"><input type=\"radio\" name=\"ds-dinner\"><span class=\"ds-plate\">A</span><span><strong>Tomato lentil spaghetti</strong><small>28 min · €8.45</small></span><b>A</b></label>",
+      "css": ".ds-dinner-card{position:relative;min-height:148px;display:grid;grid-template-columns:94px 1fr;align-items:center;gap:15px;padding:14px;border:1px solid var(--line,#c9c7bd);color:var(--ink,#13241c);background:var(--paper,#f4f0e7);cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-dinner-card:hover{border-color:var(--ink,#13241c);transform:translateY(-2px)}.ds-dinner-card:focus-within{outline:3px solid var(--orange,#f28b38);outline-offset:2px}.ds-dinner-card:has(input:checked){border-color:var(--ink,#13241c);box-shadow:inset 0 0 0 2px var(--ink,#13241c);background:var(--paper-2,#fffdf7)}.ds-dinner-card input{position:absolute;opacity:0}.ds-dinner-card strong,.ds-dinner-card small{display:block}.ds-dinner-card small{margin-top:8px;color:var(--muted,#617068);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px}.ds-dinner-card>b{position:absolute;top:8px;right:9px;color:#91958f;font-family:var(--mono,monospace);font-size:10px}.ds-plate{width:88px;height:88px;display:grid;place-items:center;border:1px solid var(--line,#c9c7bd);border-radius:50%;background:#e8e2d4;font-family:var(--display,\"Archivo Black\",sans-serif)}"
+    },
+    {
+      "name": "Model State Pill",
+      "kind": "chip",
+      "refersTo": "state-pill-revealed",
+      "description": "Compact sealed/revealed status; revealed uses lime plus explicit text.",
+      "html": "<span class=\"ds-model-state ds-is-revealed\">Revealed</span>",
+      "css": ".ds-model-state{display:inline-block;padding:7px 10px;border:1px solid rgba(255,255,255,.32);border-radius:999px;color:rgba(255,255,255,.65);background:var(--green,#173f2d);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:9px;text-transform:uppercase}.ds-model-state.ds-is-revealed{color:var(--ink,#13241c);background:var(--lime,#c9f05b);border-color:var(--lime,#c9f05b)}.ds-model-state:focus-visible{outline:3px solid var(--lime,#c9f05b);outline-offset:4px}"
+    },
+    {
+      "name": "Choice Probability Distribution",
+      "kind": "custom",
+      "description": "Complete four-basket-plus-None model distribution with separate blocked labeling.",
+      "html": "<div class=\"ds-probabilities\" aria-label=\"Commerce-1 Choice probabilities\"><div class=\"ds-prob ds-winner\"><span>Tomato lentil spaghetti</span><i><b style=\"width:82.99%\"></b></i><strong>82.99%</strong></div><div class=\"ds-prob ds-blocked\"><span>Cashew pesto pasta <em>ineligible</em></span><i><b style=\"width:.89%\"></b></i><strong>0.89%</strong></div></div>",
+      "css": ".ds-probabilities{padding:18px;color:#fff;background:var(--green,#173f2d);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-prob{display:grid;grid-template-columns:minmax(120px,1.25fr) minmax(80px,1fr) 52px;align-items:center;gap:10px;margin:10px 0;font-size:12px}.ds-prob>span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.ds-prob em{margin-left:4px;color:#ffd2cd;font-family:var(--mono,monospace);font-size:7px;font-style:normal;text-transform:uppercase}.ds-prob>i{height:7px;background:rgba(255,255,255,.13)}.ds-prob>i>b{display:block;min-width:3px;height:100%;background:rgba(255,255,255,.55)}.ds-prob.ds-winner>i>b{background:var(--lime,#c9f05b)}.ds-prob.ds-blocked>i>b{background:var(--red,#b8322a)}.ds-prob>strong{text-align:right;font-family:var(--mono,monospace);font-size:9px}"
+    },
+    {
+      "name": "Hard-Rule Pass Slip",
+      "kind": "custom",
+      "refersTo": "rule-result",
+      "description": "Code-owned proceed result, stated through icon, label, headline, and supporting checks.",
+      "html": "<div class=\"ds-rule ds-pass\"><svg viewBox=\"0 0 24 24\"><path d=\"m5 12 4 4L19 6\"/></svg><div><span>Hard-rule check</span><strong>Eligible to continue</strong><p>Within budget, vegetarian, under 30 minutes, and no declared nut warning.</p></div></div>",
+      "css": ".ds-rule{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:15px;color:var(--ink,#13241c);background:var(--paper-2,#fffdf7);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-rule svg{width:28px;height:28px;fill:none;stroke:var(--green-2,#2f6c4b);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-rule span,.ds-rule strong{display:block}.ds-rule span{color:var(--muted,#617068);font-family:var(--mono,monospace);font-size:8px;text-transform:uppercase}.ds-rule strong{margin-top:3px;font-size:14px}.ds-rule p{margin:3px 0 0;color:var(--muted,#617068);font-size:10px}"
+    },
+    {
+      "name": "Hard-Rule Block Slip",
+      "kind": "custom",
+      "refersTo": "rule-result",
+      "description": "Policy block variant with explicit checkout boundary and concrete allergy reason.",
+      "html": "<div class=\"ds-rule ds-block\"><svg viewBox=\"0 0 24 24\"><path d=\"m6 6 12 12M18 6 6 18\"/></svg><div><span>Hard-rule check</span><strong>Blocked before checkout</strong><p>Contains cashew. The strict nut-free rule overrides the model ranking.</p></div></div>",
+      "css": ".ds-rule{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:15px;color:var(--ink,#13241c);background:var(--paper-2,#fffdf7);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-rule svg{width:28px;height:28px;fill:none;stroke:var(--red,#b8322a);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-rule span,.ds-rule strong{display:block}.ds-rule span{color:var(--muted,#617068);font-family:var(--mono,monospace);font-size:8px;text-transform:uppercase}.ds-rule strong{margin-top:3px;font-size:14px}.ds-rule p{margin:3px 0 0;color:var(--muted,#617068);font-size:10px}"
+    },
+    {
+      "name": "Result Action Button",
+      "kind": "button",
+      "refersTo": "action-button",
+      "description": "Equal-weight share/reset action on the model field.",
+      "html": "<button class=\"ds-result-action\" type=\"button\"><svg viewBox=\"0 0 24 24\"><circle cx=\"18\" cy=\"5\" r=\"2.5\"/><circle cx=\"6\" cy=\"12\" r=\"2.5\"/><circle cx=\"18\" cy=\"19\" r=\"2.5\"/><path d=\"m8.2 10.8 7.6-4.5m-7.6 6.9 7.6 4.5\"/></svg>Share result</button>",
+      "css": ".ds-result-action{min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 14px;border:1px solid rgba(255,255,255,.35);color:#fff;background:var(--green,#173f2d);cursor:pointer;font-family:var(--sans,\"DM Sans\",sans-serif);font-size:12px;font-weight:700}.ds-result-action:hover,.ds-result-action:focus-visible{color:var(--ink,#13241c);background:var(--lime,#c9f05b);border-color:var(--lime,#c9f05b);outline:none}.ds-result-action:active{transform:translateY(1px)}.ds-result-action svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Evidence Link",
+      "kind": "custom",
+      "description": "Quiet but persistent path from the revealed UI to the public inference receipt.",
+      "html": "<a class=\"ds-evidence-link\" href=\"#\">Open the inference receipt <svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-evidence-link{display:inline-flex;align-items:center;gap:7px;padding:4px 0;color:rgba(255,255,255,.66);background:var(--green,#173f2d);font-family:var(--sans,\"DM Sans\",sans-serif);font-size:11px}.ds-evidence-link:hover{color:#fff}.ds-evidence-link:focus-visible{outline:3px solid var(--lime,#c9f05b);outline-offset:4px}.ds-evidence-link svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Supermarket Shelf-Edge Decision Arcade",
+    "overview": "Dinner Run turns a bounded AI choice into a compact, tactile game board. The warm paper half is the shopper's familiar decision surface; the deep green half is the sealed machine readout. Shelf labels, price tickets, lettered options, geometric plate illustrations, and terse mono data make the interaction feel like a fictional supermarket without imitating a real retailer.\n\nThe system is energetic but evidentiary. Oversized black display type creates the arcade invitation, while quiet body copy and mono labels specify what is synthetic, what is precomputed, and what deterministic code controls. The reveal is not spectacle for its own sake: it exposes the complete Choice distribution, identifies the human selection, and keeps the hard-rule result visually and semantically separate from model probability.\n\nThis is an Operate surface with a one-click path: choose one complete basket, see Commerce-1's choice, inspect policy, then share or reset. The finish-contract seed is 6c956125. The current visual regression anchors are assets/dinner-run-sealed.png, assets/dinner-run-result.png, and assets/dinner-run-mobile.png; implementation tokens and behavior remain the source of truth.",
+    "keyCharacteristics": [
+      "A near-equal paper/green split that reads as human choice versus model evidence.",
+      "Bold, tightly tracked display typography paired with restrained sans copy and mono facts.",
+      "Flat, rule-led surfaces with only a small hover lift and inset selection emphasis.",
+      "Original geometric dinner illustrations instead of product photography or retailer mimicry.",
+      "Claim boundaries embedded in the interface, not deferred to a legal footer.",
+      "A sealed-to-revealed state change that works with keyboard, touch, and reduced motion."
+    ],
+    "rules": [
+      { "name": "The Choice-Before-Reveal Rule", "body": "Commerce-1's answer stays sealed until the user selects one of the same four frozen baskets.", "section": "overview" },
+      { "name": "The Evidence-After-Action Rule", "body": "The first interaction earns the reveal; the resulting view must expose model probabilities, the code-owned hard-rule result, and a direct evidence-receipt link together.", "section": "overview" },
+      { "name": "The Dark Green Is Evidence Rule", "body": "Reserve the large green field for model state, probabilities, and policy outcome; do not let it become a generic marketing background.", "section": "colors" },
+      { "name": "The Signal Needs Language Rule", "body": "Lime, red, and green never carry pass, block, selected, or revealed meaning alone; pair them with labels, icons, border changes, or state copy.", "section": "colors" },
+      { "name": "The Facts Use Mono Rule", "body": "Use IBM Plex Mono for bounded facts and system state, not for narrative paragraphs or primary calls to action.", "section": "typography" },
+      { "name": "The Display Stays Blunt Rule", "body": "Archivo Black is for the mission and reveal hierarchy; never use it as body copy or shrink it into dense utility labels.", "section": "typography" },
+      { "name": "The Same Decision on Every Width Rule", "body": "Responsive changes may reflow the four baskets, but may not reorder, omit, or summarize them differently from desktop.", "section": "layout" },
+      { "name": "The Paired Halves Rule", "body": "On desktop, paper and green must read as one bordered instrument; on mobile, preserve their sequence and shared outer frame rather than turning them into unrelated cards.", "section": "layout" },
+      { "name": "The Flat Instrument Rule", "body": "Do not add generic drop shadows, glass effects, or layered marketing cards; the board should feel printed, bounded, and directly operable.", "section": "elevation" },
+      { "name": "The State Motion Rule", "body": "Use short 180–200ms transitions for hover, focus, and toast state only, and collapse them to near-zero under prefers-reduced-motion.", "section": "elevation" },
+      { "name": "The Square Surface, Round Status Rule", "body": "Content and actions stay rectilinear; only food plates and compact status indicators become circular or pill-shaped.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do preserve the paper-left / green-right decision-and-evidence relationship on wide screens and the same order on narrow screens.",
+      "Do show all four candidate baskets plus None whenever the Choice distribution is shown.",
+      "Do label 82.99% as a model Choice probability and keep the hard-rule result in its own light slip.",
+      "Do keep synthetic-data and precomputed-output disclosures visible before selection, then link the exact inference receipt after reveal.",
+      "Do use text, icons, border changes, and state labels alongside color for selected, revealed, eligible, and blocked states.",
+      "Do preserve visible focus, radio semantics, arrow-key operation, focus transfer to changed content, live toast status, and reduced-motion behavior.",
+      "Do use ‘basket,’ ‘choice,’ ‘continue,’ ‘blocked,’ or ‘reveal’ language for the interaction; reserve ‘checkout’ for the explicit authority boundary.",
+      "Do maintain assets/PROVENANCE.json whenever a shipping screenshot is added or recaptured; record its hash, pixel dimensions, UI state, selected basket, source hashes, and evidence receipt."
+    ],
+    "donts": [
+      "Don't present the 82.99% probability as a score, policy verdict, success rate, benchmark, or explanation generated by Commerce-1.",
+      "Don't imply live inference, store browsing, recipe generation, payment processing, or autonomous checkout.",
+      "Don't collapse the model output and deterministic hard-rule check into one pass/fail message.",
+      "Don't use red, lime, or green as the sole carrier of meaning, especially for the nut-allergy block.",
+      "Don't replace the original geometric meals with food photography, emoji, retailer assets, or realistic branded packaging.",
+      "Don't add generic rounded cards, gradients, glassmorphism, ambient shadows, or decorative dashboards that weaken the shelf-edge instrument character.",
+      "Don't remove the precomputed H200 pill, the initial disclosure hint, the method boundaries, or the inference-receipt link to gain visual space.",
+      "Don't treat the screenshots as stronger evidence than code and evidence/mission-1-public.json; they are audited presentation artifacts, not the claim source."
+    ]
+  }
+}
