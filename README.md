@@ -13,6 +13,10 @@ short_description: Pick dinner, then reveal Commerce-1's typed decision.
 
 Can you make the same dinner decision as a 27B commerce decision model?
 
+**[Play the live demo](https://huggingface.co/spaces/infercrane/commerce-1-dinner-run)** · [Get Commerce-1](https://huggingface.co/infercrane/Commerce-1) · [Inspect the model runtime](https://github.com/infercrane/commerce-1)
+
+![Dinner Run result showing Commerce-1's probability distribution](https://raw.githubusercontent.com/infercrane/commerce-1-dinner-run/main/assets/dinner-run-result.png)
+
 Four complete dinner baskets. One €18 budget. One strict nut allergy. Pick a
 dinner, then reveal the basket chosen by Commerce-1 and the model's complete
 probability distribution.
@@ -21,6 +25,10 @@ Commerce-1 does not browse a store or generate a recipe in this demo. It ranks
 the same four frozen candidate baskets shown to the user and returns a typed
 Choice distribution. Separate deterministic code enforces budget, diet, time,
 and allergy rules.
+
+```text
+four frozen baskets → Commerce-1 Choice distribution → deterministic policy → user
+```
 
 The model output is a real, precomputed H200 inference from the immutable public
 Commerce-1 artifact. The store, products, prices, and mission are synthetic.
