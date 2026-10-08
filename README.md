@@ -19,6 +19,8 @@ then compare the result with Commerce-1 and the separate checkout policy.
 [Inspect the model runtime](https://github.com/infercrane/commerce-1) ·
 [Read the launch article](https://infercrane.com/blog/commerce-1)
 
+![Checkout Rush result with five hard rules cleared and a separate Commerce-1 comparison](https://raw.githubusercontent.com/infercrane/commerce-1-dinner-run/main/assets/checkout-rush-result.png)
+
 ## Game loop
 
 1. Read Maya's synthetic customer brief and its five hard rules.

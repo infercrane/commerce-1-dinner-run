@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T20:16:58Z",
+  "generatedAt": "2026-10-08T21:11:40Z",
   "project": {
-    "name": "The €18 Agent Test — Commerce-1",
+    "name": "Checkout Rush — Commerce-1",
     "surface": "index.html",
     "finishContractSeed": "a860ea20",
-    "assignedDirection": "one-question agentic-commerce challenge"
+    "assignedDirection": "fifteen-second agentic-commerce arcade"
   },
   "source": {
     "repository": "https://github.com/infercrane/commerce-1-dinner-run",
-    "revision": "f13294b3fdadc06efe0d2608f9b3771b6fffd3d9",
-    "revisionNote": "Screenshots were captured from this frozen source revision. Raster metadata and this manifest were committed afterward.",
+    "revision": "3df72d7b00fb5821b5cd9b07e095cc485ab09518",
+    "revisionNote": "Screenshots were recaptured from this frozen source revision. Raster metadata and this manifest were committed afterward.",
     "files": [
-      { "path": "index.html", "sha256": "133202970f852ff3af4dba5ba737a91c00c77e384bf69dfefb1d75954feafc69" },
-      { "path": "styles.css", "sha256": "d9f3114f7dede5aea8e9789c0b6e17007e8483ac6e9d1eda0f5f30e7c76160a8" },
-      { "path": "app.js", "sha256": "9efb977ed200143072ce6a2fb1ca9f348d91954c876a727bfe3337b9f11851a7" },
-      { "path": "PRODUCT.md", "sha256": "44fe0a6f3c0e4a35db2e58d663fb193c9403cda00a02370bd0d8085f0e1bc935" }
+      { "path": "index.html", "sha256": "140b4c25e583eaf25d565d4c3a6cdc8664cf5ec886d6dace266394d05a702236" },
+      { "path": "styles.css", "sha256": "d53891d72e72a725a9e4af051ea0fa812996591d7468c2c7fa2fe1d78f005e0f" },
+      { "path": "app.js", "sha256": "5632d24cff10297b10b0ceb64499234c6d5afba745afce03d0bc4011015043b6" },
+      { "path": "PRODUCT.md", "sha256": "6ce2f3cb440a256a24ba5fc56732e0c64e8e06c2e45859d1a1bce62215c1fdf1" }
     ]
   },
   "evidence": {
@@ -31,7 +31,7 @@
   },
   "captureContract": {
     "format": "image/png",
-    "capturedAt": "2026-10-08T20:16:58Z",
+    "capturedAt": "2026-10-08T21:11:40Z",
     "colorScheme": "light",
     "locale": "en-US",
     "dataMode": "frozen synthetic scenario with precomputed model output",
@@ -42,34 +42,44 @@
   },
   "screenshots": [
     {
-      "path": "assets/dinner-run-sealed.png",
-      "sha256": "c0207b60e970ea58b4f0b836e0b31a551f09a2edb88bb0bf78ee82409b04ff8d",
-      "bytes": 222600,
-      "pixelDimensions": { "width": 1440, "height": 1190 },
-      "viewport": { "width": 1440, "height": 1000 },
-      "uiState": { "modelState": "hidden until a recommendation is chosen", "selectedBasket": null },
-      "purpose": "Desktop initial state and launch preview.",
-      "alt": "Commerce-1 agent test showing a synthetic customer dinner brief and four basket recommendations before the model choice is revealed."
+      "path": "assets/checkout-rush-start.png",
+      "sha256": "716eea6f69d5a6e2705ccd979257ceb92456bb8561bb43fae50c5abb5863c3a8",
+      "bytes": 175436,
+      "pixelDimensions": { "width": 1440, "height": 1134 },
+      "viewport": { "width": 1440, "height": 1100 },
+      "uiState": { "gameState": "ready", "modelState": "sealed", "gamePoints": 0 },
+      "purpose": "Desktop ready state and primary challenge introduction.",
+      "alt": "Checkout Rush ready screen with a 15-second mission, Maya's dinner constraints, an eighteen-euro cart limit, and a start button."
     },
     {
-      "path": "assets/dinner-run-result.png",
-      "sha256": "302c2dea2ceca6656bb96c427de37b8fb8eb1db1826d480d31ff6c19b5c70000",
-      "bytes": 198609,
-      "pixelDimensions": { "width": 1440, "height": 1190 },
-      "viewport": { "width": 1440, "height": 1000 },
-      "uiState": { "modelState": "revealed", "selectedBasket": "lentil_pasta", "modelChoice": "lentil_pasta", "checkoutCode": "safe_to_continue" },
-      "purpose": "Desktop matched-decision result and primary launch image.",
-      "alt": "Commerce-1 and the human shopping agent both recommend tomato lentil spaghetti; separate checkout code reports that the basket is safe to continue."
+      "path": "assets/checkout-rush-live.png",
+      "sha256": "4d250191b063242b7cbeac41fe6a9760e0c328a55988ba4debd13b3070848e70",
+      "bytes": 204766,
+      "pixelDimensions": { "width": 1440, "height": 1134 },
+      "viewport": { "width": 1440, "height": 1100 },
+      "uiState": { "gameState": "playing", "modelState": "sealed", "candidateCount": 4 },
+      "purpose": "Desktop live-timer state showing the complete player decision.",
+      "alt": "Checkout Rush live mission with a running timer, four basket choices, and Commerce-1's answer still hidden."
     },
     {
-      "path": "assets/dinner-run-mobile.png",
-      "sha256": "69a51d97c4c3f85985b74b25151ac415f0744027eff27c7da659f10cf97ce610",
-      "bytes": 93769,
-      "pixelDimensions": { "width": 390, "height": 1411 },
+      "path": "assets/checkout-rush-result.png",
+      "sha256": "ec2cacc6f31d3739bb31b1b75063c1da572ee16bbccb829ba4a29f5082e4d2be",
+      "bytes": 204182,
+      "pixelDimensions": { "width": 1440, "height": 1134 },
+      "viewport": { "width": 1440, "height": 1100 },
+      "uiState": { "gameState": "result", "selectedBasket": "lentil_pasta", "modelChoice": "lentil_pasta", "checkoutCode": "safe_to_continue" },
+      "purpose": "Desktop checkout-clear result and model-comparison proof.",
+      "alt": "Checkout Rush result with all five hard rules cleared, policy-safe game points, and a separate Commerce-1 comparison."
+    },
+    {
+      "path": "assets/checkout-rush-mobile.png",
+      "sha256": "35cd42e5c268223f99032c8c5324d6557238b95d97afdb4742d07f5980e1c5cb",
+      "bytes": 119342,
+      "pixelDimensions": { "width": 390, "height": 1485 },
       "viewport": { "width": 390, "height": 844 },
-      "uiState": { "modelState": "revealed", "selectedBasket": "cashew_pesto_pasta", "modelChoice": "lentil_pasta", "checkoutCode": "blocked_contains_cashew" },
-      "purpose": "Mobile divergent-decision and deterministic safety-gate proof.",
-      "alt": "Mobile Commerce-1 agent test where the human shopping agent recommends cashew pesto, Commerce-1 recommends lentil spaghetti, and checkout code blocks the cashew basket."
+      "uiState": { "gameState": "ready", "modelState": "sealed", "gamePoints": 0 },
+      "purpose": "Mobile ready-state layout proof.",
+      "alt": "Mobile Checkout Rush ready screen with the timer HUD, customer brief, cart limit, and start action."
     }
   ]
 }
