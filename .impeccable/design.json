@@ -1,68 +1,68 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T18:26:08Z",
-  "title": "Design System: Dinner Run — Commerce-1",
+  "generatedAt": "2026-10-08T20:13:25Z",
+  "title": "Design System: The €18 Agent Test",
   "extensions": {
     "colorMeta": {
       "ink": {
         "role": "neutral",
-        "displayName": "Receipt Ink",
-        "canonical": "#13241c",
-        "tonalRamp": ["oklch(15% 0.025 155)", "oklch(25% 0.025 155)", "oklch(35% 0.025 155)", "oklch(45% 0.025 155)", "oklch(55% 0.025 155)", "oklch(68% 0.022 155)", "oklch(82% 0.015 155)", "oklch(95% 0.008 155)"]
+        "displayName": "Decision Ink",
+        "canonical": "#17151f",
+        "tonalRamp": ["oklch(15% 0.020 300)", "oklch(25% 0.020 300)", "oklch(35% 0.020 300)", "oklch(45% 0.018 300)", "oklch(55% 0.016 300)", "oklch(68% 0.013 300)", "oklch(82% 0.009 300)", "oklch(95% 0.004 300)"]
       },
-      "muted": {
+      "ink-soft": {
         "role": "neutral",
-        "displayName": "Quiet Copy",
-        "canonical": "#617068",
-        "tonalRamp": ["oklch(15% 0.018 155)", "oklch(25% 0.018 155)", "oklch(35% 0.018 155)", "oklch(45% 0.018 155)", "oklch(55% 0.017 155)", "oklch(68% 0.014 155)", "oklch(82% 0.010 155)", "oklch(95% 0.005 155)"]
+        "displayName": "Soft Ink",
+        "canonical": "#514d5b",
+        "tonalRamp": ["oklch(15% 0.025 300)", "oklch(25% 0.025 300)", "oklch(35% 0.024 300)", "oklch(45% 0.022 300)", "oklch(55% 0.020 300)", "oklch(68% 0.016 300)", "oklch(82% 0.010 300)", "oklch(95% 0.005 300)"]
       },
-      "paper": {
-        "role": "neutral",
-        "displayName": "Grocery Paper",
-        "canonical": "#f4f0e7",
-        "tonalRamp": ["oklch(15% 0.025 85)", "oklch(25% 0.025 85)", "oklch(35% 0.024 85)", "oklch(45% 0.023 85)", "oklch(55% 0.022 85)", "oklch(68% 0.020 85)", "oklch(82% 0.016 85)", "oklch(95% 0.012 85)"]
-      },
-      "paper-bright": {
-        "role": "neutral",
-        "displayName": "Bright Slip",
-        "canonical": "#fffdf7",
-        "tonalRamp": ["oklch(15% 0.018 85)", "oklch(25% 0.018 85)", "oklch(35% 0.017 85)", "oklch(45% 0.016 85)", "oklch(55% 0.015 85)", "oklch(68% 0.013 85)", "oklch(82% 0.010 85)", "oklch(98% 0.007 85)"]
-      },
-      "decision-green": {
+      "lavender-ground": {
         "role": "primary",
-        "displayName": "Decision Green",
-        "canonical": "#173f2d",
-        "tonalRamp": ["oklch(15% 0.060 155)", "oklch(25% 0.065 155)", "oklch(35% 0.070 155)", "oklch(45% 0.072 155)", "oklch(55% 0.068 155)", "oklch(68% 0.055 155)", "oklch(82% 0.035 155)", "oklch(95% 0.015 155)"]
+        "displayName": "Lavender Tabletop",
+        "canonical": "#f2f0ff",
+        "tonalRamp": ["oklch(15% 0.045 285)", "oklch(25% 0.045 285)", "oklch(35% 0.044 285)", "oklch(45% 0.042 285)", "oklch(55% 0.039 285)", "oklch(68% 0.034 285)", "oklch(82% 0.026 285)", "oklch(95% 0.016 285)"]
       },
-      "pass-green": {
+      "answer-paper": {
+        "role": "neutral",
+        "displayName": "Answer Paper",
+        "canonical": "#fffdf8",
+        "tonalRamp": ["oklch(15% 0.018 85)", "oklch(25% 0.018 85)", "oklch(35% 0.017 85)", "oklch(45% 0.016 85)", "oklch(55% 0.015 85)", "oklch(68% 0.013 85)", "oklch(82% 0.010 85)", "oklch(98% 0.006 85)"]
+      },
+      "warm-paper": {
+        "role": "neutral",
+        "displayName": "Warm Comparison Paper",
+        "canonical": "#f8f5ed",
+        "tonalRamp": ["oklch(15% 0.022 85)", "oklch(25% 0.022 85)", "oklch(35% 0.021 85)", "oklch(45% 0.020 85)", "oklch(55% 0.019 85)", "oklch(68% 0.016 85)", "oklch(82% 0.012 85)", "oklch(96% 0.008 85)"]
+      },
+      "action-violet": {
         "role": "primary",
-        "displayName": "Pass Green",
-        "canonical": "#2f6c4b",
-        "tonalRamp": ["oklch(15% 0.065 155)", "oklch(25% 0.072 155)", "oklch(35% 0.080 155)", "oklch(45% 0.084 155)", "oklch(55% 0.080 155)", "oklch(68% 0.063 155)", "oklch(82% 0.040 155)", "oklch(95% 0.018 155)"]
+        "displayName": "Action Violet",
+        "canonical": "#6d5dfc",
+        "tonalRamp": ["oklch(15% 0.100 285)", "oklch(25% 0.145 285)", "oklch(35% 0.190 285)", "oklch(45% 0.225 285)", "oklch(55% 0.235 285)", "oklch(68% 0.205 285)", "oklch(82% 0.135 285)", "oklch(95% 0.050 285)"]
       },
-      "reveal-lime": {
+      "model-violet": {
+        "role": "primary",
+        "displayName": "Model Violet",
+        "canonical": "#4938df",
+        "tonalRamp": ["oklch(15% 0.105 285)", "oklch(25% 0.150 285)", "oklch(35% 0.195 285)", "oklch(45% 0.225 285)", "oklch(55% 0.230 285)", "oklch(68% 0.195 285)", "oklch(82% 0.125 285)", "oklch(95% 0.045 285)"]
+      },
+      "constraint-lime": {
         "role": "secondary",
-        "displayName": "Reveal Lime",
-        "canonical": "#c9f05b",
-        "tonalRamp": ["oklch(15% 0.100 115)", "oklch(25% 0.125 115)", "oklch(35% 0.150 115)", "oklch(45% 0.170 115)", "oklch(55% 0.180 115)", "oklch(68% 0.175 115)", "oklch(82% 0.150 115)", "oklch(95% 0.080 115)"]
+        "displayName": "Constraint Lime",
+        "canonical": "#d9ff67",
+        "tonalRamp": ["oklch(15% 0.095 115)", "oklch(25% 0.125 115)", "oklch(35% 0.155 115)", "oklch(45% 0.185 115)", "oklch(55% 0.205 115)", "oklch(68% 0.205 115)", "oklch(82% 0.175 115)", "oklch(95% 0.090 115)"]
       },
-      "focus-orange": {
+      "focus-coral": {
         "role": "tertiary",
-        "displayName": "Focus Orange",
-        "canonical": "#f28b38",
-        "tonalRamp": ["oklch(15% 0.085 55)", "oklch(25% 0.110 55)", "oklch(35% 0.135 55)", "oklch(45% 0.155 55)", "oklch(55% 0.170 55)", "oklch(68% 0.165 55)", "oklch(82% 0.120 55)", "oklch(95% 0.050 55)"]
+        "displayName": "Focus Coral",
+        "canonical": "#ff775f",
+        "tonalRamp": ["oklch(15% 0.080 30)", "oklch(25% 0.110 30)", "oklch(35% 0.140 30)", "oklch(45% 0.165 30)", "oklch(55% 0.180 30)", "oklch(68% 0.170 30)", "oklch(82% 0.115 30)", "oklch(95% 0.045 30)"]
       },
-      "constraint-red": {
-        "role": "tertiary",
-        "displayName": "Constraint Red",
-        "canonical": "#b8322a",
-        "tonalRamp": ["oklch(15% 0.080 28)", "oklch(25% 0.110 28)", "oklch(35% 0.140 28)", "oklch(45% 0.165 28)", "oklch(55% 0.175 28)", "oklch(68% 0.145 28)", "oklch(82% 0.090 28)", "oklch(95% 0.035 28)"]
-      },
-      "rule-line": {
+      "hairline": {
         "role": "neutral",
-        "displayName": "Shelf Rule",
-        "canonical": "#c9c7bd",
-        "tonalRamp": ["oklch(15% 0.010 90)", "oklch(25% 0.010 90)", "oklch(35% 0.010 90)", "oklch(45% 0.010 90)", "oklch(55% 0.010 90)", "oklch(68% 0.009 90)", "oklch(82% 0.008 90)", "oklch(95% 0.005 90)"]
+        "displayName": "Hairline",
+        "canonical": "#d7d2df",
+        "tonalRamp": ["oklch(15% 0.016 300)", "oklch(25% 0.016 300)", "oklch(35% 0.015 300)", "oklch(45% 0.014 300)", "oklch(55% 0.013 300)", "oklch(68% 0.011 300)", "oklch(82% 0.008 300)", "oklch(95% 0.004 300)"]
       },
       "white": {
         "role": "neutral",
@@ -70,150 +70,196 @@
         "canonical": "#ffffff",
         "tonalRamp": ["oklch(15% 0 0)", "oklch(25% 0 0)", "oklch(35% 0 0)", "oklch(45% 0 0)", "oklch(55% 0 0)", "oklch(68% 0 0)", "oklch(82% 0 0)", "oklch(100% 0 0)"]
       },
-      "blocked-soft": {
+      "on-ink-muted": {
+        "role": "neutral",
+        "displayName": "On-Ink Muted",
+        "canonical": "#afaab9",
+        "tonalRamp": ["oklch(15% 0.025 300)", "oklch(25% 0.025 300)", "oklch(35% 0.024 300)", "oklch(45% 0.022 300)", "oklch(55% 0.020 300)", "oklch(68% 0.017 300)", "oklch(82% 0.012 300)", "oklch(95% 0.006 300)"]
+      },
+      "data-muted": {
+        "role": "neutral",
+        "displayName": "Data Muted",
+        "canonical": "#746e7b",
+        "tonalRamp": ["oklch(15% 0.022 300)", "oklch(25% 0.022 300)", "oklch(35% 0.021 300)", "oklch(45% 0.020 300)", "oklch(55% 0.018 300)", "oklch(68% 0.015 300)", "oklch(82% 0.010 300)", "oklch(95% 0.005 300)"]
+      },
+      "result-muted": {
+        "role": "neutral",
+        "displayName": "Result Muted",
+        "canonical": "#403a47",
+        "tonalRamp": ["oklch(15% 0.025 300)", "oklch(25% 0.025 300)", "oklch(35% 0.024 300)", "oklch(45% 0.022 300)", "oklch(55% 0.020 300)", "oklch(68% 0.016 300)", "oklch(82% 0.010 300)", "oklch(95% 0.005 300)"]
+      },
+      "warning-red": {
         "role": "tertiary",
-        "displayName": "Blocked Soft",
-        "canonical": "#ffd2cd",
-        "tonalRamp": ["oklch(15% 0.035 28)", "oklch(25% 0.045 28)", "oklch(35% 0.055 28)", "oklch(45% 0.060 28)", "oklch(55% 0.062 28)", "oklch(68% 0.058 28)", "oklch(82% 0.045 28)", "oklch(95% 0.022 28)"]
+        "displayName": "Warning Red",
+        "canonical": "#b43827",
+        "tonalRamp": ["oklch(15% 0.080 28)", "oklch(25% 0.110 28)", "oklch(35% 0.140 28)", "oklch(45% 0.165 28)", "oklch(55% 0.175 28)", "oklch(68% 0.145 28)", "oklch(82% 0.090 28)", "oklch(95% 0.035 28)"]
+      },
+      "pass-green": {
+        "role": "secondary",
+        "displayName": "Pass Green",
+        "canonical": "#287a3f",
+        "tonalRamp": ["oklch(15% 0.075 145)", "oklch(25% 0.090 145)", "oklch(35% 0.105 145)", "oklch(45% 0.115 145)", "oklch(55% 0.110 145)", "oklch(68% 0.085 145)", "oklch(82% 0.050 145)", "oklch(95% 0.020 145)"]
+      },
+      "block-red": {
+        "role": "tertiary",
+        "displayName": "Block Red",
+        "canonical": "#c53d29",
+        "tonalRamp": ["oklch(15% 0.085 28)", "oklch(25% 0.115 28)", "oklch(35% 0.145 28)", "oklch(45% 0.170 28)", "oklch(55% 0.180 28)", "oklch(68% 0.150 28)", "oklch(82% 0.095 28)", "oklch(95% 0.035 28)"]
+      },
+      "block-paper": {
+        "role": "tertiary",
+        "displayName": "Block Paper",
+        "canonical": "#fff0ec",
+        "tonalRamp": ["oklch(15% 0.025 28)", "oklch(25% 0.030 28)", "oklch(35% 0.035 28)", "oklch(45% 0.040 28)", "oklch(55% 0.042 28)", "oklch(68% 0.038 28)", "oklch(82% 0.028 28)", "oklch(95% 0.014 28)"]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Mission Display", "purpose": "The shopper mission and largest invitation only." },
-      "headline": { "displayName": "Model Headline", "purpose": "The model panel heading and comparable reveal statements." },
-      "title": { "displayName": "Result Title", "purpose": "Dinner names, result messages, and compact strong statements." },
-      "body": { "displayName": "Operational Body", "purpose": "Instructions, disclosures, and short explanations." },
-      "label": { "displayName": "Shelf Label", "purpose": "Uppercase eyebrows and bounded state labels." },
-      "data": { "displayName": "Decision Data", "purpose": "Prices, timing, indices, runtime, percentages, and footer doctrine." }
+      "display": { "displayName": "Quick-Draw Display", "purpose": "The two-line invitation only." },
+      "headline": { "displayName": "Question and Reveal", "purpose": "The basket question and Same call/Different call result hierarchy." },
+      "title": { "displayName": "Household Voice", "purpose": "The quoted shopping brief." },
+      "body": { "displayName": "Operational Body", "purpose": "Instructions, facts, policy rationale, and disclosure." },
+      "label": { "displayName": "Receipt Label", "purpose": "Budget, choices, comparison labels, probabilities, and doctrine." }
     },
     "shadows": [
-      { "name": "selected-inset", "value": "inset 0 0 0 2px #13241c", "purpose": "Reinforces the selected radio card without changing layout." },
-      { "name": "plate-contact", "value": "0 2px 0 rgba(19,36,28,.13)", "purpose": "Grounds a geometric food illustration inside its circular plate." }
+      { "name": "decision-stage-lift", "value": "0 24px 65px rgba(58, 46, 111, .14)", "purpose": "Binds the brief and answer sheet into one elevated desktop decision object." },
+      { "name": "compact-stage-lift", "value": "0 18px 45px rgba(58, 46, 111, .13)", "purpose": "Preserves the same single-object lift on compact screens." }
     ],
     "motion": [
-      { "name": "choice-state", "value": "border-color .18s ease, box-shadow .18s ease, transform .18s ease", "purpose": "Dinner-card hover and selected-state response." },
-      { "name": "toast-state", "value": "transform .2s ease, opacity .2s ease", "purpose": "Polite share-feedback toast entrance and exit." },
-      { "name": "reduced-motion", "value": "transition-duration: .01ms", "purpose": "Collapses all transitions when reduced motion is requested." }
+      { "name": "answer-state", "value": "color .16s ease, background .16s ease", "purpose": "Immediate answer-row hover response." },
+      { "name": "directional-arrow", "value": "transform .16s cubic-bezier(.2,.8,.2,1)", "purpose": "Moves answer and model-link arrows 3px toward their destination." },
+      { "name": "choice-exit", "value": "opacity .18s ease, transform .18s cubic-bezier(.2,.8,.2,1)", "purpose": "Fades and slides the answer sheet left before reveal." },
+      { "name": "result-entry", "value": "reveal .44s cubic-bezier(.16,1,.3,1)", "purpose": "Reveals result content downward-to-rest with opacity and clip-path." },
+      { "name": "toast-state", "value": "transform .2s ease, opacity .2s ease", "purpose": "Presents share feedback from below the viewport." },
+      { "name": "reduced-motion", "value": "animation-duration: .01ms; transition-duration: .01ms", "purpose": "Collapses animation and transition durations; JavaScript also removes the handoff delay." }
     ],
     "breakpoints": [
-      { "name": "stacked-board", "value": "980px" },
+      { "name": "stacked-stage", "value": "900px" },
       { "name": "compact-mobile", "value": "620px" }
     ]
   },
   "components": [
     {
-      "name": "Topbar",
+      "name": "Transparent Topbar",
       "kind": "nav",
-      "refersTo": "topbar",
-      "description": "Dark application frame with product identity and precomputed runtime provenance.",
-      "html": "<header class=\"ds-topbar\"><strong>InferCrane</strong><span>Dinner Run</span><span class=\"ds-runtime\"><i></i> precomputed output · H200</span></header>",
-      "css": ".ds-topbar{height:66px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;padding:0 22px;color:var(--white,#fff);background:var(--ink,#13241c);border-radius:13px 13px 0 0;font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-topbar>span:nth-child(2){justify-self:center;font-weight:700}.ds-runtime{justify-self:end;display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;color:rgba(255,255,255,.62);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px;text-transform:uppercase;letter-spacing:.05em}.ds-runtime i{width:6px;height:6px;background:var(--lime,#c9f05b);border-radius:50%}"
+      "description": "Lavender-ground navigation with brand, centered demo name, and persistent model access.",
+      "html": "<header class=\"ds-topbar\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-brand-mark\"><i></i><i></i><i></i></span><strong>InferCrane</strong></a><span class=\"ds-demo-name\">The €18 Agent Test</span><a class=\"ds-model-link\" href=\"#\">Open model <svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a></header>",
+      "css": ".ds-topbar{min-height:68px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;color:var(--ink,#17151f);background:var(--ground,#f2f0ff);border-bottom:1px solid rgba(23,21,31,.16);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-brand,.ds-model-link{display:inline-flex;align-items:center;text-decoration:none}.ds-brand{justify-self:start;gap:11px}.ds-brand strong{font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-size:17px;letter-spacing:-.02em}.ds-brand-mark{position:relative;width:28px;height:26px}.ds-brand-mark i{position:absolute;left:2px;width:24px;height:5px;background:var(--ink,#17151f);transform:skewX(-32deg)}.ds-brand-mark i:nth-child(1){top:2px}.ds-brand-mark i:nth-child(2){top:10px;left:6px;width:20px}.ds-brand-mark i:nth-child(3){top:18px;left:10px;width:16px}.ds-demo-name{justify-self:center;font-size:13px;font-weight:700}.ds-model-link{justify-self:end;gap:7px;font-size:12px;font-weight:700}.ds-model-link svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;transition:transform .18s cubic-bezier(.2,.8,.2,1)}.ds-model-link:hover svg{transform:translateX(3px)}.ds-model-link:focus-visible{outline:3px solid var(--coral,#ff775f);outline-offset:4px}"
     },
     {
-      "name": "Runtime Pill",
-      "kind": "chip",
-      "refersTo": "runtime-pill",
-      "description": "Persistent factual label distinguishing precomputed output from live inference.",
-      "html": "<span class=\"ds-runtime-pill\"><i></i> precomputed output · H200</span>",
-      "css": ".ds-runtime-pill{display:inline-flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;color:rgba(255,255,255,.62);background:var(--ink,#13241c);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px;text-transform:uppercase;letter-spacing:.05em}.ds-runtime-pill i{width:6px;height:6px;background:var(--lime,#c9f05b);border-radius:50%}"
-    },
-    {
-      "name": "Dinner Choice Card",
+      "name": "Ink Household Brief",
       "kind": "card",
-      "refersTo": "dinner-card",
-      "description": "Radio-backed basket option with geometric dish, bounded facts, and robust hover/focus states.",
-      "html": "<label class=\"ds-dinner-card\"><input type=\"radio\" name=\"ds-dinner\"><span class=\"ds-plate\">A</span><span><strong>Tomato lentil spaghetti</strong><small>28 min · €8.45</small></span><b>A</b></label>",
-      "css": ".ds-dinner-card{position:relative;min-height:148px;display:grid;grid-template-columns:94px 1fr;align-items:center;gap:15px;padding:14px;border:1px solid var(--line,#c9c7bd);color:var(--ink,#13241c);background:var(--paper,#f4f0e7);cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-dinner-card:hover{border-color:var(--ink,#13241c);transform:translateY(-2px)}.ds-dinner-card:focus-within{outline:3px solid var(--orange,#f28b38);outline-offset:2px}.ds-dinner-card:has(input:checked){border-color:var(--ink,#13241c);box-shadow:inset 0 0 0 2px var(--ink,#13241c);background:var(--paper-2,#fffdf7)}.ds-dinner-card input{position:absolute;opacity:0}.ds-dinner-card strong,.ds-dinner-card small{display:block}.ds-dinner-card small{margin-top:8px;color:var(--muted,#617068);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px}.ds-dinner-card>b{position:absolute;top:8px;right:9px;color:#91958f;font-family:var(--mono,monospace);font-size:10px}.ds-plate{width:88px;height:88px;display:grid;place-items:center;border:1px solid var(--line,#c9c7bd);border-radius:50%;background:#e8e2d4;font-family:var(--display,\"Archivo Black\",sans-serif)}"
+      "refersTo": "brief-panel",
+      "description": "Scenario anchor combining a human sender, quoted need, hard constraints, and lime budget.",
+      "html": "<aside class=\"ds-brief\"><div class=\"ds-speaker\"><span>M</span><div><strong>Maya briefed her shopping agent</strong><small>Customer request · synthetic scenario</small></div></div><blockquote>“Dinner for four tonight. One guest has a serious nut allergy.”</blockquote><ul><li>4 adults</li><li>30 min maximum</li><li>Vegetarian</li><li>Strictly nut-free</li></ul><div class=\"ds-budget\"><small>Budget · total maximum</small><strong>€18</strong></div></aside>",
+      "css": ".ds-brief{position:relative;overflow:hidden;max-width:430px;padding:36px;color:#fff;background:var(--ink,#17151f);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-brief:after{content:\"\";position:absolute;right:-42px;bottom:-60px;width:200px;height:200px;border:36px solid rgba(217,255,103,.09);border-radius:50%}.ds-speaker{display:flex;align-items:center;gap:12px}.ds-speaker>span{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;color:var(--ink,#17151f);background:var(--lime,#d9ff67);font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-weight:700}.ds-speaker strong,.ds-speaker small{display:block}.ds-speaker small{margin-top:3px;color:#afaab9;font-size:11px}.ds-brief blockquote{margin:32px 0 28px;font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-size:2rem;font-weight:600;line-height:1.08;letter-spacing:-.03em}.ds-brief ul{display:grid;grid-template-columns:1fr 1fr;margin:0;padding:0;border-top:1px solid #3c3943;list-style:none}.ds-brief li{padding:15px 8px;border-bottom:1px solid #3c3943;color:#fff;font-size:12px}.ds-budget{position:relative;z-index:1;display:flex;align-items:end;justify-content:space-between;margin-top:28px}.ds-budget small{color:#afaab9;font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:9px;text-transform:uppercase}.ds-budget strong{color:var(--lime,#d9ff67);font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-size:3.25rem;line-height:.82}"
     },
     {
-      "name": "Model State Pill",
-      "kind": "chip",
-      "refersTo": "state-pill-revealed",
-      "description": "Compact sealed/revealed status; revealed uses lime plus explicit text.",
-      "html": "<span class=\"ds-model-state ds-is-revealed\">Revealed</span>",
-      "css": ".ds-model-state{display:inline-block;padding:7px 10px;border:1px solid rgba(255,255,255,.32);border-radius:999px;color:rgba(255,255,255,.65);background:var(--green,#173f2d);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:9px;text-transform:uppercase}.ds-model-state.ds-is-revealed{color:var(--ink,#13241c);background:var(--lime,#c9f05b);border-color:var(--lime,#c9f05b)}.ds-model-state:focus-visible{outline:3px solid var(--lime,#c9f05b);outline-offset:4px}"
+      "name": "Basket Answer Row",
+      "kind": "input",
+      "refersTo": "answer-row",
+      "description": "Full-row native radio answer with receipt facts, warning copy, and quick violet response.",
+      "html": "<label class=\"ds-answer\"><input type=\"radio\" name=\"ds-dinner\"><span class=\"ds-letter\">A</span><span class=\"ds-copy\"><strong>Tomato lentil spaghetti</strong><small>26g protein · 235g vegetables / person</small></span><span class=\"ds-facts\"><strong>€8.45</strong><small>28 min · nut-free</small></span><svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></label>",
+      "css": ".ds-answer{position:relative;display:grid;grid-template-columns:38px minmax(170px,1fr) minmax(145px,auto) 20px;align-items:center;gap:15px;padding:15px 2px;border-bottom:1px solid var(--line,#d7d2df);color:var(--ink,#17151f);background:transparent;cursor:pointer;font-family:var(--sans,\"DM Sans\",sans-serif);transition:color .16s ease,background .16s ease}.ds-answer:hover{color:#fff;background:var(--violet,#6d5dfc)}.ds-answer:focus-within{outline:3px solid var(--coral,#ff775f);outline-offset:3px}.ds-answer input{position:absolute;opacity:0;pointer-events:none}.ds-letter{width:31px;height:31px;display:grid;place-items:center;border:1px solid currentColor;border-radius:50%;font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px;font-weight:600}.ds-copy strong,.ds-copy small,.ds-facts strong,.ds-facts small{display:block}.ds-copy strong{font-size:14px}.ds-copy small,.ds-facts small{margin-top:4px;color:#746e7b;font-size:11px}.ds-facts{text-align:right}.ds-facts strong{font-family:var(--display,\"Bricolage Grotesque\",sans-serif);font-size:16px}.ds-answer:hover small{color:rgba(255,255,255,.74)}.ds-answer>svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;transition:transform .16s cubic-bezier(.2,.8,.2,1)}.ds-answer:hover>svg{transform:translateX(3px)}"
     },
     {
-      "name": "Choice Probability Distribution",
+      "name": "Human-versus-Model Comparison",
       "kind": "custom",
-      "description": "Complete four-basket-plus-None model distribution with separate blocked labeling.",
-      "html": "<div class=\"ds-probabilities\" aria-label=\"Commerce-1 Choice probabilities\"><div class=\"ds-prob ds-winner\"><span>Tomato lentil spaghetti</span><i><b style=\"width:82.99%\"></b></i><strong>82.99%</strong></div><div class=\"ds-prob ds-blocked\"><span>Cashew pesto pasta <em>ineligible</em></span><i><b style=\"width:.89%\"></b></i><strong>0.89%</strong></div></div>",
-      "css": ".ds-probabilities{padding:18px;color:#fff;background:var(--green,#173f2d);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-prob{display:grid;grid-template-columns:minmax(120px,1.25fr) minmax(80px,1fr) 52px;align-items:center;gap:10px;margin:10px 0;font-size:12px}.ds-prob>span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.ds-prob em{margin-left:4px;color:#ffd2cd;font-family:var(--mono,monospace);font-size:7px;font-style:normal;text-transform:uppercase}.ds-prob>i{height:7px;background:rgba(255,255,255,.13)}.ds-prob>i>b{display:block;min-width:3px;height:100%;background:rgba(255,255,255,.55)}.ds-prob.ds-winner>i>b{background:var(--lime,#c9f05b)}.ds-prob.ds-blocked>i>b{background:var(--red,#b8322a)}.ds-prob>strong{text-align:right;font-family:var(--mono,monospace);font-size:9px}"
+      "refersTo": "model-pick",
+      "description": "Recommendation comparison that gives Commerce-1 darker violet emphasis without turning probability into a score.",
+      "html": "<div class=\"ds-versus\"><div><span>Your agent recommends</span><strong>Black bean tacos</strong></div><b>vs</b><div class=\"ds-model-pick\"><span>Commerce-1 recommends</span><strong>Tomato lentil spaghetti</strong><small>82.99% probability</small></div></div>",
+      "css": ".ds-versus{display:grid;grid-template-columns:1fr 34px 1fr;align-items:center;gap:16px;color:var(--ink,#17151f);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-versus>div{min-width:0;padding:16px;background:var(--paper-2,#f8f5ed)}.ds-versus>b{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;color:#fff;background:var(--ink,#17151f);font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:9px;text-transform:uppercase}.ds-versus span,.ds-versus small{display:block;color:#403a47;font-size:11px}.ds-versus span{margin-bottom:5px;font-family:var(--mono,monospace);letter-spacing:.06em;text-transform:uppercase}.ds-versus strong{display:block;font-size:14px;line-height:1.25}.ds-versus small{margin-top:5px}.ds-versus .ds-model-pick{color:#fff;background:var(--violet-dark,#4938df)}.ds-versus .ds-model-pick span,.ds-versus .ds-model-pick small{color:rgba(255,255,255,.9)}"
     },
     {
-      "name": "Hard-Rule Pass Slip",
+      "name": "Checkout-Code Pass",
       "kind": "custom",
-      "refersTo": "rule-result",
-      "description": "Code-owned proceed result, stated through icon, label, headline, and supporting checks.",
-      "html": "<div class=\"ds-rule ds-pass\"><svg viewBox=\"0 0 24 24\"><path d=\"m5 12 4 4L19 6\"/></svg><div><span>Hard-rule check</span><strong>Eligible to continue</strong><p>Within budget, vegetarian, under 30 minutes, and no declared nut warning.</p></div></div>",
-      "css": ".ds-rule{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:15px;color:var(--ink,#13241c);background:var(--paper-2,#fffdf7);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-rule svg{width:28px;height:28px;fill:none;stroke:var(--green-2,#2f6c4b);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-rule span,.ds-rule strong{display:block}.ds-rule span{color:var(--muted,#617068);font-family:var(--mono,monospace);font-size:8px;text-transform:uppercase}.ds-rule strong{margin-top:3px;font-size:14px}.ds-rule p{margin:3px 0 0;color:var(--muted,#617068);font-size:10px}"
+      "refersTo": "policy-pass",
+      "description": "Deterministic proceed state, kept distinct from model probability.",
+      "html": "<div class=\"ds-policy ds-pass\"><svg viewBox=\"0 0 24 24\"><path d=\"m5 12 4 4L19 6\"/></svg><div><span>Checkout code</span><strong>Safe to continue</strong><p>This basket satisfies the budget, time, vegetarian, servings, and declared nut-free rules.</p></div></div>",
+      "css": ".ds-policy{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:15px 16px;border:1px solid var(--line,#d7d2df);color:var(--ink,#17151f);background:var(--paper,#fffdf8);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-policy>svg{width:27px;height:27px;fill:none;stroke:#287a3f;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-policy span,.ds-policy strong{display:block}.ds-policy span{color:#403a47;font-family:var(--mono,monospace);font-size:10px;letter-spacing:.06em;text-transform:uppercase}.ds-policy strong{margin-top:3px;font-size:13px}.ds-policy p{margin:3px 0 0;color:#403a47;font-size:12px;line-height:1.4}"
     },
     {
-      "name": "Hard-Rule Block Slip",
+      "name": "Checkout-Code Block",
       "kind": "custom",
-      "refersTo": "rule-result",
-      "description": "Policy block variant with explicit checkout boundary and concrete allergy reason.",
-      "html": "<div class=\"ds-rule ds-block\"><svg viewBox=\"0 0 24 24\"><path d=\"m6 6 12 12M18 6 6 18\"/></svg><div><span>Hard-rule check</span><strong>Blocked before checkout</strong><p>Contains cashew. The strict nut-free rule overrides the model ranking.</p></div></div>",
-      "css": ".ds-rule{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:15px;color:var(--ink,#13241c);background:var(--paper-2,#fffdf7);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-rule svg{width:28px;height:28px;fill:none;stroke:var(--red,#b8322a);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-rule span,.ds-rule strong{display:block}.ds-rule span{color:var(--muted,#617068);font-family:var(--mono,monospace);font-size:8px;text-transform:uppercase}.ds-rule strong{margin-top:3px;font-size:14px}.ds-rule p{margin:3px 0 0;color:var(--muted,#617068);font-size:10px}"
+      "refersTo": "policy-block",
+      "description": "Deterministic allergy block with explicit reason and model-independent authority.",
+      "html": "<div class=\"ds-policy ds-block\"><svg viewBox=\"0 0 24 24\"><path d=\"m6 6 12 12M18 6 6 18\"/></svg><div><span>Checkout code</span><strong>Blocked: contains cashew</strong><p>The allergy rule stops this basket before checkout, independently of the model.</p></div></div>",
+      "css": ".ds-policy{display:grid;grid-template-columns:34px 1fr;gap:13px;padding:15px 16px;border:1px solid #d95b47;color:var(--ink,#17151f);background:#fff0ec;font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-policy>svg{width:27px;height:27px;fill:none;stroke:#c53d29;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.ds-policy span,.ds-policy strong{display:block}.ds-policy span{color:#403a47;font-family:var(--mono,monospace);font-size:10px;letter-spacing:.06em;text-transform:uppercase}.ds-policy strong{margin-top:3px;font-size:13px}.ds-policy p{margin:3px 0 0;color:#403a47;font-size:12px;line-height:1.4}"
     },
     {
-      "name": "Result Action Button",
+      "name": "Primary Result Button",
       "kind": "button",
-      "refersTo": "action-button",
-      "description": "Equal-weight share/reset action on the model field.",
-      "html": "<button class=\"ds-result-action\" type=\"button\"><svg viewBox=\"0 0 24 24\"><circle cx=\"18\" cy=\"5\" r=\"2.5\"/><circle cx=\"6\" cy=\"12\" r=\"2.5\"/><circle cx=\"18\" cy=\"19\" r=\"2.5\"/><path d=\"m8.2 10.8 7.6-4.5m-7.6 6.9 7.6 4.5\"/></svg>Share result</button>",
-      "css": ".ds-result-action{min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 14px;border:1px solid rgba(255,255,255,.35);color:#fff;background:var(--green,#173f2d);cursor:pointer;font-family:var(--sans,\"DM Sans\",sans-serif);font-size:12px;font-weight:700}.ds-result-action:hover,.ds-result-action:focus-visible{color:var(--ink,#13241c);background:var(--lime,#c9f05b);border-color:var(--lime,#c9f05b);outline:none}.ds-result-action:active{transform:translateY(1px)}.ds-result-action svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}"
+      "refersTo": "button-primary",
+      "description": "Ink-filled Play again action that turns violet on hover or focus.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 11a8 8 0 1 1 2.3 6M4 11V5m0 6h6\"/></svg>Play again</button>",
+      "css": ".ds-btn-primary{min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 15px;border:1px solid var(--ink,#17151f);color:#fff;background:var(--ink,#17151f);cursor:pointer;font-family:var(--sans,\"DM Sans\",sans-serif);font-size:11px;font-weight:700}.ds-btn-primary:hover,.ds-btn-primary:focus-visible{color:#fff;background:var(--violet,#6d5dfc);border-color:var(--violet,#6d5dfc);outline:none}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}"
     },
     {
-      "name": "Evidence Link",
+      "name": "Secondary Result Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Transparent Share result action with the same violet hover/focus response.",
+      "html": "<button class=\"ds-btn-secondary\" type=\"button\"><svg viewBox=\"0 0 24 24\"><circle cx=\"18\" cy=\"5\" r=\"2.5\"/><circle cx=\"6\" cy=\"12\" r=\"2.5\"/><circle cx=\"18\" cy=\"19\" r=\"2.5\"/><path d=\"m8.2 10.8 7.6-4.5m-7.6 6.9 7.6 4.5\"/></svg>Share result</button>",
+      "css": ".ds-btn-secondary{min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 15px;border:1px solid var(--ink,#17151f);color:var(--ink,#17151f);background:transparent;cursor:pointer;font-family:var(--sans,\"DM Sans\",sans-serif);font-size:11px;font-weight:700}.ds-btn-secondary:hover,.ds-btn-secondary:focus-visible{color:#fff;background:var(--violet,#6d5dfc);border-color:var(--violet,#6d5dfc);outline:none}.ds-btn-secondary:active{transform:translateY(1px)}.ds-btn-secondary svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Evidence Drawer",
       "kind": "custom",
-      "description": "Quiet but persistent path from the revealed UI to the public inference receipt.",
-      "html": "<a class=\"ds-evidence-link\" href=\"#\">Open the inference receipt <svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a>",
-      "css": ".ds-evidence-link{display:inline-flex;align-items:center;gap:7px;padding:4px 0;color:rgba(255,255,255,.66);background:var(--green,#173f2d);font-family:var(--sans,\"DM Sans\",sans-serif);font-size:11px}.ds-evidence-link:hover{color:#fff}.ds-evidence-link:focus-visible{outline:3px solid var(--lime,#c9f05b);outline-offset:4px}.ds-evidence-link svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}"
+      "description": "Native disclosure for the full Choice distribution, precomputed-output boundary, and receipt link.",
+      "html": "<details class=\"ds-evidence\"><summary>See model probabilities and evidence</summary><div class=\"ds-prob ds-winner\"><span>Tomato lentil spaghetti</span><i><b style=\"width:82.99%\"></b></i><strong>82.99%</strong></div><div class=\"ds-prob ds-blocked\"><span>Cashew pesto pasta <em>ineligible</em></span><i><b style=\"width:.89%\"></b></i><strong>0.89%</strong></div><p>Real precomputed output from the public Commerce-1 artifact on NVIDIA H200.</p><a href=\"#\">Open inference receipt</a></details>",
+      "css": ".ds-evidence{padding-top:16px;border-top:1px solid var(--line,#d7d2df);color:var(--ink,#17151f);background:var(--paper,#fffdf8);font-family:var(--sans,\"DM Sans\",sans-serif)}.ds-evidence summary{padding:14px 0 6px;cursor:pointer;color:var(--ink-soft,#514d5b);font-size:12px;font-weight:700}.ds-evidence summary:hover{color:var(--ink,#17151f)}.ds-evidence summary:focus-visible{outline:3px solid var(--coral,#ff775f);outline-offset:3px}.ds-prob{display:grid;grid-template-columns:minmax(130px,1.25fr) minmax(80px,1fr) 54px;align-items:center;gap:10px;margin:8px 0;font-size:11px}.ds-prob>span em{margin-left:5px;color:#b43827;font-family:var(--mono,monospace);font-size:9px;font-style:normal;font-weight:700;text-transform:uppercase}.ds-prob>i{height:6px;background:#e4e0e9}.ds-prob>i>b{display:block;min-width:3px;height:100%;background:#9f98aa}.ds-prob.ds-winner>i>b{background:var(--violet,#6d5dfc)}.ds-prob.ds-blocked>i>b{background:var(--coral,#ff775f)}.ds-prob>strong{text-align:right;font-family:var(--mono,\"IBM Plex Mono\",monospace)}.ds-evidence p{color:#746e7b;font-size:12px;line-height:1.45}.ds-evidence a{font-size:12px;font-weight:700;text-underline-offset:4px}"
+    },
+    {
+      "name": "Explainer Fact Pill",
+      "kind": "chip",
+      "description": "Compact outlined fact for open weights, typed decisions, or zero generated tokens.",
+      "html": "<span class=\"ds-fact-pill\">Typed decisions</span>",
+      "css": ".ds-fact-pill{display:inline-block;padding:7px 9px;border:1px solid #c4bdcf;border-radius:999px;color:var(--ink,#17151f);background:transparent;font-family:var(--mono,\"IBM Plex Mono\",monospace);font-size:10px;white-space:nowrap}.ds-fact-pill:hover{border-color:var(--violet,#6d5dfc);color:var(--violet,#6d5dfc)}"
     }
   ],
   "narrative": {
-    "northStar": "The Supermarket Shelf-Edge Decision Arcade",
-    "overview": "Dinner Run turns a bounded AI choice into a compact, tactile game board. The warm paper half is the shopper's familiar decision surface; the deep green half is the sealed machine readout. Shelf labels, price tickets, lettered options, geometric plate illustrations, and terse mono data make the interaction feel like a fictional supermarket without imitating a real retailer.\n\nThe system is energetic but evidentiary. Oversized black display type creates the arcade invitation, while quiet body copy and mono labels specify what is synthetic, what is precomputed, and what deterministic code controls. The reveal is not spectacle for its own sake: it exposes the complete Choice distribution, identifies the human selection, and keeps the hard-rule result visually and semantically separate from model probability.\n\nThis is an Operate surface with a one-click path: choose one complete basket, see Commerce-1's choice, inspect policy, then share or reset. The finish-contract seed is 6c956125. The current visual regression anchors are assets/dinner-run-sealed.png, assets/dinner-run-result.png, and assets/dinner-run-mobile.png; implementation tokens and behavior remain the source of truth.",
+    "northStar": "The Checkout Quick Draw",
+    "overview": "The €18 Agent Test makes one bounded AI decision feel like a twenty-second human game, not a model dashboard. A spacious lavender ground holds one elevated decision stage. Inside it, a near-black customer brief states the stakes and non-negotiable constraints; a warm paper answer sheet asks one plain-language recommendation question. Bricolage Grotesque brings game-show immediacy, while receipt-like mono facts keep price, time, state, and probability precise.\n\nThe interaction is intentionally sequential. The first state contains the scenario and four complete answers but no model output. A user commits to one basket, the answer sheet changes in place, and only then does Commerce-1 appear alongside the code-owned checkout result. Violet signals action and revealed model material; electric lime calls out fixed constraints and budget; neither is allowed to blur model probability with policy authority.\n\nThe system is playful, candid, and materially simple: lavender tabletop, ink brief, paper answer/result panel, violet action, lime constraints. It rejects model-control-room density, retailer imitation, product photography, and decorative data visualization. The interface should remain understandable from the first question and evidentiary after the reveal.",
     "keyCharacteristics": [
-      "A near-equal paper/green split that reads as human choice versus model evidence.",
-      "Bold, tightly tracked display typography paired with restrained sans copy and mono facts.",
-      "Flat, rule-led surfaces with only a small hover lift and inset selection emphasis.",
-      "Original geometric dinner illustrations instead of product photography or retailer mimicry.",
-      "Claim boundaries embedded in the interface, not deferred to a legal footer.",
-      "A sealed-to-revealed state change that works with keyboard, touch, and reduced motion."
+      "One large, softly elevated decision stage on a quiet lavender field.",
+      "An ink brief paired with a paper answer sheet, like a note beside a checkout form.",
+      "Bricolage Grotesque for the human game voice; DM Sans and IBM Plex Mono for operational facts.",
+      "Violet reserved for action, comparison, and revealed model emphasis.",
+      "Lime reserved for people, constraints, budget, and text selection—not model confidence.",
+      "A one-question choice-to-reveal flow with the full probability distribution kept in an evidence drawer."
     ],
     "rules": [
-      { "name": "The Choice-Before-Reveal Rule", "body": "Commerce-1's answer stays sealed until the user selects one of the same four frozen baskets.", "section": "overview" },
-      { "name": "The Evidence-After-Action Rule", "body": "The first interaction earns the reveal; the resulting view must expose model probabilities, the code-owned hard-rule result, and a direct evidence-receipt link together.", "section": "overview" },
-      { "name": "The Dark Green Is Evidence Rule", "body": "Reserve the large green field for model state, probabilities, and policy outcome; do not let it become a generic marketing background.", "section": "colors" },
-      { "name": "The Signal Needs Language Rule", "body": "Lime, red, and green never carry pass, block, selected, or revealed meaning alone; pair them with labels, icons, border changes, or state copy.", "section": "colors" },
-      { "name": "The Facts Use Mono Rule", "body": "Use IBM Plex Mono for bounded facts and system state, not for narrative paragraphs or primary calls to action.", "section": "typography" },
-      { "name": "The Display Stays Blunt Rule", "body": "Archivo Black is for the mission and reveal hierarchy; never use it as body copy or shrink it into dense utility labels.", "section": "typography" },
-      { "name": "The Same Decision on Every Width Rule", "body": "Responsive changes may reflow the four baskets, but may not reorder, omit, or summarize them differently from desktop.", "section": "layout" },
-      { "name": "The Paired Halves Rule", "body": "On desktop, paper and green must read as one bordered instrument; on mobile, preserve their sequence and shared outer frame rather than turning them into unrelated cards.", "section": "layout" },
-      { "name": "The Flat Instrument Rule", "body": "Do not add generic drop shadows, glass effects, or layered marketing cards; the board should feel printed, bounded, and directly operable.", "section": "elevation" },
-      { "name": "The State Motion Rule", "body": "Use short 180–200ms transitions for hover, focus, and toast state only, and collapse them to near-zero under prefers-reduced-motion.", "section": "elevation" },
-      { "name": "The Square Surface, Round Status Rule", "body": "Content and actions stay rectilinear; only food plates and compact status indicators become circular or pill-shaped.", "section": "shapes" }
+      { "name": "The Human Commits First Rule", "body": "Do not show Commerce-1's answer, probability, or policy result until the user chooses one supplied basket.", "section": "overview" },
+      { "name": "The One Question Rule", "body": "Keep the primary flow to one scenario, one four-option question, one reveal, and one reset; explanation lives after the decision.", "section": "overview" },
+      { "name": "The Lavender Is Atmosphere Rule", "body": "Use lavender around the decision object, not inside every component; paper and ink must keep the central stage legible.", "section": "colors" },
+      { "name": "The Violet Means Reveal Rule", "body": "Violet carries action or revealed model emphasis. It must not imply policy approval, allergy safety, or model correctness.", "section": "colors" },
+      { "name": "The Lime Means Constraint Rule", "body": "Lime marks the human brief and its fixed limits. Never use it as a probability winner color or a generic success badge.", "section": "colors" },
+      { "name": "The Game Voice Leads Rule", "body": "Use Bricolage Grotesque for the invitation, question, quoted brief, price emphasis, and reveal headline; never use it for dense evidence copy.", "section": "typography" },
+      { "name": "The Receipt Facts Rule", "body": "Use IBM Plex Mono only for bounded labels and values that benefit from a factual, scanned quality.", "section": "typography" },
+      { "name": "The Brief Persists Rule", "body": "The household constraints remain visible while the result replaces the answer list; do not navigate to a detached result page.", "section": "layout" },
+      { "name": "The Safety Facts Survive Rule", "body": "Responsive compression may hide secondary nutrition detail, but never price, time, nut-status, the €18 limit, or the checkout-code result.", "section": "layout" },
+      { "name": "The One Elevated Object Rule", "body": "Elevate the complete decision stage, not its rows, comparison blocks, policy slips, or evidence details.", "section": "elevation" },
+      { "name": "The Reveal Motion Rule", "body": "Choice exit lasts 180ms; result entry lasts 440ms with a short downward-to-rest reveal. Reduced-motion mode collapses both animation and the JavaScript handoff delay.", "section": "elevation" },
+      { "name": "The Soft Frame, Sharp Answer Rule", "body": "Round the enclosing stage and compact markers; keep answer, result, evidence, and action surfaces square and direct.", "section": "shapes" }
     ],
     "dos": [
-      "Do preserve the paper-left / green-right decision-and-evidence relationship on wide screens and the same order on narrow screens.",
-      "Do show all four candidate baskets plus None whenever the Choice distribution is shown.",
-      "Do label 82.99% as a model Choice probability and keep the hard-rule result in its own light slip.",
-      "Do keep synthetic-data and precomputed-output disclosures visible before selection, then link the exact inference receipt after reveal.",
-      "Do use text, icons, border changes, and state labels alongside color for selected, revealed, eligible, and blocked states.",
-      "Do preserve visible focus, radio semantics, arrow-key operation, focus transfer to changed content, live toast status, and reduced-motion behavior.",
-      "Do use ‘basket,’ ‘choice,’ ‘continue,’ ‘blocked,’ or ‘reveal’ language for the interaction; reserve ‘checkout’ for the explicit authority boundary.",
-      "Do maintain assets/PROVENANCE.json whenever a shipping screenshot is added or recaptured; record its hash, pixel dimensions, UI state, selected basket, source hashes, and evidence receipt."
+      "Do keep the lavender ground, ink brief, and paper answer/result panel as the three dominant material layers.",
+      "Do preserve the one-question flow: human choice first, result second, detailed probabilities on demand.",
+      "Do keep the household brief visible beside or above the result so policy remains grounded in the original constraints.",
+      "Do use violet for action and revealed model emphasis, lime for fixed brief constraints, and coral for focus or blocked evidence.",
+      "Do preserve native radio semantics, Up/Down keyboard focus, programmatic focus on the result headline, reset focus, polite share feedback, and reduced-motion handling.",
+      "Do show price, time, nut status, checkout-code result, and the €18 limit at every supported width.",
+      "Do label 82.99% as model probability and keep the checkout-code result visually and verbally separate.",
+      "Do keep the public inference receipt reachable from the revealed state and disclose that the scenario is synthetic and the output precomputed."
     ],
     "donts": [
-      "Don't present the 82.99% probability as a score, policy verdict, success rate, benchmark, or explanation generated by Commerce-1.",
-      "Don't imply live inference, store browsing, recipe generation, payment processing, or autonomous checkout.",
-      "Don't collapse the model output and deterministic hard-rule check into one pass/fail message.",
-      "Don't use red, lime, or green as the sole carrier of meaning, especially for the nut-allergy block.",
-      "Don't replace the original geometric meals with food photography, emoji, retailer assets, or realistic branded packaging.",
-      "Don't add generic rounded cards, gradients, glassmorphism, ambient shadows, or decorative dashboards that weaken the shelf-edge instrument character.",
-      "Don't remove the precomputed H200 pill, the initial disclosure hint, the method boundaries, or the inference-receipt link to gain visual space.",
-      "Don't treat the screenshots as stronger evidence than code and evidence/mission-1-public.json; they are audited presentation artifacts, not the claim source."
+      "Don't show Commerce-1's choice before the user commits or turn the opening state into a model dashboard.",
+      "Don't use lime as model confidence, violet as policy approval, or color alone as the carrier of safety meaning.",
+      "Don't call 82.99% a score, pass rate, policy verdict, benchmark, generated rationale, or checkout authority.",
+      "Don't imply live inference, autonomous purchase, real-store facts, nutrition advice, or an allergy guarantee.",
+      "Don't detach the result from the brief, merge model probability with deterministic policy, or hide the block reason inside the evidence drawer.",
+      "Don't add food photography, retailer branding, gradients, glass effects, nested card shadows, or dashboard chrome.",
+      "Don't round answer rows, comparison blocks, policy slips, or action buttons; the outer stage owns the softness.",
+      "Don't hide the Open model link, evidence receipt, project links, or core claim boundaries to save space."
     ]
   }
 }

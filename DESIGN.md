@@ -1,301 +1,318 @@
 ---
-name: "Dinner Run — Commerce-1"
-description: "A supermarket shelf-edge decision arcade that makes one bounded model choice and its evidence legible at a glance."
+name: "The €18 Agent Test"
+description: "A one-question shopping-agent quick draw that reveals a typed Commerce-1 decision only after the human commits."
 colors:
-  ink: "#13241c"
-  muted: "#617068"
-  paper: "#f4f0e7"
-  paper-bright: "#fffdf7"
-  decision-green: "#173f2d"
-  pass-green: "#2f6c4b"
-  reveal-lime: "#c9f05b"
-  focus-orange: "#f28b38"
-  constraint-red: "#b8322a"
-  rule-line: "#c9c7bd"
+  ink: "#17151f"
+  ink-soft: "#514d5b"
+  lavender-ground: "#f2f0ff"
+  answer-paper: "#fffdf8"
+  warm-paper: "#f8f5ed"
+  action-violet: "#6d5dfc"
+  model-violet: "#4938df"
+  constraint-lime: "#d9ff67"
+  focus-coral: "#ff775f"
+  hairline: "#d7d2df"
   white: "#ffffff"
-  blocked-soft: "#ffd2cd"
+  on-ink-muted: "#afaab9"
+  data-muted: "#746e7b"
+  result-muted: "#403a47"
+  warning-red: "#b43827"
+  pass-green: "#287a3f"
+  block-red: "#c53d29"
+  block-paper: "#fff0ec"
 typography:
   display:
-    fontFamily: "Archivo Black, sans-serif"
-    fontSize: "clamp(3rem, 5.6vw, 6.2rem)"
-    fontWeight: 400
-    lineHeight: 0.91
-    letterSpacing: "-0.065em"
-  headline:
-    fontFamily: "Archivo Black, sans-serif"
-    fontSize: "clamp(2rem, 3.4vw, 3.8rem)"
-    fontWeight: 400
-    lineHeight: 0.95
-    letterSpacing: "-0.05em"
-  title:
-    fontFamily: "DM Sans, sans-serif"
-    fontSize: "17px"
+    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontSize: "clamp(3.2rem, 6.2vw, 5.75rem)"
     fontWeight: 700
-    lineHeight: 1.2
-    letterSpacing: "normal"
+    lineHeight: 0.9
+    letterSpacing: "-0.04em"
+  headline:
+    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontSize: "clamp(1.85rem, 3vw, 3rem)"
+    fontWeight: 600
+    lineHeight: 1
+    letterSpacing: "-0.035em"
+  title:
+    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontSize: "clamp(1.65rem, 2.5vw, 2.5rem)"
+    fontWeight: 600
+    lineHeight: 1.08
+    letterSpacing: "-0.03em"
   body:
     fontFamily: "DM Sans, sans-serif"
-    fontSize: "14px"
+    fontSize: "12px"
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: "normal"
   label:
     fontFamily: "IBM Plex Mono, monospace"
     fontSize: "10px"
-    fontWeight: 600
-    lineHeight: 1.2
-    letterSpacing: "0.1em"
-  data:
-    fontFamily: "IBM Plex Mono, monospace"
-    fontSize: "10px"
     fontWeight: 500
-    lineHeight: 1.4
-    letterSpacing: "0.05em"
+    lineHeight: 1.2
+    letterSpacing: "0.06em"
 rounded:
   square: "0px"
-  shell: "13px 13px 0 0"
+  stage: "16px"
+  stage-mobile: "13px"
   pill: "999px"
   circle: "50%"
 spacing:
-  xxs: "4px"
-  xs: "8px"
-  sm: "12px"
-  md: "18px"
-  lg: "28px"
-  xl: "60px"
+  xs: "6px"
+  sm: "10px"
+  md: "15px"
+  lg: "24px"
+  xl: "32px"
+  xxl: "48px"
 components:
-  topbar:
+  decision-stage:
+    backgroundColor: "{colors.answer-paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.stage}"
+  brief-panel:
     backgroundColor: "{colors.ink}"
     textColor: "{colors.white}"
-    rounded: "{rounded.shell}"
-    padding: "0 22px"
-    height: "66px"
-  runtime-pill:
+    rounded: "{rounded.square}"
+    padding: "clamp(28px, 3.3vw, 48px)"
+  answer-row:
     backgroundColor: "transparent"
-    textColor: "{colors.white}"
-    typography: "{typography.data}"
-    rounded: "{rounded.pill}"
-    padding: "9px 12px"
-  dinner-card:
-    backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
     typography: "{typography.body}"
     rounded: "{rounded.square}"
-    padding: "14px"
-  dinner-card-selected:
-    backgroundColor: "{colors.paper-bright}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body}"
-    rounded: "{rounded.square}"
-    padding: "14px"
-  action-button:
-    backgroundColor: "transparent"
+    padding: "15px 2px"
+  answer-row-hover:
+    backgroundColor: "{colors.action-violet}"
     textColor: "{colors.white}"
     typography: "{typography.body}"
     rounded: "{rounded.square}"
-    padding: "0 14px"
+    padding: "15px 2px"
+  model-pick:
+    backgroundColor: "{colors.model-violet}"
+    textColor: "{colors.white}"
+    rounded: "{rounded.square}"
+    padding: "16px"
+  button-primary:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.white}"
+    typography: "{typography.body}"
+    rounded: "{rounded.square}"
+    padding: "0 15px"
     height: "42px"
-  action-button-hover:
-    backgroundColor: "{colors.reveal-lime}"
+  button-secondary:
+    backgroundColor: "transparent"
     textColor: "{colors.ink}"
     typography: "{typography.body}"
     rounded: "{rounded.square}"
-    padding: "0 14px"
+    padding: "0 15px"
     height: "42px"
-  rule-result:
-    backgroundColor: "{colors.paper-bright}"
+  button-hover:
+    backgroundColor: "{colors.action-violet}"
+    textColor: "{colors.white}"
+    typography: "{typography.body}"
+    rounded: "{rounded.square}"
+    padding: "0 15px"
+    height: "42px"
+  policy-pass:
+    backgroundColor: "{colors.answer-paper}"
     textColor: "{colors.ink}"
     typography: "{typography.body}"
     rounded: "{rounded.square}"
-    padding: "15px"
-  state-pill-revealed:
-    backgroundColor: "{colors.reveal-lime}"
+    padding: "15px 16px"
+  policy-block:
+    backgroundColor: "{colors.block-paper}"
     textColor: "{colors.ink}"
-    typography: "{typography.data}"
-    rounded: "{rounded.pill}"
-    padding: "7px 10px"
+    typography: "{typography.body}"
+    rounded: "{rounded.square}"
+    padding: "15px 16px"
 ---
 
-# Design System: Dinner Run — Commerce-1
+# Design System: The €18 Agent Test
 
 ## Overview
 
-**Creative North Star: "The Supermarket Shelf-Edge Decision Arcade"**
+**Creative North Star: "The Checkout Quick Draw"**
 
-Dinner Run turns a bounded AI choice into a compact, tactile game board. The warm paper half is the shopper's familiar decision surface; the deep green half is the sealed machine readout. Shelf labels, price tickets, lettered options, geometric plate illustrations, and terse mono data make the interaction feel like a fictional supermarket without imitating a real retailer.
+The €18 Agent Test makes one bounded AI decision feel like a twenty-second human game, not a model dashboard. A spacious lavender ground holds one elevated decision stage. Inside it, a near-black customer brief states the stakes and non-negotiable constraints; a warm paper answer sheet asks one plain-language recommendation question. Bricolage Grotesque brings game-show immediacy, while receipt-like mono facts keep price, time, state, and probability precise.
 
-The system is energetic but evidentiary. Oversized black display type creates the arcade invitation, while quiet body copy and mono labels specify what is synthetic, what is precomputed, and what deterministic code controls. The reveal is not spectacle for its own sake: it exposes the complete Choice distribution, identifies the human selection, and keeps the hard-rule result visually and semantically separate from model probability.
+The interaction is intentionally sequential. The first state contains the scenario and four complete answers but no model output. A user commits to one basket, the answer sheet changes in place, and only then does Commerce-1 appear alongside the code-owned checkout result. Violet signals action and revealed model material; electric lime calls out fixed constraints and budget; neither is allowed to blur model probability with policy authority.
 
-This is an Operate surface with a one-click path: choose one complete basket, see Commerce-1's choice, inspect policy, then share or reset. The finish-contract seed is `6c956125`. The current visual regression anchors are `assets/dinner-run-sealed.png`, `assets/dinner-run-result.png`, and `assets/dinner-run-mobile.png`; implementation tokens and behavior remain the source of truth.
+The system is playful, candid, and materially simple: lavender tabletop, ink brief, paper answer/result panel, violet action, lime constraints. It rejects model-control-room density, retailer imitation, product photography, and decorative data visualization. The interface should remain understandable from the first question and evidentiary after the reveal.
 
 **Key Characteristics:**
 
-- A near-equal paper/green split that reads as human choice versus model evidence.
-- Bold, tightly tracked display typography paired with restrained sans copy and mono facts.
-- Flat, rule-led surfaces with only a small hover lift and inset selection emphasis.
-- Original geometric dinner illustrations instead of product photography or retailer mimicry.
-- Claim boundaries embedded in the interface, not deferred to a legal footer.
-- A sealed-to-revealed state change that works with keyboard, touch, and reduced motion.
+- One large, softly elevated decision stage on a quiet lavender field.
+- An ink brief paired with a paper answer sheet, like a note beside a checkout form.
+- Bricolage Grotesque for the human game voice; DM Sans and IBM Plex Mono for operational facts.
+- Violet reserved for action, comparison, and revealed model emphasis.
+- Lime reserved for people, constraints, budget, and text selection—not model confidence.
+- A one-question choice-to-reveal flow with the full probability distribution kept in an evidence drawer.
 
-**The Choice-Before-Reveal Rule.** Commerce-1's answer stays sealed until the user selects one of the same four frozen baskets.
+**The Human Commits First Rule.** Do not show Commerce-1's answer, probability, or policy result until the user chooses one supplied basket.
 
-**The Evidence-After-Action Rule.** The first interaction earns the reveal; the resulting view must expose model probabilities, the code-owned hard-rule result, and a direct evidence-receipt link together.
+**The One Question Rule.** Keep the primary flow to one scenario, one four-option question, one reveal, and one reset; explanation lives after the decision.
 
 ## Colors
 
-The palette combines warm grocery paper with a dark institutional green, then uses lime, orange, and red as rare operational signals.
+The palette is a deliberate collision of calm lavender, paper neutrals, near-black ink, vivid action violet, and electric constraint lime.
 
 ### Primary
 
-- **Decision Green** (`decision-green`): owns the model half, sealed state, and evidence environment. It should feel authoritative without suggesting that the model controls checkout.
-- **Receipt Ink** (`ink`): primary text, structural borders, and the top application bar. It replaces generic black with a green-black that keeps both halves related.
-- **Reveal Lime** (`reveal-lime`): marks live/precomputed status, revealed state, the winning probability bar, and result-side focus. Its rarity gives the reveal its charge.
+- **Decision Ink** (`ink`): the household brief, primary text, first result action, comparison marker, toast, and brand mark. It supplies authority without looking like a technical terminal.
+- **Action Violet** (`action-violet`): the second line of the hero, answer-row hover, result headline, winning probability bar, and interactive hover state.
+- **Model Violet** (`model-violet`): the Commerce-1 half of the revealed comparison. Its darker value keeps white captions and the 82.99% probability legible.
+- **Lavender Tabletop** (`lavender-ground`): the page-level atmosphere around the decision object. It creates separation without becoming a card fill.
 
 ### Secondary
 
-- **Constraint Red** (`constraint-red`): marks the maximum-budget ticket and a blocked/ineligible probability bar. Pair it with explicit text or an icon.
-- **Focus Orange** (`focus-orange`): provides the high-visibility focus ring on light surfaces; it is not a general decorative accent.
-- **Pass Green** (`pass-green`): colors the positive hard-rule icon. The adjacent “Eligible to continue” copy carries the meaning.
+- **Constraint Lime** (`constraint-lime`): avatar, requirement icons, budget amount, selection highlight, and the decorative brief-ring trace. It marks fixed human constraints, not AI quality.
+- **Focus Coral** (`focus-coral`): the visible focus outline and blocked probability cue. It is a high-attention operational signal, not a general brand accent.
+- **Warning Red** (`warning-red`): the “contains cashew” answer fact and `ineligible` evidence tag; it always appears as text, never as an unlabeled swatch.
+- **Pass Green** (`pass-green`): the positive checkout-code icon, always paired with explicit “Safe to continue” language.
+- **Block Red** (`block-red`): the negative checkout-code icon, always paired with explicit block language and the block-paper surface.
 
 ### Neutral
 
-- **Grocery Paper** (`paper`): the human decision field and default choice-card surface.
-- **Bright Slip** (`paper-bright`): selected cards, rule-result slips, and high-contrast light content nested inside green.
-- **Quiet Copy** (`muted`): supporting explanations and secondary navigation.
-- **Shelf Rule** (`rule-line`): card dividers and secondary structural rules.
-- **White** (`white`): model-panel text and topbar content.
-- **Blocked Soft** (`blocked-soft`): the textual “ineligible” cue on the model panel, where plain red would lose contrast.
+- **Answer Paper** (`answer-paper`): the main choice and result surface.
+- **Warm Comparison Paper** (`warm-paper`): the human half of the revealed side-by-side comparison.
+- **Soft Ink** (`ink-soft`): supporting copy and lower-emphasis navigation.
+- **Hairline** (`hairline`): answer separators, evidence boundaries, and policy borders.
+- **White** (`white`): text on ink and violet.
+- **On-Ink Muted** (`on-ink-muted`): timestamps and secondary constraint descriptions on the dark brief.
+- **Data Muted** (`data-muted`): secondary answer facts and result metadata on paper.
+- **Result Muted** (`result-muted`): higher-contrast captions and rationale inside the revealed comparison and policy result.
+- **Block Paper** (`block-paper`): the tinted surface for an explicit deterministic block.
 
-**The Dark Green Is Evidence Rule.** Reserve the large green field for model state, probabilities, and policy outcome; do not let it become a generic marketing background.
+**The Lavender Is Atmosphere Rule.** Use lavender around the decision object, not inside every component; paper and ink must keep the central stage legible.
 
-**The Signal Needs Language Rule.** Lime, red, and green never carry pass, block, selected, or revealed meaning alone; pair them with labels, icons, border changes, or state copy.
+**The Violet Means Reveal Rule.** Violet carries action or revealed model emphasis. It must not imply policy approval, allergy safety, or model correctness.
+
+**The Lime Means Constraint Rule.** Lime marks the human brief and its fixed limits. Never use it as a probability winner color or a generic success badge.
 
 ## Typography
 
-**Display Font:** Archivo Black (with `sans-serif` fallback)  
+**Display Font:** Bricolage Grotesque (with `sans-serif` fallback)
 **Body Font:** DM Sans (with `sans-serif` fallback)  
 **Label/Mono Font:** IBM Plex Mono (with `monospace` fallback)
 
-**Character:** Archivo Black gives the game its blunt supermarket-poster confidence. DM Sans keeps the scenario conversational, while IBM Plex Mono turns budgets, timing, runtimes, option indices, percentages, and state labels into inspectable facts.
+**Character:** Bricolage Grotesque makes the prompt feel like a friendly game card rather than a form or benchmark. DM Sans stays neutral and conversational; IBM Plex Mono turns prices, timings, category labels, probabilities, and small doctrine into receipt facts.
 
 ### Hierarchy
 
-- **Display** (400, `clamp(3rem, 5.6vw, 6.2rem)`, 0.91): the mission only. Keep the tight negative tracking and deliberate line break.
-- **Headline** (400, `clamp(2rem, 3.4vw, 3.8rem)`, 0.95): the model-panel title and comparable section-level reveal statements.
-- **Title** (700, 17px, 1.2): strong result names and action-level messages.
-- **Body** (400, 14px, 1.5): instructions and explanatory copy. Keep operational passages short; the current sealed-state measure is about 330px.
-- **Label** (600, 10px, 0.1em letter spacing, uppercase): eyebrows and state/context labels.
-- **Data** (500, 9–10px): prices, timing, option indices, runtime, probability values, and footer doctrine.
+- **Display** (700, `clamp(3.2rem, 6.2vw, 5.75rem)`, 0.9): the two-line invitation only. Keep the second line violet and preserve the balanced wrap.
+- **Headline** (600, `clamp(1.85rem, 3vw, 3rem)`, 1): question and result-section hierarchy.
+- **Title** (600, `clamp(1.65rem, 2.5vw, 2.5rem)`, 1.08): the quoted household brief.
+- **Body** (400, typically 12–20px, 1.4–1.55): instructions, supporting facts, policy rationale, explainer copy, and disclosure.
+- **Label** (500–600, 9–11px, 0.06–0.08em letter spacing, uppercase where categorical): budget labels, choice letters, checkout-code labels, comparison captions, probabilities, and footer doctrine.
 
-**The Facts Use Mono Rule.** Use IBM Plex Mono for bounded facts and system state, not for narrative paragraphs or primary calls to action.
+**The Game Voice Leads Rule.** Use Bricolage Grotesque for the invitation, question, quoted brief, price emphasis, and reveal headline; never use it for dense evidence copy.
 
-**The Display Stays Blunt Rule.** Archivo Black is for the mission and reveal hierarchy; never use it as body copy or shrink it into dense utility labels.
+**The Receipt Facts Rule.** Use IBM Plex Mono only for bounded labels and values that benefit from a factual, scanned quality.
 
 ## Layout
 
-The application sits in a centered shell with an 18px desktop inset and a 1500px maximum width. A 66px three-part topbar leads into a game board whose viewport-aware height is `calc(100svh - 174px)` with a 650px minimum. On wide screens the board divides into `1.12fr / 0.88fr`: choices on warm paper, evidence on decision green. Both halves use fluid padding from 28px to 60px.
+The application shell is centered at a 1260px maximum width with a 40px desktop gutter. A 68px three-column topbar holds brand, centered demo name, and model link. The main introduction begins 30–58px below it and keeps the hero within a 790px measure; the supporting sentence stays within 620px.
 
-The choice area has three rows: mission, vertically centered 2×2 dinner grid, and disclosure hint. Dinner cards have a 12px gutter and preserve a stable 94px illustration column. The model side is a vertical state machine: header, sealed or revealed content, probability list, rule slip, actions, and evidence link. The method disclosure and footer sit below the board so the primary decision remains complete in one desktop viewport.
+The decision stage is one 545px-minimum two-part object. On wide screens, the ink brief takes `0.72fr` with a 310px minimum and the paper play panel takes `1.28fr`. The brief uses fluid 28–48px padding; the play panel uses 28–52px. The brief stacks sender, quote, a 2×2 constraint matrix, then pushes the €18 ticket to the bottom. The play panel leads with a two-column question header and four full-width answer rows.
 
-At 980px and below, the board becomes one column, the model panel follows the choice panel, and the four-part method disclosure becomes 2×2. At 620px and below, the shell inset falls to 10px, the topbar becomes two columns, the demo title hides, choices become a single list with 72px dish illustrations, the budget ticket joins document flow, the model panel keeps at least 590px, the method disclosure stacks, and footer links wrap below the doctrine. Do not hide the runtime provenance pill or evidence link on small screens.
+The result replaces the choice view inside the same paper panel; the brief remains fixed so the revealed decision is still visibly grounded in the original constraints. Comparison, policy, actions, and the evidence drawer follow in one vertical sequence. The model explainer sits directly below the stage, then the footer closes the shell.
 
-**The Same Decision on Every Width Rule.** Responsive changes may reflow the four baskets, but may not reorder, omit, or summarize them differently from desktop.
+At 900px and below, the decision stage stacks brief above paper, the brief keeps a 440px minimum, and the explainer becomes two columns. At 620px and below, the shell gutter falls to 10px per side, the topbar becomes two columns and hides the centered demo name, the stage radius tightens, brief and play padding compact, the four constraint cells keep their 2×2 grid but hide secondary descriptions, and answer rows hide only protein/vegetable detail—not price, time, or allergy status. The comparison stacks, actions share width, and the explainer and footer reflow.
 
-**The Paired Halves Rule.** On desktop, paper and green must read as one bordered instrument; on mobile, preserve their sequence and shared outer frame rather than turning them into unrelated cards.
+**The Brief Persists Rule.** The household constraints remain visible while the result replaces the answer list; do not navigate to a detached result page.
+
+**The Safety Facts Survive Rule.** Responsive compression may hide secondary nutrition detail, but never price, time, nut-status, the €18 limit, or the checkout-code result.
 
 ## Elevation & Depth
 
-The system is flat by default. Hierarchy comes from tonal fields, one-pixel rules, typography, and adjacency rather than ambient card shadows. Dinner-card hover lifts by 2px, selection uses a 2px inset ink ring, and illustrated plates use only a tiny grounding shadow (`0 2px 0 rgba(19,36,28,.13)`). Toasts move vertically into view, but the primary board does not float above the page.
+Depth is concentrated in the decision stage, which floats as one object above the lavender ground. Its desktop shadow is broad and violet-tinted (`0 24px 65px rgba(58, 46, 111, .14)`); the compact version becomes `0 18px 45px rgba(58, 46, 111, .13)`. Internal surfaces stay flat and use tonal contrast and one-pixel rules instead of nested shadows. A faint oversized lime ring is clipped into the brief as a single atmospheric gesture.
 
 ### Shadow Vocabulary
 
-- **Selected inset** (`inset 0 0 0 2px #13241c`): reinforces the radio's selected state without changing layout.
-- **Plate contact** (`0 2px 0 rgba(19,36,28,.13)`): grounds the geometric food illustration inside its circular plate.
+- **Decision-stage lift** (`0 24px 65px rgba(58, 46, 111, .14)`): the only large ambient shadow; it binds brief and answer sheet into one object.
+- **Compact-stage lift** (`0 18px 45px rgba(58, 46, 111, .13)`): the mobile-equivalent stage shadow.
 
-**The Flat Instrument Rule.** Do not add generic drop shadows, glass effects, or layered marketing cards; the board should feel printed, bounded, and directly operable.
+**The One Elevated Object Rule.** Elevate the complete decision stage, not its rows, comparison blocks, policy slips, or evidence details.
 
-**The State Motion Rule.** Use short 180–200ms transitions for hover, focus, and toast state only, and collapse them to near-zero under `prefers-reduced-motion`.
+**The Reveal Motion Rule.** Choice exit lasts 180ms; result entry lasts 440ms with a short downward-to-rest reveal. Reduced-motion mode collapses both animation and the JavaScript handoff delay.
 
 ## Shapes
 
-Most interactive surfaces are square and rule-bound. Dinner cards, action buttons, the method region, probability tracks, and rule slips use zero radius. The shell allows one soft gesture: a 13px radius on the top corners of the dark topbar. Full pills are reserved for compact state metadata such as runtime and sealed/revealed status. Circles belong to plate illustrations and tiny status lights, not general-purpose containers.
+The decision stage has a soft 16px outer radius, reduced to 13px on compact screens, and clips its dark/light split. Inside, form language is mostly rectilinear: answer rows are separator-led with no boxes, action buttons are square, comparison blocks are square, and policy results are square bordered slips.
 
-The original dish illustrations are deliberately diagrammatic: nested circles form plate and rim, while a few flat geometric marks suggest pasta, tofu, pesto, or tacos. Preserve the 1px shelf-rule outline and warm plate ground. Do not replace these with third-party food photography, emoji, or a real retailer's package language.
+Circles identify small, human-scale markers: Maya's avatar, A–D answer letters, and the “vs” comparison marker. Small explainer facts use full pills. The InferCrane mark keeps its three skewed bars. Icons remain thin outlined strokes with rounded line caps; no filled icon library or illustrated food imagery belongs in this world.
 
-**The Square Surface, Round Status Rule.** Content and actions stay rectilinear; only food plates and compact status indicators become circular or pill-shaped.
+**The Soft Frame, Sharp Answer Rule.** Round the enclosing stage and compact markers; keep answer, result, evidence, and action surfaces square and direct.
 
 ## Components
 
-### Topbar and Runtime Pill
+### Topbar and Model Link
 
-The topbar is the frame, not a marketing nav. It holds the InferCrane mark at left, demo identity in the center on wide screens, and the precomputed H200 runtime pill at right. The runtime pill's lime dot indicates state but the text carries the factual disclosure. On small screens the center label may hide; provenance may not.
+The topbar is a transparent structural line on lavender. The InferCrane mark and wordmark anchor left, the demo name centers on wide screens, and “Open model” anchors right with a thin arrow that moves 3px on hover. On mobile the center name hides, but brand and model access remain.
 
-### Dinner Choice Cards
+### Intro
 
-- **Shape:** square card, 1px shelf-rule border, 14px padding, and a fixed illustration/text split.
-- **Default:** grocery paper on the human side, with an A–D mono index, dinner title, and time/price line.
-- **Hover:** ink border plus a 2px upward lift.
-- **Focus:** 3px focus-orange outline with 2px offset around the label via `:focus-within`.
-- **Selected:** bright-slip surface, ink border, and 2px inset ink ring. The native radio remains the semantic control even though it is visually hidden.
-- **Keyboard:** arrow keys cycle through the same ordered set and update the reveal; selecting moves focus to the model heading so screen-reader and keyboard users land at the changed region.
+The invitation is two lines: “One customer. Four baskets.” in ink and “Make the agent's call.” in action violet. One sentence asks the user to recommend as a shopping agent before comparing with Commerce-1. Keep the intro plain; badges, dashboards, and model metrics would spoil the quick-draw premise.
 
-### Geometric Dish Illustrations
+### Ink Brief
 
-Each choice uses an original CSS-built plate with a distinct food silhouette. Treat the four illustrations as identifiers, never evidence. Their colors may vary, but their 88px desktop / 72px mobile plate structure and simplified diagram language should remain consistent.
+The brief is the scenario anchor. A lime avatar identifies Maya, who briefed her fictional shopping agent; Bricolage renders the household quote, a ruled 2×2 matrix lists four hard constraints with lime outline icons, and the oversized lime €18 closes the panel. The decorative lime ring remains faint, clipped, and non-interactive.
 
-### Sealed and Revealed Model States
+### Answer Rows
 
-The sealed state centers a lime lock, “Pick first,” and one explanatory sentence. After selection, the status pill changes from outlined “Sealed” to lime “Revealed,” the human result appears first, and the complete probability distribution follows. The result region shares the model heading as its accessible label; programmatic focus moves there on direct selection.
+- **Structure:** native radio inside a full-row label; circular A–D marker; name/nutrition; price/time/allergy; arrow.
+- **Default:** transparent on answer paper with a hairline bottom separator.
+- **Hover:** full action-violet field, white foreground, and a 3px rightward arrow shift.
+- **Focus:** 3px focus-coral outline with 3px offset around the row.
+- **Selection:** the user sees the reveal immediately, so selection is not treated as a persistent visual card state.
+- **Keyboard:** Up/Down moves focus cyclically through the four radios; native radio activation triggers the reveal.
+- **Mobile:** preserve name, price, time, and nut status; hide the secondary protein/vegetable line only.
 
-### Probability Distribution
+### Result Reveal
 
-Rows use a stable three-column structure: option label, proportional track, and right-aligned mono percentage. The chosen model option uses reveal lime. The cashew option pairs a red bar with the textual `ineligible` tag. Always show all four baskets plus `None`, retain exact two-decimal percentages, and label this as Commerce-1 Choice probabilities.
+The choice view fades and slides 18px left over 180ms. The result then reveals downward-to-rest over 440ms using opacity, clip-path, and a 12px vertical offset. The result heading receives programmatic focus and a coral focus outline, announcing “Same call.” or “Different call.” before the comparison.
 
-The displayed 82.99% is the model probability for `lentil_pasta`, rounded from the canonical value in `evidence/mission-1-public.json`. It is not a deterministic policy score, eligibility probability, accuracy measure, benchmark result, confidence narrative, or authority to transact.
+### Human-versus-Model Comparison
 
-### Hard-Rule Result
+“Your agent recommends” uses warm comparison paper; “Commerce-1 recommends” uses model violet with high-contrast white text and an explicit 82.99% probability. A small ink “vs” circle separates them on wide screens and becomes a plain inline label when stacked. This is a comparison of recommendations, not scores.
 
-The hard-rule slip sits after probabilities to show that policy is a separate code-owned layer. Pass uses a check icon, pass-green, “Eligible to continue,” and a sentence enumerating budget, vegetarian, time, and declared nut-warning checks. Block uses an X icon, constraint red, “Blocked before checkout,” and the concrete cashew reason. Never infer the hard-rule result from probability color or model ranking.
+### Checkout-Code Result
 
-### Result Actions and Toast
+The policy result is visually separate from the model comparison. Pass uses a green check plus “Safe to continue” and lists budget, time, vegetarian, servings, and declared nut-free rules. Block uses a tinted block-paper field, red border and X, “Blocked: contains cashew,” and states that policy stops the basket independently of the model. Neither variant authorizes checkout.
 
-Share and Try again are equal outlined buttons on green. Hover and keyboard focus invert to reveal lime with ink text. Share prefers the native share sheet, falls back to clipboard, and uses the polite toast for success or unavailability. Reset reseals the result, clears card selection, and returns focus to the first radio.
+### Result Buttons and Toast
 
-### Method Disclosure and Footer
+Play again is ink-filled; Share result is transparent with an ink border. Both become violet with white text on hover or focus. Reset restores the answer sheet and returns focus to the first radio. Share prefers the platform share sheet, falls back to clipboard, and reports outcome through the polite ink toast.
 
-The native details disclosure contains four fixed claim-boundary statements: same options, typed Choice rather than prose, deterministic rules, and real precomputed output over fictional data. The footer closes with “Commerce-1 proposes. Code enforces. You decide.” and direct Weights, Source, and Evidence links. Keep these boundaries available in the initial sealed state.
+### Evidence Drawer and Probability Rows
 
-### Evidence and Claim Contract
+The native details drawer follows the primary result. Opening it reveals all four supplied baskets plus `None`, exact two-decimal percentages, the precomputed H200 disclosure, and the inference-receipt link. Tracks use quiet gray by default, violet for the model's chosen option, and coral for the ineligible cashew option.
 
-The durable source for the demonstrated inference is `evidence/mission-1-public.json`, including H200 execution context and immutable artifact/runtime hashes. UI claims must preserve the following distinctions:
+The displayed 82.99% is Commerce-1's model probability for `lentil_pasta`, rounded from `evidence/mission-1-public.json`. It is not a policy score, eligibility result, benchmark, accuracy claim, explanation, or permission to purchase.
 
-- The user and model choose from the identical frozen set of four synthetic baskets.
-- Commerce-1 returns a typed Choice distribution; it does not generate the meal copy or a rationale.
-- Probabilities are real precomputed model output; the store, prices, plates, and mission are fictional.
-- Budget, diet, time, and allergy proceed/block checks belong to deterministic code.
-- “Eligible to continue” is not checkout or purchase authorization; the user remains the authority.
-- The demo is not a benchmark, nutrition tool, allergy guarantee, autonomous purchase, or live inference claim.
+### Model Explainer, Fact Pills, and Footer
+
+The explainer answers “What just happened?” in one compact row, describes Commerce-1 as an open decision model for commerce agents, and names inventory alongside allergies, budgets, permissions, and checkout as code-owned concerns. It closes with three outlined mono pills: Open weights, Typed decisions, and 0 generated tokens. The footer repeats “Commerce-1 proposes. Code enforces. You decide.” and offers Model, GitHub, and Launch article links.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** preserve the paper-left / green-right decision-and-evidence relationship on wide screens and the same order on narrow screens.
-- **Do** show all four candidate baskets plus `None` whenever the Choice distribution is shown.
-- **Do** label 82.99% as a model Choice probability and keep the hard-rule result in its own light slip.
-- **Do** keep synthetic-data and precomputed-output disclosures visible before selection, then link the exact inference receipt after reveal.
-- **Do** use text, icons, border changes, and state labels alongside color for selected, revealed, eligible, and blocked states.
-- **Do** preserve visible focus, radio semantics, arrow-key operation, focus transfer to changed content, live toast status, and reduced-motion behavior.
-- **Do** use “basket,” “choice,” “continue,” “blocked,” or “reveal” language for the interaction; reserve “checkout” for the explicit authority boundary.
-- **Do** maintain `assets/PROVENANCE.json` whenever a shipping screenshot is added or recaptured; record its hash, pixel dimensions, UI state, selected basket, source hashes, and evidence receipt.
+- **Do** keep the lavender ground, ink brief, and paper answer/result panel as the three dominant material layers.
+- **Do** preserve the one-question flow: human choice first, result second, detailed probabilities on demand.
+- **Do** keep the household brief visible beside or above the result so policy remains grounded in the original constraints.
+- **Do** use violet for action and revealed model emphasis, lime for fixed brief constraints, and coral for focus or blocked evidence.
+- **Do** preserve native radio semantics, Up/Down keyboard focus, programmatic focus on the result headline, reset focus, polite share feedback, and reduced-motion handling.
+- **Do** show price, time, nut status, checkout-code result, and the €18 limit at every supported width.
+- **Do** label 82.99% as model probability and keep the checkout-code result visually and verbally separate.
+- **Do** keep the public inference receipt reachable from the revealed state and disclose that the scenario is synthetic and the output precomputed.
 
 ### Don't:
 
-- **Don't** present the 82.99% probability as a score, policy verdict, success rate, benchmark, or explanation generated by Commerce-1.
-- **Don't** imply live inference, store browsing, recipe generation, payment processing, or autonomous checkout.
-- **Don't** collapse the model output and deterministic hard-rule check into one pass/fail message.
-- **Don't** use red, lime, or green as the sole carrier of meaning, especially for the nut-allergy block.
-- **Don't** replace the original geometric meals with food photography, emoji, retailer assets, or realistic branded packaging.
-- **Don't** add generic rounded cards, gradients, glassmorphism, ambient shadows, or decorative dashboards that weaken the shelf-edge instrument character.
-- **Don't** remove the precomputed H200 pill, the initial disclosure hint, the method boundaries, or the inference-receipt link to gain visual space.
-- **Don't** treat the screenshots as stronger evidence than code and `evidence/mission-1-public.json`; they are audited presentation artifacts, not the claim source.
+- **Don't** show Commerce-1's choice before the user commits or turn the opening state into a model dashboard.
+- **Don't** use lime as model confidence, violet as policy approval, or color alone as the carrier of safety meaning.
+- **Don't** call 82.99% a score, pass rate, policy verdict, benchmark, generated rationale, or checkout authority.
+- **Don't** imply live inference, autonomous purchase, real-store facts, nutrition advice, or an allergy guarantee.
+- **Don't** detach the result from the brief, merge model probability with deterministic policy, or hide the block reason inside the evidence drawer.
+- **Don't** add food photography, retailer branding, gradients, glass effects, nested card shadows, or dashboard chrome.
+- **Don't** round answer rows, comparison blocks, policy slips, or action buttons; the outer stage owns the softness.
+- **Don't** hide the Open model link, evidence receipt, project links, or core claim boundaries to save space.

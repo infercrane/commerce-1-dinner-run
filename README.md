@@ -1,25 +1,25 @@
 ---
-title: Dinner Run — Human vs Commerce-1
+title: The €18 Agent Test — Commerce-1
 emoji: 🛒
-colorFrom: green
+colorFrom: purple
 colorTo: yellow
 sdk: static
 pinned: false
 license: apache-2.0
-short_description: Pick dinner, then reveal Commerce-1's typed decision.
+short_description: Make one shopping-agent recommendation, then compare it with Commerce-1.
 ---
 
-# Dinner Run — Human vs Commerce-1
+# The €18 Agent Test
 
-Can you make the same dinner decision as a 27B commerce decision model?
+Run a shopping agent for one decision: recommend a dinner basket, then compare your call with Commerce-1.
 
 **[Play the live demo](https://huggingface.co/spaces/infercrane/commerce-1-dinner-run)** · [Get Commerce-1](https://huggingface.co/infercrane/Commerce-1) · [Inspect the model runtime](https://github.com/infercrane/commerce-1)
 
-![Dinner Run result showing Commerce-1's probability distribution](https://raw.githubusercontent.com/infercrane/commerce-1-dinner-run/main/assets/dinner-run-result.png)
+![The Dinner Test comparing a human choice with Commerce-1](https://raw.githubusercontent.com/infercrane/commerce-1-dinner-run/main/assets/dinner-run-result.png)
 
-Four complete dinner baskets. One €18 budget. One strict nut allergy. Pick a
-dinner, then reveal the basket chosen by Commerce-1 and the model's complete
-probability distribution.
+You are the shopping agent for four friends, one strict nut allergy, thirty
+minutes, and an €18 budget. Pick one fictional basket. Then compare your call
+with Commerce-1 and the separate checkout rule.
 
 Commerce-1 does not browse a store or generate a recipe in this demo. It ranks
 the same four frozen candidate baskets shown to the user and returns a typed
@@ -40,5 +40,6 @@ Commerce-1 artifact. The store, products, prices, and mission are synthetic.
 ## Boundaries
 
 This is an interactive product demonstration, not a benchmark, nutrition tool,
-allergy guarantee, or autonomous checkout. Commerce-1 proposes; deterministic
-code enforces hard constraints; the user remains the authority for checkout.
+allergy guarantee, or autonomous checkout. Commerce-1 ranks the frozen actions;
+deterministic code enforces hard constraints; the user remains the authority for
+checkout.

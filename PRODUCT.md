@@ -24,9 +24,9 @@ embedded in launch material without an always-on GPU.
 
 Commerce-1 accepts structured state and ordered Choice, Noul, or Score
 questions, then returns typed answers and probability distributions rather
-than generated prose. “Dinner Run” makes that mechanism understandable through
-one bounded decision: a person and Commerce-1 choose from the same four complete
-dinners under the same budget, time, dietary, and household constraints.
+than generated prose. “The €18 Agent Test” makes that mechanism understandable
+through one bounded decision: a person and Commerce-1 choose from the same four
+complete dinners under the same budget, time, dietary, and household constraints.
 
 ## Positioning
 
@@ -38,7 +38,7 @@ explanation text.
 
 The model is used inside commerce-agent workflows for proceed/review/block
 gates, action and tool routing, fulfillment choices, approval-policy checks,
-and risk or priority scoring. Dinner Run uses an original fictional European
+and risk or priority scoring. The Agent Test uses an original fictional European
 online supermarket; it does not copy a retailer's brand, product photography,
 or interface.
 
@@ -62,7 +62,7 @@ or interface.
 
 - Product name: Commerce-1.
 - Publisher: InferCrane.
-- Demo name: Dinner Run — Human vs Commerce-1.
+- Demo name: The €18 Agent Test.
 - Voice: direct, technically honest, and energetic enough for a public launch.
 
 ## Evidence on Hand
